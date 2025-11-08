@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ac0340963b0822546b62f4d74c08cdd0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330825
+  packageName: Sea Otter Chef(UModeler X)
+  packageVersion: 1.0.1
+  assetPath: Assets/UModelerX_SeaOtterChef_URP_Editable/Scenes/LighttingSetting/LightingData.asset
+  uploadId: 787258

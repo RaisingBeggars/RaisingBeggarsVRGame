@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8fbbdcf4a4f845045ab0fc7c8ff29eed
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330825
+  packageName: Sea Otter Chef(UModeler X)
+  packageVersion: 1.0.1
+  assetPath: Assets/UModelerX_SeaOtterChef_URP_Editable/Shaders/Water/PlayerMovement.cs
+  uploadId: 787258
