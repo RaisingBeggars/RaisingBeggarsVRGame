@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 14eaf23044923d44a8b0ae00bae8ded0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330825
+  packageName: Sea Otter Chef(UModeler X)
+  packageVersion: 1.0.1
+  assetPath: Assets/UModelerX_SeaOtterChef_URP_Editable/Shaders/Water/URP/Basewater_shader.mat
+  uploadId: 787258
