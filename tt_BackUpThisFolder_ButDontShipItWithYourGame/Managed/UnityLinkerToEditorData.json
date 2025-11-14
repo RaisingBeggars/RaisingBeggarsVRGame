@@ -967,9 +967,7 @@
           },
           {
             "name": "SphereCollider",
-            "scenes": [
-              "Assets/Scenes/StockScene.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },

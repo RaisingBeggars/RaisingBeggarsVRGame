@@ -7,6 +7,14 @@
 
 
 
+extern void StockDetailPanel_Start_m9235F89279B4AE6C43D479839A72C9140BD94CAB (void);
+extern void StockDetailPanel_HideAll_m9362A8D01C527ECA10BAFBF271A073B8BF3DD99A (void);
+extern void StockDetailPanel_ShowCompany_mA5FE911C2D7CF5821197A467DD9C21C13C264682 (void);
+extern void StockDetailPanel__ctor_m9A241BEC863FA2182CCAAC8A47301597D2CEA26A (void);
+extern void StockItemToggle_Awake_m801D12D022BB8983C6ABDF3A1F4F594257F14D0E (void);
+extern void StockItemToggle_OnDestroy_m499797521AB665E8F482CBD7BEE6112C8F245E7C (void);
+extern void StockItemToggle_OnToggleChanged_mB1D67A95CBCFDE96E4C80A0F8AF4D4AC23CF409D (void);
+extern void StockItemToggle__ctor_mB8E1E9629269EF163C17314AD6DFFE81A8C0DCDA (void);
 extern void XRHandsManagerRuntime_Awake_m4C740FA66FE6AAF3D77491C605804B57C78AB0AA (void);
 extern void XRHandsManagerRuntime_OnEnable_m84854992BCC2AFCBA9B517FF452B2E50F98299B4 (void);
 extern void XRHandsManagerRuntime_OnDisable_m0C032F0FA728D820FE0A77CFD73A3FEDEE5C42D6 (void);
@@ -59,8 +67,16 @@ extern void U3CShuffleClipsU3Ed__14_MoveNext_m21CCDFB14A54E54E7B6E469BF7FE65B865
 extern void U3CShuffleClipsU3Ed__14_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m880ABF34AB841D0D576711951A62BA455B62392A (void);
 extern void U3CShuffleClipsU3Ed__14_System_Collections_IEnumerator_Reset_mD2A7343FBB7E5DF34AE98BF9FB8D217F735BE8AD (void);
 extern void U3CShuffleClipsU3Ed__14_System_Collections_IEnumerator_get_Current_m1125D1E580999FB21DB587118BFFC63501D4328D (void);
-static Il2CppMethodPointer s_methodPointers[52] = 
+static Il2CppMethodPointer s_methodPointers[60] = 
 {
+	StockDetailPanel_Start_m9235F89279B4AE6C43D479839A72C9140BD94CAB,
+	StockDetailPanel_HideAll_m9362A8D01C527ECA10BAFBF271A073B8BF3DD99A,
+	StockDetailPanel_ShowCompany_mA5FE911C2D7CF5821197A467DD9C21C13C264682,
+	StockDetailPanel__ctor_m9A241BEC863FA2182CCAAC8A47301597D2CEA26A,
+	StockItemToggle_Awake_m801D12D022BB8983C6ABDF3A1F4F594257F14D0E,
+	StockItemToggle_OnDestroy_m499797521AB665E8F482CBD7BEE6112C8F245E7C,
+	StockItemToggle_OnToggleChanged_mB1D67A95CBCFDE96E4C80A0F8AF4D4AC23CF409D,
+	StockItemToggle__ctor_mB8E1E9629269EF163C17314AD6DFFE81A8C0DCDA,
 	XRHandsManagerRuntime_Awake_m4C740FA66FE6AAF3D77491C605804B57C78AB0AA,
 	XRHandsManagerRuntime_OnEnable_m84854992BCC2AFCBA9B517FF452B2E50F98299B4,
 	XRHandsManagerRuntime_OnDisable_m0C032F0FA728D820FE0A77CFD73A3FEDEE5C42D6,
@@ -114,8 +130,16 @@ static Il2CppMethodPointer s_methodPointers[52] =
 	U3CShuffleClipsU3Ed__14_System_Collections_IEnumerator_Reset_mD2A7343FBB7E5DF34AE98BF9FB8D217F735BE8AD,
 	U3CShuffleClipsU3Ed__14_System_Collections_IEnumerator_get_Current_m1125D1E580999FB21DB587118BFFC63501D4328D,
 };
-static const int32_t s_InvokerIndices[52] = 
+static const int32_t s_InvokerIndices[60] = 
 {
+	13968,
+	13968,
+	10564,
+	13968,
+	13968,
+	13968,
+	10439,
+	13968,
 	13968,
 	13968,
 	13968,
@@ -173,7 +197,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	52,
+	60,
 	s_methodPointers,
 	0,
 	NULL,
