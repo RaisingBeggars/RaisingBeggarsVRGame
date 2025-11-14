@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class SimpleWalker : MonoBehaviour
 {
-    public float moveSpeed = 3f;
-    public float roadStart = 117f;
-    public float roadEnd = 21f;
+    public float moveSpeed = 4f;
+    public float roadStart = -21f;
+    public float roadEnd = -84f;
     public bool useZAxis = true;
 
     //캐릭터가 뒤로 걷는다면 체크, 평소에는 비워두기
