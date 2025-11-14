@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/InterectionScene.unity
-    guid: 4c1316b6f0aca476aafbaf7556a931e9
+    path: Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity
+    guid: 3ff35cecbcc52cc42945cf531638a60a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 369daf0a388484d7db9b656af0ccde1b, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
