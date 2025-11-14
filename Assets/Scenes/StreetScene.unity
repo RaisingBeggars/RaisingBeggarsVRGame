@@ -11566,8 +11566,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1139327099}
     m_Modifications:
     - target: {fileID: -1526742159586503116, guid: f71041fd118fbb34aa9d2dd6a1d96fce, type: 3}
+      propertyPath: roadEnd
+      value: -84
+      objectReference: {fileID: 0}
+    - target: {fileID: -1526742159586503116, guid: f71041fd118fbb34aa9d2dd6a1d96fce, type: 3}
       propertyPath: moveSpeed
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -1526742159586503116, guid: f71041fd118fbb34aa9d2dd6a1d96fce, type: 3}
+      propertyPath: roadStart
+      value: -21
       objectReference: {fileID: 0}
     - target: {fileID: 1616406060653692748, guid: f71041fd118fbb34aa9d2dd6a1d96fce, type: 3}
       propertyPath: m_Name
@@ -29675,8 +29683,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4440107227005073490, guid: 314b13a2c4f89c74299eabc2a4c725c7, type: 3}
+      propertyPath: roadEnd
+      value: -84
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440107227005073490, guid: 314b13a2c4f89c74299eabc2a4c725c7, type: 3}
       propertyPath: moveSpeed
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440107227005073490, guid: 314b13a2c4f89c74299eabc2a4c725c7, type: 3}
+      propertyPath: roadStart
+      value: -21
       objectReference: {fileID: 0}
     - target: {fileID: 6993270559495516286, guid: 314b13a2c4f89c74299eabc2a4c725c7, type: 3}
       propertyPath: m_Name
@@ -45794,8 +45810,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1139327099}
     m_Modifications:
     - target: {fileID: -4270440901557770816, guid: bae26acf817c6dc4e82f95d9ef4ab46a, type: 3}
+      propertyPath: roadEnd
+      value: -84
+      objectReference: {fileID: 0}
+    - target: {fileID: -4270440901557770816, guid: bae26acf817c6dc4e82f95d9ef4ab46a, type: 3}
       propertyPath: moveSpeed
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -4270440901557770816, guid: bae26acf817c6dc4e82f95d9ef4ab46a, type: 3}
+      propertyPath: roadStart
+      value: -21
       objectReference: {fileID: 0}
     - target: {fileID: 489417422609642697, guid: bae26acf817c6dc4e82f95d9ef4ab46a, type: 3}
       propertyPath: m_Controller
@@ -49177,8 +49201,16 @@ PrefabInstance:
       value: police_Female_A
       objectReference: {fileID: 0}
     - target: {fileID: 8351052664029603767, guid: f0ac6fb9ada49f24683e3eca20786103, type: 3}
+      propertyPath: roadEnd
+      value: -84
+      objectReference: {fileID: 0}
+    - target: {fileID: 8351052664029603767, guid: f0ac6fb9ada49f24683e3eca20786103, type: 3}
       propertyPath: moveSpeed
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8351052664029603767, guid: f0ac6fb9ada49f24683e3eca20786103, type: 3}
+      propertyPath: roadStart
+      value: -21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -55143,8 +55175,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1139327099}
     m_Modifications:
     - target: {fileID: -3782686317719819131, guid: bcc8732b8b44622449c23934f89e68c0, type: 3}
+      propertyPath: roadEnd
+      value: -84
+      objectReference: {fileID: 0}
+    - target: {fileID: -3782686317719819131, guid: bcc8732b8b44622449c23934f89e68c0, type: 3}
       propertyPath: moveSpeed
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -3782686317719819131, guid: bcc8732b8b44622449c23934f89e68c0, type: 3}
+      propertyPath: roadStart
+      value: -21
       objectReference: {fileID: 0}
     - target: {fileID: 186757882122740016, guid: bcc8732b8b44622449c23934f89e68c0, type: 3}
       propertyPath: m_Name
