@@ -14,6 +14,7 @@ struct HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178;
 struct List_1_t8463D6E8766F823573C7FF81CA9AC38D1F351FFF;
 struct List_1_t6374200280C9D4D9E197123BCF3B71CB8726B89F;
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
+struct List_1_t80AF51D5D3B90164EF2016D606DCD0ECAA4DC406;
 struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD;
 struct List_1_tE4111BEC044D13259EFD4EC5907636C855887179;
 struct UnityEvent_1_tEEB36A367DCB5867E93AAF6BECAF3558CA71BECB;
@@ -27,6 +28,7 @@ struct JointToTransformReferenceU5BU5D_tB4EDF8357D13DD2A4E07436A2D5819F73E507A52
 struct JointVisualizerU5BU5D_tBE9067F8E5E225E6A76C5027CD08047938471342;
 struct LineRendererU5BU5D_t5AA0E11EC99A18A11BCCCABDF088C854E50D394A;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+struct ShaderContainerU5BU5D_t486180245366FAEFA5C4D2EF51F47D6A6F225567;
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 struct TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24;
 struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C;
@@ -45,10 +47,15 @@ struct InputSettings_tBA8835B505722A59702A08BCBA46ECF0B0274EEF;
 struct JointVisualizer_t00D07115B1B09275653E1814C92C73DF8EEABFD6;
 struct LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D;
 struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
+struct MaterialPipelineHandler_tF073532612A2F16372CCBD89100FC0CCB47EDDDC;
 struct MethodInfo_t;
 struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
+struct RenderPipelineAsset_t5F9BF815BF931E1314B184E7F9070FB649C7054E;
 struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF;
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A;
+struct Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692;
+struct ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52;
 struct SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E;
 struct String_t;
 struct SubsystemProvider_tE1865B8FE698C81A59AED35E0E536BD53F402455;
@@ -72,6 +79,7 @@ IL2CPP_EXTERN_C RuntimeClass* Action_3_t7D778238CD0A45B8368B3EAC4062AD2D477E1997
 IL2CPP_EXTERN_C RuntimeClass* ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* GraphicsSettings_t01785CE5CB5C5105CB527619AF4D74BEF417EF1A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6_il2cpp_TypeInfo_var;
@@ -89,13 +97,16 @@ IL2CPP_EXTERN_C RuntimeClass* SubsystemManager_t9A7261E4D0B53B996F04B8707D8E1C33
 IL2CPP_EXTERN_C RuntimeClass* Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* XRHandJointID_tC0BE8E1AC7717425649709BB62AAD56304FCC081_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tED03EE4A916C409E9C8B3F447A436C67DA8EF95D____6CB0C7B750E570894955266D788F0C32165C7900796AE442280CFB9E0E5578B0_FieldInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tED03EE4A916C409E9C8B3F447A436C67DA8EF95D____AABB3F39EFAE0E5006B7E599912DC5E371D09EBE198550EDC79E3C0EF24E1AF7_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tED03EE4A916C409E9C8B3F447A436C67DA8EF95D____7853A4E5E739BACEDA0F69E99FCE1D272FD6B628CE98D088CB10FB0E6DD81B21_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tED03EE4A916C409E9C8B3F447A436C67DA8EF95D____D071707EEEB2BDC45E405D4A05F1162C406A25FAB6F15959806AB233E0BC7D49_FieldInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral2620038B8A71EF21A205CC921576171A3CA9B0F4;
 IL2CPP_EXTERN_C String_t* _stringLiteral4A4955D176516025430352DFFE6DF5974DEB47AB;
-IL2CPP_EXTERN_C String_t* _stringLiteralA73F4360C56103ED788368C9769D9E67B8857E15;
-IL2CPP_EXTERN_C String_t* _stringLiteralAF67CEDF9BEAFF3DA766DA974B7F2E46E04D6D08;
+IL2CPP_EXTERN_C String_t* _stringLiteral9B4FEEFA76B93D58B6E47CD9FF76F6E287D0D321;
 IL2CPP_EXTERN_C String_t* _stringLiteralE16EED961058125D81E09FCA0B5A362770A7CAB5;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_TryGetComponent_TisSkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E_m95CEC209AB48BA4465F3CB2C9453CCA6322D2A63_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m2A316758173D3AF217BD415516279FBE46931C17_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m9FB5C17BEA2305D525582DF38C21BE94ABE5D326_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m04EA4373946F8720DED1255002B9C83EA0ABB7EB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisXRHandMeshController_t670ADAE830016D758ED74153F39334564CD3D687_m0EF34ABB02714F807910BD0C78AB85F2D25D023D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisXRHandSkeletonDriver_t549956F17FD2C98A8FC1C9DF04ED4218610321A9_m8D2D63A6AD343A90A9DDF71D360B7AD36BC3B4F2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisXRHandTrackingEvents_tF1DA1153E15422968E62D8B84B99D5C00018574C_mADC3C017664513070D3093477B302FC7198E8F2A_RuntimeMethod_var;
@@ -111,6 +122,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* HandGameObjects_ToggleRenderers_TisMeshRend
 IL2CPP_EXTERN_C const RuntimeMethod* HandVisualizer_OnTrackingAcquired_m0171A5A819541BC01F5AF3C6EF2125F81178E0CE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* HandVisualizer_OnTrackingLost_m1AE1681D37C767E16833FE70F184B796E0D1AA4D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* HandVisualizer_OnUpdatedHands_m2609041B9380B5501A4CAF6EDE5673C4CEBCBC01_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m653BD90E86DAC4C19518CC4C56AB6F3D6AB463E7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m9991CB9E0E4608CAE947384283EE27BCF3DAC2D4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mF9E011AC0B45B83F28F733B52084915C67A264CD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m209A9B25E99DCB0C5847654EFA37FC1EFF4E782C_RuntimeMethod_var;
@@ -156,6 +168,13 @@ struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
 	int32_t ____version;
 	RuntimeObject* ____syncRoot;
 };
+struct List_1_t80AF51D5D3B90164EF2016D606DCD0ECAA4DC406  : public RuntimeObject
+{
+	ShaderContainerU5BU5D_t486180245366FAEFA5C4D2EF51F47D6A6F225567* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
 struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD  : public RuntimeObject
 {
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ____items;
@@ -172,6 +191,16 @@ struct List_1_tE4111BEC044D13259EFD4EC5907636C855887179  : public RuntimeObject
 };
 struct U3CPrivateImplementationDetailsU3E_tED03EE4A916C409E9C8B3F447A436C67DA8EF95D  : public RuntimeObject
 {
+};
+struct ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52  : public RuntimeObject
+{
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	bool ___useSRPShaderName;
+	String_t* ___scriptableRenderPipelineShaderName;
+	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___scriptableRenderPipelineShader;
+	bool ___useBuiltinShaderName;
+	String_t* ___builtInPipelineShaderName;
+	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___builtInPipelineShader;
 };
 struct String_t  : public RuntimeObject
 {
@@ -204,6 +233,20 @@ struct HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F  : public Runti
 	LineRendererU5BU5D_t5AA0E11EC99A18A11BCCCABDF088C854E50D394A* ___m_Lines;
 	JointVisualizerU5BU5D_tBE9067F8E5E225E6A76C5027CD08047938471342* ___m_JointVisualizers;
 	XRHandMeshController_t670ADAE830016D758ED74153F39334564CD3D687* ___m_MeshController;
+};
+struct Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A 
+{
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	RuntimeObject* ____current;
+};
+struct Enumerator_t38A231BB01943CC3CC02D92799631EF4681643E9 
+{
+	List_1_t80AF51D5D3B90164EF2016D606DCD0ECAA4DC406* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52* ____current;
 };
 struct SubsystemWithProvider_3_tE926FFDCD0BC2F75B118A7CCE6FBFA422A41E2B2  : public SubsystemWithProvider_tC72E35EE2D413A4B0635B058154BABF265F31242
 {
@@ -271,7 +314,7 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 	};
 };
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D237_t429B18FEB638A7E8D3353A875A10196F6A8660E5 
+struct __StaticArrayInitTypeSizeU3D325_tEA61858874AAC6D561DB28A0B05449D9198C22B4 
 {
 	union
 	{
@@ -281,12 +324,12 @@ struct __StaticArrayInitTypeSizeU3D237_t429B18FEB638A7E8D3353A875A10196F6A8660E5
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D237_t429B18FEB638A7E8D3353A875A10196F6A8660E5__padding[237];
+		uint8_t __StaticArrayInitTypeSizeU3D325_tEA61858874AAC6D561DB28A0B05449D9198C22B4__padding[325];
 	};
 };
 #pragma pack(pop, tp)
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D276_t1B5ABE1B00704AAF7FAE288F619AF06C1A0951AD 
+struct __StaticArrayInitTypeSizeU3D416_tEAA1F7560F7E32AB0E0E2940064C485B5478FBA8 
 {
 	union
 	{
@@ -296,7 +339,7 @@ struct __StaticArrayInitTypeSizeU3D276_t1B5ABE1B00704AAF7FAE288F619AF06C1A0951AD
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D276_t1B5ABE1B00704AAF7FAE288F619AF06C1A0951AD__padding[276];
+		uint8_t __StaticArrayInitTypeSizeU3D416_tEAA1F7560F7E32AB0E0E2940064C485B5478FBA8__padding[416];
 	};
 };
 #pragma pack(pop, tp)
@@ -407,6 +450,10 @@ struct RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5
 {
 	intptr_t ___value;
 };
+struct XRDetectedHandMeshLayout_t818D2C6006D25B90EB6E96A3507777304E478EE0 
+{
+	int32_t ___value__;
+};
 struct XRHandFingerID_tE48C9E276F8DF1E47199DC780D661392679A498D 
 {
 	int32_t ___value__;
@@ -424,10 +471,6 @@ struct ProcessorExampleMode_tFFC3B4AA82230EA42F3360BAE1051CDCCD14D49B
 	int32_t ___value__;
 };
 struct VelocityType_tF48EEE418E154AFBC73243BBBF471EEC2F660636 
-{
-	int32_t ___value__;
-};
-struct XRDetectedHandMeshLayout_t1D07FEBDBC9D6C4328233BA8CB43D5528AC54FB5 
 {
 	int32_t ___value__;
 };
@@ -526,6 +569,9 @@ struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_pinv
 struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_com : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
 {
 };
+struct Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
 struct XRHandJoint_tDB955774276659AFD2294D516FC8A76A51E94783 
 {
 	int32_t ___m_IdAndHandedness;
@@ -564,6 +610,14 @@ struct InputSettings_tBA8835B505722A59702A08BCBA46ECF0B0274EEF  : public Scripta
 	bool ___m_DisableRedundantEventsMerging;
 	bool ___m_ShortcutKeysConsumeInputs;
 	HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178* ___m_FeatureFlags;
+};
+struct MaterialPipelineHandler_tF073532612A2F16372CCBD89100FC0CCB47EDDDC  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
+{
+	List_1_t80AF51D5D3B90164EF2016D606DCD0ECAA4DC406* ___m_ShaderContainers;
+	bool ___m_AutoRefreshShaders;
+};
+struct RenderPipelineAsset_t5F9BF815BF931E1314B184E7F9070FB649C7054E  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
+{
 };
 struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
@@ -702,6 +756,10 @@ struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
 {
 	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray;
 };
+struct List_1_t80AF51D5D3B90164EF2016D606DCD0ECAA4DC406_StaticFields
+{
+	ShaderContainerU5BU5D_t486180245366FAEFA5C4D2EF51F47D6A6F225567* ___s_emptyArray;
+};
 struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_StaticFields
 {
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___s_emptyArray;
@@ -712,8 +770,8 @@ struct List_1_tE4111BEC044D13259EFD4EC5907636C855887179_StaticFields
 };
 struct U3CPrivateImplementationDetailsU3E_tED03EE4A916C409E9C8B3F447A436C67DA8EF95D_StaticFields
 {
-	__StaticArrayInitTypeSizeU3D276_t1B5ABE1B00704AAF7FAE288F619AF06C1A0951AD ___6CB0C7B750E570894955266D788F0C32165C7900796AE442280CFB9E0E5578B0;
-	__StaticArrayInitTypeSizeU3D237_t429B18FEB638A7E8D3353A875A10196F6A8660E5 ___AABB3F39EFAE0E5006B7E599912DC5E371D09EBE198550EDC79E3C0EF24E1AF7;
+	__StaticArrayInitTypeSizeU3D325_tEA61858874AAC6D561DB28A0B05449D9198C22B4 ___7853A4E5E739BACEDA0F69E99FCE1D272FD6B628CE98D088CB10FB0E6DD81B21;
+	__StaticArrayInitTypeSizeU3D416_tEAA1F7560F7E32AB0E0E2940064C485B5478FBA8 ___D071707EEEB2BDC45E405D4A05F1162C406A25FAB6F15959806AB233E0BC7D49;
 };
 struct String_t_StaticFields
 {
@@ -967,6 +1025,10 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m209A9B2
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_ToggleRenderers_TisRuntimeObject_m21CF32A9DCEE9F23E70AEB08222E216637EAA206_gshared (bool ___0_toggle, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___1_rendererTransform, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameObject_TryGetComponent_TisRuntimeObject_m4D430300D2DFB9276DE980D78F60A05D271D3630_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, RuntimeObject** ___0_component, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeObject_m90A1E6C4C2B445D2E848DB75C772D1B95AAC046A_gshared (RuntimeObject* ___0_original, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
 
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
@@ -1021,12 +1083,10 @@ inline void Action_3__ctor_m3AB504B4A53E26F38ACFEC08DD59973F0169F14B (Action_3_t
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_OnDestroy_mDC01BE3680763342F2F89A8788D9B6A42ED7BBD6 (HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool SubsystemWithProvider_get_running_m6BF31FC3BDA38C56C0F60FEA37767A4151B22C44_inline (SubsystemWithProvider_tC72E35EE2D413A4B0635B058154BABF265F31242* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_UnsubscribeHandSubsystem_m4FB54A65D825A9218998D66F0099C171D4A2DBB9 (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HandVisualizer_GetProviderLayoutMesh_m2F0B33FB26CD6C70B331A2E1EF7F105651EF3004 (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRHandSubsystem_get_detectedHandMeshLayout_mF9302D3A002D17493BD0DA787BF462F3D1406B3B (XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects__ctor_mE5FE6A2F0C183C672EB9F6584039CE9F6F0ED458 (HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* __this, int32_t ___0_handedness, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___1_parent, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___2_meshPrefab, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___3_meshMaterial, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___4_debugDrawPrefab, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___5_velocityPrefab, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_SubscribeHandSubsystem_mC8DF8C9AD2E5B23D5593833681DADD53C31B28FF (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OpenXRRuntime_get_name_mB3B4B1E4ECE3B15BFE5F95AB267D90E0E1829456 (const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1 (String_t* ___0_a, String_t* ___1_b, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00 (Delegate_t* ___0_a, Delegate_t* ___1_b, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_ToggleDrawMesh_m3EC9E4B67721C48B59B52B1A6E146E7AF07BF259 (HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* __this, bool ___0_drawMesh, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_ToggleDebugDrawJoints_m5897D801494BFAAA40B96964AE976A7F71214752 (HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* __this, bool ___0_debugDrawJoints, const RuntimeMethod* method) ;
@@ -1163,6 +1223,29 @@ inline bool GameObject_TryGetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB
 {
 	return ((  bool (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF**, const RuntimeMethod*))GameObject_TryGetComponent_TisRuntimeObject_m4D430300D2DFB9276DE980D78F60A05D271D3630_gshared)(__this, ___0_component, method);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MaterialPipelineHandler_SetPipelineShaders_mC44CCA2781AD703384B2C1BB07C5E924666852F5 (MaterialPipelineHandler_tF073532612A2F16372CCBD89100FC0CCB47EDDDC* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RenderPipelineAsset_t5F9BF815BF931E1314B184E7F9070FB649C7054E* GraphicsSettings_get_currentRenderPipeline_mEC94DC23DE4F901D6A629E2DE882982686AF75F1 (const RuntimeMethod* method) ;
+inline Enumerator_t38A231BB01943CC3CC02D92799631EF4681643E9 List_1_GetEnumerator_m653BD90E86DAC4C19518CC4C56AB6F3D6AB463E7 (List_1_t80AF51D5D3B90164EF2016D606DCD0ECAA4DC406* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t38A231BB01943CC3CC02D92799631EF4681643E9 (*) (List_1_t80AF51D5D3B90164EF2016D606DCD0ECAA4DC406*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
+}
+inline void Enumerator_Dispose_m2A316758173D3AF217BD415516279FBE46931C17 (Enumerator_t38A231BB01943CC3CC02D92799631EF4681643E9* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t38A231BB01943CC3CC02D92799631EF4681643E9*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
+}
+inline ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52* Enumerator_get_Current_m04EA4373946F8720DED1255002B9C83EA0ABB7EB_inline (Enumerator_t38A231BB01943CC3CC02D92799631EF4681643E9* __this, const RuntimeMethod* method)
+{
+	return ((  ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52* (*) (Enumerator_t38A231BB01943CC3CC02D92799631EF4681643E9*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* Shader_Find_m183AA54F78320212DDEC811592F98456898A41C5 (String_t* ___0_name, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* Material_get_shader_m8B0C11AE6F2AD7DE30AF52D3195EB716F7A71983 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_set_shader_mBD3A0D9AB14DE2F7CD5F2775E9AD58E15424C171 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MaterialPipelineHandler_MarkMaterialModified_m2C07959C6249B610A28CF28C5F1DD029390AE050 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___0_material, const RuntimeMethod* method) ;
+inline bool Enumerator_MoveNext_m9FB5C17BEA2305D525582DF38C21BE94ABE5D326 (Enumerator_t38A231BB01943CC3CC02D92799631EF4681643E9* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t38A231BB01943CC3CC02D92799631EF4681643E9*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF (ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Normalize_mEF8349CC39674236CFC694189AFD36E31F89AC8F_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
@@ -1181,41 +1264,41 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 77554
+// Method Definition Index: 77575
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_tF50C601B9FB7D0B824131FDA44DEA76DA6808B08 UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m4B3248C322A66BDBA3CD5BFB1772120127EC39A7 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_tED03EE4A916C409E9C8B3F447A436C67DA8EF95D____6CB0C7B750E570894955266D788F0C32165C7900796AE442280CFB9E0E5578B0_FieldInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_tED03EE4A916C409E9C8B3F447A436C67DA8EF95D____AABB3F39EFAE0E5006B7E599912DC5E371D09EBE198550EDC79E3C0EF24E1AF7_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_tED03EE4A916C409E9C8B3F447A436C67DA8EF95D____7853A4E5E739BACEDA0F69E99FCE1D272FD6B628CE98D088CB10FB0E6DD81B21_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_tED03EE4A916C409E9C8B3F447A436C67DA8EF95D____D071707EEEB2BDC45E405D4A05F1162C406A25FAB6F15959806AB233E0BC7D49_FieldInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	MonoScriptData_tF50C601B9FB7D0B824131FDA44DEA76DA6808B08 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_tF50C601B9FB7D0B824131FDA44DEA76DA6808B08));
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)237));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)325));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_tED03EE4A916C409E9C8B3F447A436C67DA8EF95D____AABB3F39EFAE0E5006B7E599912DC5E371D09EBE198550EDC79E3C0EF24E1AF7_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_tED03EE4A916C409E9C8B3F447A436C67DA8EF95D____7853A4E5E739BACEDA0F69E99FCE1D272FD6B628CE98D088CB10FB0E6DD81B21_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
 		(&V_0)->___FilePathsData = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)276));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)416));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = L_3;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_tED03EE4A916C409E9C8B3F447A436C67DA8EF95D____6CB0C7B750E570894955266D788F0C32165C7900796AE442280CFB9E0E5578B0_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_tED03EE4A916C409E9C8B3F447A436C67DA8EF95D____D071707EEEB2BDC45E405D4A05F1162C406A25FAB6F15959806AB233E0BC7D49_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_4, L_5, NULL);
 		(&V_0)->___TypesData = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___TypesData), (void*)L_4);
-		(&V_0)->___TotalFiles = 3;
-		(&V_0)->___TotalTypes = 4;
+		(&V_0)->___TotalFiles = 4;
+		(&V_0)->___TotalTypes = 6;
 		(&V_0)->___IsEditorOnly = (bool)0;
 		MonoScriptData_tF50C601B9FB7D0B824131FDA44DEA76DA6808B08 L_6 = V_0;
 		return L_6;
 	}
 }
-// Method Definition Index: 77555
+// Method Definition Index: 77576
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m60A4D90625F91B9B8D47C83D0385C367755F1886 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t7668C3C4633617BBE6BF3CF11A0B7C37309F7EB6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1301,39 +1384,39 @@ IL2CPP_EXTERN_C void MonoScriptData_tF50C601B9FB7D0B824131FDA44DEA76DA6808B08_ma
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 77556
+// Method Definition Index: 77577
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HandProcessor_get_callbackOrder_m3F2EF2D3D2C2C58FDADEE00CE9157B9C585FA8F7 (HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:14>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:14>
 		return 0;
 	}
 }
-// Method Definition Index: 77557
+// Method Definition Index: 77578
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HandProcessor_get_processorExampleMode_m676693753425671E2723428A5D9B7B244F5B7494 (HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:54>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:54>
 		int32_t L_0 = __this->___m_ProcessorExampleMode;
 		return L_0;
 	}
 }
-// Method Definition Index: 77558
+// Method Definition Index: 77579
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor_set_processorExampleMode_mE2759A5B11698877F2FD1FD6046042CD29AF48FE (HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:55>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:55>
 		int32_t L_0 = ___0_value;
 		__this->___m_ProcessorExampleMode = L_0;
 		return;
 	}
 }
-// Method Definition Index: 77559
+// Method Definition Index: 77580
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor_ProcessJoints_m6FA3EA45A43E877F8FC9268E133CA424D5FAD2C1 (HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270* __this, XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* ___0_subsystem, int32_t ___1_successFlags, int32_t ___2_updateType, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:71>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:71>
 		int32_t L_0 = __this->___m_ProcessorExampleMode;
 		V_0 = L_0;
 		int32_t L_1 = V_0;
@@ -1355,20 +1438,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor_ProcessJoints_m6FA3EA45A43
 
 IL_0011:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:74>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:74>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_3 = ___0_subsystem;
 		int32_t L_4 = ___1_successFlags;
 		int32_t L_5 = ___2_updateType;
 		int32_t L_6 = __this->___m_LastProcessorExampleMode;
 		int32_t L_7 = __this->___m_ProcessorExampleMode;
 		HandProcessor_SmoothHandsExample_mA4CDE58B592B8073552EC6600EDC740DA4536C05(__this, L_3, L_4, L_5, (bool)((((int32_t)((((int32_t)L_6) == ((int32_t)L_7))? 1 : 0)) == ((int32_t)0))? 1 : 0), NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:75>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:75>
 		goto IL_0036;
 	}
 
 IL_002d:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:78>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:78>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_8 = ___0_subsystem;
 		int32_t L_9 = ___1_successFlags;
 		int32_t L_10 = ___2_updateType;
@@ -1377,14 +1460,14 @@ IL_002d:
 
 IL_0036:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:82>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:82>
 		int32_t L_11 = __this->___m_ProcessorExampleMode;
 		__this->___m_LastProcessorExampleMode = L_11;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:83>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:83>
 		return;
 	}
 }
-// Method Definition Index: 77560
+// Method Definition Index: 77581
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor_SmoothHandsExample_mA4CDE58B592B8073552EC6600EDC740DA4536C05 (HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270* __this, XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* ___0_subsystem, int32_t ___1_successFlags, int32_t ___2_updateType, bool ___3_modeChanged, const RuntimeMethod* method) 
 {
 	XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 V_0;
@@ -1402,19 +1485,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor_SmoothHandsExample_mA4CDE5
 	memset((&V_6), 0, sizeof(V_6));
 	float V_7 = 0.0f;
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:89>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:89>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_0 = ___0_subsystem;
 		NullCheck(L_0);
 		XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 L_1;
 		L_1 = XRHandSubsystem_get_leftHand_mD3B931E5129348FEE34C3965A0CF8E62A0CFFB97_inline(L_0, NULL);
 		V_0 = L_1;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:90>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:90>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_2 = ___0_subsystem;
 		NullCheck(L_2);
 		XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 L_3;
 		L_3 = XRHandSubsystem_get_rightHand_mDE333FDF35460E1A06BE051AF9C2144B7053ED3C_inline(L_2, NULL);
 		V_1 = L_3;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:92>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:92>
 		bool L_4;
 		L_4 = XRHand_get_isTracked_mDFC9D4FDE271E2DC90D5459B1A6EA304F97B7428_inline((&V_0), NULL);
 		if (!L_4)
@@ -1430,15 +1513,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor_SmoothHandsExample_mA4CDE5
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:94>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:94>
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_6;
 		L_6 = XRHand_get_rootPose_m4F34E7F55AEBFD2FF7491364ADB00B27BF86F1A5_inline((&V_0), NULL);
 		V_2 = L_6;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:95>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:95>
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_7 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = L_7.___position;
 		V_3 = L_8;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:96>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:96>
 		bool L_9 = __this->___m_FirstFrame;
 		if (L_9)
 		{
@@ -1453,31 +1536,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor_SmoothHandsExample_mA4CDE5
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:98>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:98>
 		float L_11;
 		L_11 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		float L_12 = __this->___m_LeftHandSmoothingFactor;
 		V_4 = ((float)il2cpp_codegen_multiply(L_11, L_12));
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:99>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:99>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = __this->___m_LastLeftHandPosition;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = V_3;
 		float L_15 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
 		L_16 = Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline(L_13, L_14, L_15, NULL);
 		V_3 = L_16;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:100>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:100>
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_17 = (Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971*)(&__this->___m_LeftHandPose);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = V_3;
 		L_17->___position = L_18;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:101>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:101>
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_19 = (Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971*)(&__this->___m_LeftHandPose);
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_20 = V_2;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_21 = L_20.___rotation;
 		L_19->___rotation = L_21;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:103>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:103>
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_22 = __this->___m_LeftHandPose;
 		XRHandProcessingUtility_SetRootPose_m116319D83FE5DC86798991011D0230A2531E35EE((&V_0), L_22, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:104>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:104>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_23 = ___0_subsystem;
 		XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 L_24 = V_0;
 		XRHandProcessingUtility_SetCorrespondingHand_m7AB9505CF0D27B84D54B7AB39746D4B66EED9CD7(L_23, L_24, NULL);
@@ -1485,14 +1568,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor_SmoothHandsExample_mA4CDE5
 
 IL_008d:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:106>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:106>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25 = V_3;
 		__this->___m_LastLeftHandPosition = L_25;
 	}
 
 IL_0094:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:109>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:109>
 		bool L_26;
 		L_26 = XRHand_get_isTracked_mDFC9D4FDE271E2DC90D5459B1A6EA304F97B7428_inline((&V_1), NULL);
 		if (!L_26)
@@ -1508,15 +1591,15 @@ IL_0094:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:111>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:111>
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_28;
 		L_28 = XRHand_get_rootPose_m4F34E7F55AEBFD2FF7491364ADB00B27BF86F1A5_inline((&V_1), NULL);
 		V_5 = L_28;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:112>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:112>
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_29 = V_5;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30 = L_29.___position;
 		V_6 = L_30;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:113>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:113>
 		bool L_31 = __this->___m_FirstFrame;
 		if (L_31)
 		{
@@ -1531,31 +1614,31 @@ IL_0094:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:115>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:115>
 		float L_33;
 		L_33 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		float L_34 = __this->___m_RightHandSmoothingFactor;
 		V_7 = ((float)il2cpp_codegen_multiply(L_33, L_34));
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:116>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:116>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35 = __this->___m_LastRightHandPosition;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = V_6;
 		float L_37 = V_7;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38;
 		L_38 = Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline(L_35, L_36, L_37, NULL);
 		V_6 = L_38;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:117>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:117>
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_39 = (Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971*)(&__this->___m_RightHandPose);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40 = V_6;
 		L_39->___position = L_40;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:118>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:118>
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_41 = (Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971*)(&__this->___m_RightHandPose);
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_42 = V_5;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_43 = L_42.___rotation;
 		L_41->___rotation = L_43;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:120>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:120>
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_44 = __this->___m_RightHandPose;
 		XRHandProcessingUtility_SetRootPose_m116319D83FE5DC86798991011D0230A2531E35EE((&V_1), L_44, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:121>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:121>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_45 = ___0_subsystem;
 		XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 L_46 = V_1;
 		XRHandProcessingUtility_SetCorrespondingHand_m7AB9505CF0D27B84D54B7AB39746D4B66EED9CD7(L_45, L_46, NULL);
@@ -1563,18 +1646,18 @@ IL_0094:
 
 IL_011d:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:123>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:123>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47 = V_6;
 		__this->___m_LastRightHandPosition = L_47;
 	}
 
 IL_0125:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:125>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:125>
 		return;
 	}
 }
-// Method Definition Index: 77561
+// Method Definition Index: 77582
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor_InvertHandsExample_m687CDDC448C97A6991929570A925D19BB6DC6E54 (HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270* __this, XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* ___0_subsystem, int32_t ___1_successFlags, int32_t ___2_updateType, const RuntimeMethod* method) 
 {
 	XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 V_0;
@@ -1586,27 +1669,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor_InvertHandsExample_m687CDD
 	Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 V_3;
 	memset((&V_3), 0, sizeof(V_3));
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:130>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:130>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_0 = ___0_subsystem;
 		NullCheck(L_0);
 		XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 L_1;
 		L_1 = XRHandSubsystem_get_leftHand_mD3B931E5129348FEE34C3965A0CF8E62A0CFFB97_inline(L_0, NULL);
 		V_0 = L_1;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:131>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:131>
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_2;
 		L_2 = XRHand_get_rootPose_m4F34E7F55AEBFD2FF7491364ADB00B27BF86F1A5_inline((&V_0), NULL);
 		V_1 = L_2;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:133>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:133>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_3 = ___0_subsystem;
 		NullCheck(L_3);
 		XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 L_4;
 		L_4 = XRHandSubsystem_get_rightHand_mDE333FDF35460E1A06BE051AF9C2144B7053ED3C_inline(L_3, NULL);
 		V_2 = L_4;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:134>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:134>
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_5;
 		L_5 = XRHand_get_rootPose_m4F34E7F55AEBFD2FF7491364ADB00B27BF86F1A5_inline((&V_2), NULL);
 		V_3 = L_5;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:136>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:136>
 		bool L_6;
 		L_6 = XRHand_get_isTracked_mDFC9D4FDE271E2DC90D5459B1A6EA304F97B7428_inline((&V_0), NULL);
 		if (!L_6)
@@ -1615,17 +1698,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor_InvertHandsExample_m687CDD
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:138>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:138>
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_7 = V_3;
 		XRHandProcessingUtility_SetRootPose_m116319D83FE5DC86798991011D0230A2531E35EE((&V_0), L_7, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:139>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:139>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_8 = ___0_subsystem;
 		XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 L_9 = V_0;
 		XRHandProcessingUtility_SetCorrespondingHand_m7AB9505CF0D27B84D54B7AB39746D4B66EED9CD7(L_8, L_9, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:141>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:141>
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_10 = V_1;
 		XRHandProcessingUtility_SetRootPose_m116319D83FE5DC86798991011D0230A2531E35EE((&V_2), L_10, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:142>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:142>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_11 = ___0_subsystem;
 		XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 L_12 = V_2;
 		XRHandProcessingUtility_SetCorrespondingHand_m7AB9505CF0D27B84D54B7AB39746D4B66EED9CD7(L_11, L_12, NULL);
@@ -1633,11 +1716,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor_InvertHandsExample_m687CDD
 
 IL_0045:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:144>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:144>
 		return;
 	}
 }
-// Method Definition Index: 77562
+// Method Definition Index: 77583
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor_Update_mBBDC1E75C79B02410EBA836F5319A620CC9DB68C (HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1652,7 +1735,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor_Update_mBBDC1E75C79B02410E
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:148>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:148>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_0 = __this->___m_Subsystem;
 		if (!L_0)
 		{
@@ -1660,18 +1743,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor_Update_mBBDC1E75C79B02410E
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:149>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:149>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:151>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:151>
 		il2cpp_codegen_runtime_class_init_inline(HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270_il2cpp_TypeInfo_var);
 		List_1_tE4111BEC044D13259EFD4EC5907636C855887179* L_1 = ((HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270_StaticFields*)il2cpp_codegen_static_fields_for(HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270_il2cpp_TypeInfo_var))->___s_SubsystemsReuse;
 		il2cpp_codegen_runtime_class_init_inline(SubsystemManager_t9A7261E4D0B53B996F04B8707D8E1C33AB65E824_il2cpp_TypeInfo_var);
 		SubsystemManager_GetSubsystems_TisXRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C_m80B420587E83801A6C5F75FED3B6CEF1693D2C73(L_1, SubsystemManager_GetSubsystems_TisXRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C_m80B420587E83801A6C5F75FED3B6CEF1693D2C73_RuntimeMethod_var);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:152>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:152>
 		List_1_tE4111BEC044D13259EFD4EC5907636C855887179* L_2 = ((HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270_StaticFields*)il2cpp_codegen_static_fields_for(HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270_il2cpp_TypeInfo_var))->___s_SubsystemsReuse;
 		NullCheck(L_2);
 		int32_t L_3;
@@ -1682,13 +1765,13 @@ IL_0009:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:153>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:153>
 		return;
 	}
 
 IL_0020:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:155>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:155>
 		il2cpp_codegen_runtime_class_init_inline(HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270_il2cpp_TypeInfo_var);
 		List_1_tE4111BEC044D13259EFD4EC5907636C855887179* L_4 = ((HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270_StaticFields*)il2cpp_codegen_static_fields_for(HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270_il2cpp_TypeInfo_var))->___s_SubsystemsReuse;
 		NullCheck(L_4);
@@ -1696,15 +1779,15 @@ IL_0020:
 		L_5 = List_1_get_Item_m75273E2FDEA382223C6F78765C1A71E6A758CF9F(L_4, 0, List_1_get_Item_m75273E2FDEA382223C6F78765C1A71E6A758CF9F_RuntimeMethod_var);
 		__this->___m_Subsystem = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Subsystem), (void*)L_5);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:156>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:156>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_6 = __this->___m_Subsystem;
 		NullCheck(L_6);
 		XRHandSubsystem_RegisterProcessor_TisHandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270_mCD67CCBA02ABF3697173E24F8E496A84E9C01C3B(L_6, __this, XRHandSubsystem_RegisterProcessor_TisHandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270_mCD67CCBA02ABF3697173E24F8E496A84E9C01C3B_RuntimeMethod_var);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:157>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:157>
 		return;
 	}
 }
-// Method Definition Index: 77563
+// Method Definition Index: 77584
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor_OnDisable_m6974EEBFCE6402FA180EA4F49BC9170BE1B8D7C2 (HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1714,7 +1797,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor_OnDisable_m6974EEBFCE6402F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:161>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:161>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_0 = __this->___m_Subsystem;
 		if (!L_0)
 		{
@@ -1722,22 +1805,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor_OnDisable_m6974EEBFCE6402F
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:163>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:163>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_1 = __this->___m_Subsystem;
 		NullCheck(L_1);
 		XRHandSubsystem_UnregisterProcessor_TisHandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270_m65F55E11E864D525A4FC903D1E656577323E5DE7(L_1, __this, XRHandSubsystem_UnregisterProcessor_TisHandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270_m65F55E11E864D525A4FC903D1E656577323E5DE7_RuntimeMethod_var);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:164>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:164>
 		__this->___m_Subsystem = (XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Subsystem), (void*)(XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C*)NULL);
 	}
 
 IL_001b:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:166>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:166>
 		return;
 	}
 }
-// Method Definition Index: 77564
+// Method Definition Index: 77585
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor__ctor_mF09F8BA24E05E370C6FA8C234656527187D9590C (HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1747,26 +1830,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor__ctor_mF09F8BA24E05E370C6F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:41>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:41>
 		il2cpp_codegen_runtime_class_init_inline(Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971_il2cpp_TypeInfo_var);
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_0;
 		L_0 = Pose_get_identity_m145C7BA9D895CD7F8CCE2483B69764F7A9FEC66E(NULL);
 		__this->___m_LeftHandPose = L_0;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:42>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:42>
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_1;
 		L_1 = Pose_get_identity_m145C7BA9D895CD7F8CCE2483B69764F7A9FEC66E(NULL);
 		__this->___m_RightHandPose = L_1;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:46>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:46>
 		__this->___m_ProcessorExampleMode = 1;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:62>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:62>
 		__this->___m_LeftHandSmoothingFactor = (16.0f);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:66>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:66>
 		__this->___m_RightHandSmoothingFactor = (16.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
 }
-// Method Definition Index: 77565
+// Method Definition Index: 77586
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor__cctor_m167C4F42BCBA3FB91CD65AF8CC4F7AC8F45E563B (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1778,7 +1861,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor__cctor_m167C4F42BCBA3FB91C
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandProcessor.cs:169>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandProcessor.cs:169>
 		List_1_tE4111BEC044D13259EFD4EC5907636C855887179* L_0 = (List_1_tE4111BEC044D13259EFD4EC5907636C855887179*)il2cpp_codegen_object_new(List_1_tE4111BEC044D13259EFD4EC5907636C855887179_il2cpp_TypeInfo_var);
 		List_1__ctor_m9991CB9E0E4608CAE947384283EE27BCF3DAC2D4(L_0, List_1__ctor_m9991CB9E0E4608CAE947384283EE27BCF3DAC2D4_RuntimeMethod_var);
 		((HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270_StaticFields*)il2cpp_codegen_static_fields_for(HandProcessor_tB65F4982827071531E5561C27DB783A11A3E9270_il2cpp_TypeInfo_var))->___s_SubsystemsReuse = L_0;
@@ -1802,64 +1885,64 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandProcessor__cctor_m167C4F42BCBA3FB91C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 77566
+// Method Definition Index: 77587
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HandVisualizer_get_drawMeshes_m819F8F7A4BD67F4A2F1B900B0894DA8D1AAA35DA (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:92>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:76>
 		bool L_0 = __this->___m_DrawMeshes;
 		return L_0;
 	}
 }
-// Method Definition Index: 77567
+// Method Definition Index: 77588
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_set_drawMeshes_m04694763530BE9498ABECBB67CF61C1FAA404501 (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:93>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:77>
 		bool L_0 = ___0_value;
 		__this->___m_DrawMeshes = L_0;
 		return;
 	}
 }
-// Method Definition Index: 77568
+// Method Definition Index: 77589
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HandVisualizer_get_debugDrawJoints_mF00F4130C8C43341BA96062EA480188592A07E76 (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:110>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:94>
 		bool L_0 = __this->___m_DebugDrawJoints;
 		return L_0;
 	}
 }
-// Method Definition Index: 77569
+// Method Definition Index: 77590
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_set_debugDrawJoints_m48799BD9CCFCAB52720C5A66743B11632D1A334C (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:111>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:95>
 		bool L_0 = ___0_value;
 		__this->___m_DebugDrawJoints = L_0;
 		return;
 	}
 }
-// Method Definition Index: 77570
+// Method Definition Index: 77591
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HandVisualizer_get_velocityType_m31F64C6FF2671B1019BBED2EF639959287698249 (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:128>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:112>
 		int32_t L_0 = __this->___m_VelocityType;
 		return L_0;
 	}
 }
-// Method Definition Index: 77571
+// Method Definition Index: 77592
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_set_velocityType_mE2593C4D1B6D37DF7DE56634995945D5F6BD0879 (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:129>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:113>
 		int32_t L_0 = ___0_value;
 		__this->___m_VelocityType = L_0;
 		return;
 	}
 }
-// Method Definition Index: 77572
+// Method Definition Index: 77593
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_Awake_m5D0351B5F4C5D103A9A6A718ADABFBA348BE8C85 (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1870,7 +1953,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_Awake_m5D0351B5F4C5D103A9
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:144>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:128>
 		bool L_0 = __this->___m_UseOptimizedControls;
 		if (!L_0)
 		{
@@ -1878,7 +1961,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_Awake_m5D0351B5F4C5D103A9
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:145>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:129>
 		il2cpp_codegen_runtime_class_init_inline(InputSystem_t4120CA4FE7DCFD56AF9391933FC3F1F485350164_il2cpp_TypeInfo_var);
 		InputSettings_tBA8835B505722A59702A08BCBA46ECF0B0274EEF* L_1;
 		L_1 = InputSystem_get_settings_m8E3E9C0907904CBDBAE96354142AB0A87C7A3B74(NULL);
@@ -1888,17 +1971,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_Awake_m5D0351B5F4C5D103A9
 
 IL_0018:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:147>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:131>
 		return;
 	}
 }
-// Method Definition Index: 77573
+// Method Definition Index: 77594
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnEnable_m153D5811DA0274C7203D5C031F3B2CAA571DAF43 (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, const RuntimeMethod* method) 
 {
 	XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:154>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:138>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_0 = __this->___m_Subsystem;
 		if (L_0)
 		{
@@ -1906,13 +1989,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnEnable_m153D5811DA0274C
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:155>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:139>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:157>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:141>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_1 = __this->___m_LeftHandGameObjects;
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_2 = __this->___m_Subsystem;
 		NullCheck(L_2);
@@ -1922,7 +2005,7 @@ IL_0009:
 		bool L_4;
 		L_4 = XRHand_get_isTracked_mDFC9D4FDE271E2DC90D5459B1A6EA304F97B7428_inline((&V_0), NULL);
 		HandVisualizer_UpdateRenderingVisibility_mFBC70B71322E6C97E3882E9DCE6E1F616CDC9BD1(__this, L_1, L_4, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:158>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:142>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_5 = __this->___m_RightHandGameObjects;
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_6 = __this->___m_Subsystem;
 		NullCheck(L_6);
@@ -1932,11 +2015,11 @@ IL_0009:
 		bool L_8;
 		L_8 = XRHand_get_isTracked_mDFC9D4FDE271E2DC90D5459B1A6EA304F97B7428_inline((&V_0), NULL);
 		HandVisualizer_UpdateRenderingVisibility_mFBC70B71322E6C97E3882E9DCE6E1F616CDC9BD1(__this, L_5, L_8, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:159>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:143>
 		return;
 	}
 }
-// Method Definition Index: 77574
+// Method Definition Index: 77595
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnDisable_m6AE8205BE1A2E445464458C682452687FDEB63AC (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1950,7 +2033,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnDisable_m6AE8205BE1A2E4
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:166>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:150>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_0 = __this->___m_Subsystem;
 		if (!L_0)
 		{
@@ -1958,7 +2041,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnDisable_m6AE8205BE1A2E4
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:168>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:152>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_1 = __this->___m_Subsystem;
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_2 = L_1;
 		NullCheck(L_2);
@@ -1970,7 +2053,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnDisable_m6AE8205BE1A2E4
 		NullCheck(L_2);
 		L_2->___trackingAcquired = ((Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752*)Castclass((RuntimeObject*)L_5, Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752_il2cpp_TypeInfo_var));
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___trackingAcquired), (void*)((Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752*)Castclass((RuntimeObject*)L_5, Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752_il2cpp_TypeInfo_var)));
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:169>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:153>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_6 = __this->___m_Subsystem;
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_7 = L_6;
 		NullCheck(L_7);
@@ -1982,7 +2065,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnDisable_m6AE8205BE1A2E4
 		NullCheck(L_7);
 		L_7->___trackingLost = ((Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752*)Castclass((RuntimeObject*)L_10, Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752_il2cpp_TypeInfo_var));
 		Il2CppCodeGenWriteBarrier((void**)(&L_7->___trackingLost), (void*)((Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752*)Castclass((RuntimeObject*)L_10, Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752_il2cpp_TypeInfo_var)));
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:170>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:154>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_11 = __this->___m_Subsystem;
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_12 = L_11;
 		NullCheck(L_12);
@@ -1994,28 +2077,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnDisable_m6AE8205BE1A2E4
 		NullCheck(L_12);
 		L_12->___updatedHands = ((Action_3_t7D778238CD0A45B8368B3EAC4062AD2D477E1997*)Castclass((RuntimeObject*)L_15, Action_3_t7D778238CD0A45B8368B3EAC4062AD2D477E1997_il2cpp_TypeInfo_var));
 		Il2CppCodeGenWriteBarrier((void**)(&L_12->___updatedHands), (void*)((Action_3_t7D778238CD0A45B8368B3EAC4062AD2D477E1997*)Castclass((RuntimeObject*)L_15, Action_3_t7D778238CD0A45B8368B3EAC4062AD2D477E1997_il2cpp_TypeInfo_var)));
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:171>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:155>
 		__this->___m_Subsystem = (XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Subsystem), (void*)(XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C*)NULL);
 	}
 
 IL_0084:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:174>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:158>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_16 = __this->___m_LeftHandGameObjects;
 		HandVisualizer_UpdateRenderingVisibility_mFBC70B71322E6C97E3882E9DCE6E1F616CDC9BD1(__this, L_16, (bool)0, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:175>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:159>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_17 = __this->___m_RightHandGameObjects;
 		HandVisualizer_UpdateRenderingVisibility_mFBC70B71322E6C97E3882E9DCE6E1F616CDC9BD1(__this, L_17, (bool)0, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:176>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:160>
 		return;
 	}
 }
-// Method Definition Index: 77575
+// Method Definition Index: 77596
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnDestroy_m09A391B0CC23056ACBF04B9FD1D467372BC5521E (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:183>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:167>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_0 = __this->___m_LeftHandGameObjects;
 		if (!L_0)
 		{
@@ -2023,18 +2106,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnDestroy_m09A391B0CC2305
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:185>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:169>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_1 = __this->___m_LeftHandGameObjects;
 		NullCheck(L_1);
 		HandGameObjects_OnDestroy_mDC01BE3680763342F2F89A8788D9B6A42ED7BBD6(L_1, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:186>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:170>
 		__this->___m_LeftHandGameObjects = (HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_LeftHandGameObjects), (void*)(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F*)NULL);
 	}
 
 IL_001a:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:189>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:173>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_2 = __this->___m_RightHandGameObjects;
 		if (!L_2)
 		{
@@ -2042,22 +2125,22 @@ IL_001a:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:191>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:175>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_3 = __this->___m_RightHandGameObjects;
 		NullCheck(L_3);
 		HandGameObjects_OnDestroy_mDC01BE3680763342F2F89A8788D9B6A42ED7BBD6(L_3, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:192>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:176>
 		__this->___m_RightHandGameObjects = (HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_RightHandGameObjects), (void*)(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F*)NULL);
 	}
 
 IL_0034:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:194>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:178>
 		return;
 	}
 }
-// Method Definition Index: 77576
+// Method Definition Index: 77597
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_Update_mCCBC611653726A607817B3938FF6481F40CA7452 (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2079,7 +2162,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_Update_mCCBC611653726A607
 	XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 V_5;
 	memset((&V_5), 0, sizeof(V_5));
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:201>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:185>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_0 = __this->___m_Subsystem;
 		if (!L_0)
 		{
@@ -2097,27 +2180,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_Update_mCCBC611653726A607
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:202>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:186>
 		return;
 	}
 
 IL_0016:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:204>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:188>
 		il2cpp_codegen_runtime_class_init_inline(HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6_il2cpp_TypeInfo_var);
 		List_1_tE4111BEC044D13259EFD4EC5907636C855887179* L_3 = ((HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6_StaticFields*)il2cpp_codegen_static_fields_for(HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6_il2cpp_TypeInfo_var))->___s_SubsystemsReuse;
 		il2cpp_codegen_runtime_class_init_inline(SubsystemManager_t9A7261E4D0B53B996F04B8707D8E1C33AB65E824_il2cpp_TypeInfo_var);
 		SubsystemManager_GetSubsystems_TisXRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C_m80B420587E83801A6C5F75FED3B6CEF1693D2C73(L_3, SubsystemManager_GetSubsystems_TisXRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C_m80B420587E83801A6C5F75FED3B6CEF1693D2C73_RuntimeMethod_var);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:205>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:189>
 		V_0 = (bool)0;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:206>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:190>
 		V_3 = 0;
 		goto IL_0052;
 	}
 
 IL_0026:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:208>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:192>
 		il2cpp_codegen_runtime_class_init_inline(HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6_il2cpp_TypeInfo_var);
 		List_1_tE4111BEC044D13259EFD4EC5907636C855887179* L_4 = ((HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6_StaticFields*)il2cpp_codegen_static_fields_for(HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6_il2cpp_TypeInfo_var))->___s_SubsystemsReuse;
 		int32_t L_5 = V_3;
@@ -2125,7 +2208,7 @@ IL_0026:
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_6;
 		L_6 = List_1_get_Item_m75273E2FDEA382223C6F78765C1A71E6A758CF9F(L_4, L_5, List_1_get_Item_m75273E2FDEA382223C6F78765C1A71E6A758CF9F_RuntimeMethod_var);
 		V_4 = L_6;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:209>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:193>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_7 = V_4;
 		NullCheck(L_7);
 		bool L_8;
@@ -2136,28 +2219,28 @@ IL_0026:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:211>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:195>
 		HandVisualizer_UnsubscribeHandSubsystem_m4FB54A65D825A9218998D66F0099C171D4A2DBB9(__this, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:212>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:196>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_9 = V_4;
 		__this->___m_Subsystem = L_9;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Subsystem), (void*)L_9);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:213>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:197>
 		V_0 = (bool)1;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:214>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:198>
 		goto IL_005f;
 	}
 
 IL_004e:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:206>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:190>
 		int32_t L_10 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_10, 1));
 	}
 
 IL_0052:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:206>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:190>
 		int32_t L_11 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6_il2cpp_TypeInfo_var);
 		List_1_tE4111BEC044D13259EFD4EC5907636C855887179* L_12 = ((HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6_StaticFields*)il2cpp_codegen_static_fields_for(HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6_il2cpp_TypeInfo_var))->___s_SubsystemsReuse;
@@ -2172,7 +2255,7 @@ IL_0052:
 
 IL_005f:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:218>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:202>
 		bool L_14 = V_0;
 		if (L_14)
 		{
@@ -2180,193 +2263,142 @@ IL_005f:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:219>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:203>
 		return;
 	}
 
 IL_0063:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:221>
-		int32_t L_15;
-		L_15 = HandVisualizer_GetProviderLayoutMesh_m2F0B33FB26CD6C70B331A2E1EF7F105651EF3004(__this, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:222>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:205>
 		V_1 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:222>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:205>
 		V_2 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:223>
-		if ((!(((uint32_t)L_15) == ((uint32_t)2))))
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:206>
+		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_15 = __this->___m_Subsystem;
+		NullCheck(L_15);
+		int32_t L_16;
+		L_16 = XRHandSubsystem_get_detectedHandMeshLayout_mF9302D3A002D17493BD0DA787BF462F3D1406B3B(L_15, NULL);
+		if ((!(((uint32_t)L_16) == ((uint32_t)2))))
 		{
-			goto IL_0080;
+			goto IL_0085;
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:225>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = __this->___m_AndroidXRLeftHandMesh;
-		V_1 = L_16;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:226>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = __this->___m_AndroidXRRightHandMesh;
-		V_2 = L_17;
-		goto IL_008e;
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:208>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = __this->___m_AndroidXRLeftHandMesh;
+		V_1 = L_17;
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:209>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = __this->___m_AndroidXRRightHandMesh;
+		V_2 = L_18;
+		goto IL_0093;
 	}
 
-IL_0080:
+IL_0085:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:230>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = __this->___m_MetaQuestLeftHandMesh;
-		V_1 = L_18;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:231>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = __this->___m_MetaQuestRightHandMesh;
-		V_2 = L_19;
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:213>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = __this->___m_MetaQuestLeftHandMesh;
+		V_1 = L_19;
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:214>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = __this->___m_MetaQuestRightHandMesh;
+		V_2 = L_20;
 	}
 
-IL_008e:
+IL_0093:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:234>
-		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_20 = __this->___m_LeftHandGameObjects;
-		if (L_20)
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:217>
+		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_21 = __this->___m_LeftHandGameObjects;
+		if (L_21)
 		{
-			goto IL_00bb;
+			goto IL_00c0;
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:236>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:237>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:238>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:239>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:240>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:241>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:242>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
-		L_21 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = V_1;
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_23 = __this->___m_HandMeshMaterial;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24 = __this->___m_DebugDrawPrefab;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25 = __this->___m_VelocityPrefab;
-		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_26 = (HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F*)il2cpp_codegen_object_new(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var);
-		HandGameObjects__ctor_mE5FE6A2F0C183C672EB9F6584039CE9F6F0ED458(L_26, 1, L_21, L_22, L_23, L_24, L_25, NULL);
-		__this->___m_LeftHandGameObjects = L_26;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_LeftHandGameObjects), (void*)L_26);
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:219>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:220>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:221>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:222>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:223>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:224>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:225>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22;
+		L_22 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23 = V_1;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_24 = __this->___m_HandMeshMaterial;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25 = __this->___m_DebugDrawPrefab;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26 = __this->___m_VelocityPrefab;
+		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_27 = (HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F*)il2cpp_codegen_object_new(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var);
+		HandGameObjects__ctor_mE5FE6A2F0C183C672EB9F6584039CE9F6F0ED458(L_27, 1, L_22, L_23, L_24, L_25, L_26, NULL);
+		__this->___m_LeftHandGameObjects = L_27;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_LeftHandGameObjects), (void*)L_27);
 	}
 
-IL_00bb:
+IL_00c0:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:245>
-		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_27 = __this->___m_RightHandGameObjects;
-		if (L_27)
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:228>
+		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_28 = __this->___m_RightHandGameObjects;
+		if (L_28)
 		{
-			goto IL_00e8;
+			goto IL_00ed;
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:247>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:248>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:249>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:250>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:251>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:252>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:253>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_28;
-		L_28 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = V_2;
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_30 = __this->___m_HandMeshMaterial;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = __this->___m_DebugDrawPrefab;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = __this->___m_VelocityPrefab;
-		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_33 = (HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F*)il2cpp_codegen_object_new(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var);
-		HandGameObjects__ctor_mE5FE6A2F0C183C672EB9F6584039CE9F6F0ED458(L_33, 2, L_28, L_29, L_30, L_31, L_32, NULL);
-		__this->___m_RightHandGameObjects = L_33;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_RightHandGameObjects), (void*)L_33);
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:230>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:231>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:232>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:233>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:234>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:235>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:236>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29;
+		L_29 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_30 = V_2;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_31 = __this->___m_HandMeshMaterial;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = __this->___m_DebugDrawPrefab;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_33 = __this->___m_VelocityPrefab;
+		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_34 = (HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F*)il2cpp_codegen_object_new(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var);
+		HandGameObjects__ctor_mE5FE6A2F0C183C672EB9F6584039CE9F6F0ED458(L_34, 2, L_29, L_30, L_31, L_32, L_33, NULL);
+		__this->___m_RightHandGameObjects = L_34;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_RightHandGameObjects), (void*)L_34);
 	}
 
-IL_00e8:
+IL_00ed:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:256>
-		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_34 = __this->___m_LeftHandGameObjects;
-		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_35 = __this->___m_Subsystem;
-		NullCheck(L_35);
-		XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 L_36;
-		L_36 = XRHandSubsystem_get_leftHand_mD3B931E5129348FEE34C3965A0CF8E62A0CFFB97_inline(L_35, NULL);
-		V_5 = L_36;
-		bool L_37;
-		L_37 = XRHand_get_isTracked_mDFC9D4FDE271E2DC90D5459B1A6EA304F97B7428_inline((&V_5), NULL);
-		HandVisualizer_UpdateRenderingVisibility_mFBC70B71322E6C97E3882E9DCE6E1F616CDC9BD1(__this, L_34, L_37, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:257>
-		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_38 = __this->___m_RightHandGameObjects;
-		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_39 = __this->___m_Subsystem;
-		NullCheck(L_39);
-		XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 L_40;
-		L_40 = XRHandSubsystem_get_rightHand_mDE333FDF35460E1A06BE051AF9C2144B7053ED3C_inline(L_39, NULL);
-		V_5 = L_40;
-		bool L_41;
-		L_41 = XRHand_get_isTracked_mDFC9D4FDE271E2DC90D5459B1A6EA304F97B7428_inline((&V_5), NULL);
-		HandVisualizer_UpdateRenderingVisibility_mFBC70B71322E6C97E3882E9DCE6E1F616CDC9BD1(__this, L_38, L_41, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:259>
-		bool L_42 = __this->___m_DrawMeshes;
-		__this->___m_PreviousDrawMeshes = L_42;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:260>
-		bool L_43 = __this->___m_DebugDrawJoints;
-		__this->___m_PreviousDebugDrawJoints = L_43;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:261>
-		int32_t L_44 = __this->___m_VelocityType;
-		__this->___m_PreviousVelocityType = L_44;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:263>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:239>
+		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_35 = __this->___m_LeftHandGameObjects;
+		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_36 = __this->___m_Subsystem;
+		NullCheck(L_36);
+		XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 L_37;
+		L_37 = XRHandSubsystem_get_leftHand_mD3B931E5129348FEE34C3965A0CF8E62A0CFFB97_inline(L_36, NULL);
+		V_5 = L_37;
+		bool L_38;
+		L_38 = XRHand_get_isTracked_mDFC9D4FDE271E2DC90D5459B1A6EA304F97B7428_inline((&V_5), NULL);
+		HandVisualizer_UpdateRenderingVisibility_mFBC70B71322E6C97E3882E9DCE6E1F616CDC9BD1(__this, L_35, L_38, NULL);
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:240>
+		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_39 = __this->___m_RightHandGameObjects;
+		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_40 = __this->___m_Subsystem;
+		NullCheck(L_40);
+		XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 L_41;
+		L_41 = XRHandSubsystem_get_rightHand_mDE333FDF35460E1A06BE051AF9C2144B7053ED3C_inline(L_40, NULL);
+		V_5 = L_41;
+		bool L_42;
+		L_42 = XRHand_get_isTracked_mDFC9D4FDE271E2DC90D5459B1A6EA304F97B7428_inline((&V_5), NULL);
+		HandVisualizer_UpdateRenderingVisibility_mFBC70B71322E6C97E3882E9DCE6E1F616CDC9BD1(__this, L_39, L_42, NULL);
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:242>
+		bool L_43 = __this->___m_DrawMeshes;
+		__this->___m_PreviousDrawMeshes = L_43;
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:243>
+		bool L_44 = __this->___m_DebugDrawJoints;
+		__this->___m_PreviousDebugDrawJoints = L_44;
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:244>
+		int32_t L_45 = __this->___m_VelocityType;
+		__this->___m_PreviousVelocityType = L_45;
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:246>
 		HandVisualizer_SubscribeHandSubsystem_mC8DF8C9AD2E5B23D5593833681DADD53C31B28FF(__this, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:264>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:247>
 		return;
 	}
 }
-// Method Definition Index: 77577
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HandVisualizer_GetProviderLayoutMesh_m2F0B33FB26CD6C70B331A2E1EF7F105651EF3004 (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA73F4360C56103ED788368C9769D9E67B8857E15);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAF67CEDF9BEAFF3DA766DA974B7F2E46E04D6D08);
-		s_Il2CppMethodInitialized = true;
-	}
-	String_t* V_0 = NULL;
-	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:271>
-		String_t* L_0;
-		L_0 = OpenXRRuntime_get_name_mB3B4B1E4ECE3B15BFE5F95AB267D90E0E1829456(NULL);
-		V_0 = L_0;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:272>
-		String_t* L_1 = V_0;
-		bool L_2;
-		L_2 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_1, _stringLiteralA73F4360C56103ED788368C9769D9E67B8857E15, NULL);
-		if (!L_2)
-		{
-			goto IL_0015;
-		}
-	}
-	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:274>
-		return (int32_t)(1);
-	}
-
-IL_0015:
-	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:276>
-		String_t* L_3 = V_0;
-		bool L_4;
-		L_4 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_3, _stringLiteralAF67CEDF9BEAFF3DA766DA974B7F2E46E04D6D08, NULL);
-		if (!L_4)
-		{
-			goto IL_0024;
-		}
-	}
-	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:278>
-		return (int32_t)(2);
-	}
-
-IL_0024:
-	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:280>
-		return (int32_t)(0);
-	}
-}
-// Method Definition Index: 77578
+// Method Definition Index: 77598
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_SubscribeHandSubsystem_mC8DF8C9AD2E5B23D5593833681DADD53C31B28FF (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2380,7 +2412,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_SubscribeHandSubsystem_mC
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:288>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:251>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_0 = __this->___m_Subsystem;
 		if (L_0)
 		{
@@ -2388,13 +2420,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_SubscribeHandSubsystem_mC
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:289>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:252>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:291>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:254>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_1 = __this->___m_Subsystem;
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_2 = L_1;
 		NullCheck(L_2);
@@ -2406,7 +2438,7 @@ IL_0009:
 		NullCheck(L_2);
 		L_2->___trackingAcquired = ((Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752*)Castclass((RuntimeObject*)L_5, Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752_il2cpp_TypeInfo_var));
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___trackingAcquired), (void*)((Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752*)Castclass((RuntimeObject*)L_5, Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752_il2cpp_TypeInfo_var)));
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:292>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:255>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_6 = __this->___m_Subsystem;
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_7 = L_6;
 		NullCheck(L_7);
@@ -2418,7 +2450,7 @@ IL_0009:
 		NullCheck(L_7);
 		L_7->___trackingLost = ((Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752*)Castclass((RuntimeObject*)L_10, Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752_il2cpp_TypeInfo_var));
 		Il2CppCodeGenWriteBarrier((void**)(&L_7->___trackingLost), (void*)((Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752*)Castclass((RuntimeObject*)L_10, Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752_il2cpp_TypeInfo_var)));
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:293>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:256>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_11 = __this->___m_Subsystem;
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_12 = L_11;
 		NullCheck(L_12);
@@ -2430,11 +2462,11 @@ IL_0009:
 		NullCheck(L_12);
 		L_12->___updatedHands = ((Action_3_t7D778238CD0A45B8368B3EAC4062AD2D477E1997*)Castclass((RuntimeObject*)L_15, Action_3_t7D778238CD0A45B8368B3EAC4062AD2D477E1997_il2cpp_TypeInfo_var));
 		Il2CppCodeGenWriteBarrier((void**)(&L_12->___updatedHands), (void*)((Action_3_t7D778238CD0A45B8368B3EAC4062AD2D477E1997*)Castclass((RuntimeObject*)L_15, Action_3_t7D778238CD0A45B8368B3EAC4062AD2D477E1997_il2cpp_TypeInfo_var)));
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:294>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:257>
 		return;
 	}
 }
-// Method Definition Index: 77579
+// Method Definition Index: 77599
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_UnsubscribeHandSubsystem_m4FB54A65D825A9218998D66F0099C171D4A2DBB9 (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2448,7 +2480,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_UnsubscribeHandSubsystem_
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:298>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:261>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_0 = __this->___m_Subsystem;
 		if (L_0)
 		{
@@ -2456,13 +2488,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_UnsubscribeHandSubsystem_
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:299>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:262>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:301>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:264>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_1 = __this->___m_Subsystem;
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_2 = L_1;
 		NullCheck(L_2);
@@ -2474,7 +2506,7 @@ IL_0009:
 		NullCheck(L_2);
 		L_2->___trackingAcquired = ((Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752*)Castclass((RuntimeObject*)L_5, Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752_il2cpp_TypeInfo_var));
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___trackingAcquired), (void*)((Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752*)Castclass((RuntimeObject*)L_5, Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752_il2cpp_TypeInfo_var)));
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:302>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:265>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_6 = __this->___m_Subsystem;
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_7 = L_6;
 		NullCheck(L_7);
@@ -2486,7 +2518,7 @@ IL_0009:
 		NullCheck(L_7);
 		L_7->___trackingLost = ((Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752*)Castclass((RuntimeObject*)L_10, Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752_il2cpp_TypeInfo_var));
 		Il2CppCodeGenWriteBarrier((void**)(&L_7->___trackingLost), (void*)((Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752*)Castclass((RuntimeObject*)L_10, Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752_il2cpp_TypeInfo_var)));
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:303>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:266>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_11 = __this->___m_Subsystem;
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_12 = L_11;
 		NullCheck(L_12);
@@ -2498,11 +2530,11 @@ IL_0009:
 		NullCheck(L_12);
 		L_12->___updatedHands = ((Action_3_t7D778238CD0A45B8368B3EAC4062AD2D477E1997*)Castclass((RuntimeObject*)L_15, Action_3_t7D778238CD0A45B8368B3EAC4062AD2D477E1997_il2cpp_TypeInfo_var));
 		Il2CppCodeGenWriteBarrier((void**)(&L_12->___updatedHands), (void*)((Action_3_t7D778238CD0A45B8368B3EAC4062AD2D477E1997*)Castclass((RuntimeObject*)L_15, Action_3_t7D778238CD0A45B8368B3EAC4062AD2D477E1997_il2cpp_TypeInfo_var)));
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:304>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:267>
 		return;
 	}
 }
-// Method Definition Index: 77580
+// Method Definition Index: 77600
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_UpdateRenderingVisibility_mFBC70B71322E6C97E3882E9DCE6E1F616CDC9BD1 (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* ___0_handGameObjects, bool ___1_isTracked, const RuntimeMethod* method) 
 {
 	HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* G_B4_0 = NULL;
@@ -2510,7 +2542,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_UpdateRenderingVisibility
 	int32_t G_B5_0 = 0;
 	HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* G_B5_1 = NULL;
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:308>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:271>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_0 = ___0_handGameObjects;
 		if (L_0)
 		{
@@ -2518,24 +2550,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_UpdateRenderingVisibility
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:309>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:272>
 		return;
 	}
 
 IL_0004:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:311>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:274>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_1 = ___0_handGameObjects;
 		bool L_2 = __this->___m_DrawMeshes;
 		NullCheck(L_1);
 		HandGameObjects_ToggleDrawMesh_m3EC9E4B67721C48B59B52B1A6E146E7AF07BF259(L_1, L_2, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:312>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:275>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_3 = ___0_handGameObjects;
 		bool L_4 = __this->___m_DebugDrawJoints;
 		bool L_5 = ___1_isTracked;
 		NullCheck(L_3);
 		HandGameObjects_ToggleDebugDrawJoints_m5897D801494BFAAA40B96964AE976A7F71214752(L_3, (bool)((int32_t)((int32_t)L_4&(int32_t)L_5)), NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:313>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:276>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_6 = ___0_handGameObjects;
 		bool L_7 = ___1_isTracked;
 		if (L_7)
@@ -2562,16 +2594,16 @@ IL_002b:
 	{
 		NullCheck(G_B5_1);
 		HandGameObjects_SetVelocityType_m13CFD04600696F6E2F6F158999D472867AE31C3C(G_B5_1, G_B5_0, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:314>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:277>
 		return;
 	}
 }
-// Method Definition Index: 77581
+// Method Definition Index: 77601
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnTrackingAcquired_m0171A5A819541BC01F5AF3C6EF2125F81178E0CE (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 ___0_hand, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:318>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:281>
 		int32_t L_0;
 		L_0 = XRHand_get_handedness_m87563F81CAF693404C49463EAC73DA29D517F752_inline((&___0_hand), NULL);
 		V_0 = L_0;
@@ -2594,28 +2626,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnTrackingAcquired_m0171A
 
 IL_0011:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:321>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:284>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_3 = __this->___m_LeftHandGameObjects;
 		HandVisualizer_UpdateRenderingVisibility_mFBC70B71322E6C97E3882E9DCE6E1F616CDC9BD1(__this, L_3, (bool)1, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:322>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:285>
 		return;
 	}
 
 IL_001f:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:325>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:288>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_4 = __this->___m_RightHandGameObjects;
 		HandVisualizer_UpdateRenderingVisibility_mFBC70B71322E6C97E3882E9DCE6E1F616CDC9BD1(__this, L_4, (bool)1, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:328>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:291>
 		return;
 	}
 }
-// Method Definition Index: 77582
+// Method Definition Index: 77602
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnTrackingLost_m1AE1681D37C767E16833FE70F184B796E0D1AA4D (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 ___0_hand, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:332>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:295>
 		int32_t L_0;
 		L_0 = XRHand_get_handedness_m87563F81CAF693404C49463EAC73DA29D517F752_inline((&___0_hand), NULL);
 		V_0 = L_0;
@@ -2638,23 +2670,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnTrackingLost_m1AE1681D3
 
 IL_0011:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:335>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:298>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_3 = __this->___m_LeftHandGameObjects;
 		HandVisualizer_UpdateRenderingVisibility_mFBC70B71322E6C97E3882E9DCE6E1F616CDC9BD1(__this, L_3, (bool)0, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:336>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:299>
 		return;
 	}
 
 IL_001f:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:339>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:302>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_4 = __this->___m_RightHandGameObjects;
 		HandVisualizer_UpdateRenderingVisibility_mFBC70B71322E6C97E3882E9DCE6E1F616CDC9BD1(__this, L_4, (bool)0, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:342>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:305>
 		return;
 	}
 }
-// Method Definition Index: 77583
+// Method Definition Index: 77603
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnUpdatedHands_m2609041B9380B5501A4CAF6EDE5673C4CEBCBC01 (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* ___0_subsystem, int32_t ___1_updateSuccessFlags, int32_t ___2_updateType, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -2670,7 +2702,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnUpdatedHands_m2609041B9
 	int32_t G_B13_0 = 0;
 	HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* G_B13_1 = NULL;
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:349>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:312>
 		int32_t L_0 = ___2_updateType;
 		if (L_0)
 		{
@@ -2678,13 +2710,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnUpdatedHands_m2609041B9
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:350>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:313>
 		return;
 	}
 
 IL_0004:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:352>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:315>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_1 = ___0_subsystem;
 		NullCheck(L_1);
 		XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 L_2;
@@ -2693,7 +2725,7 @@ IL_0004:
 		bool L_3;
 		L_3 = XRHand_get_isTracked_mDFC9D4FDE271E2DC90D5459B1A6EA304F97B7428_inline((&V_2), NULL);
 		V_0 = L_3;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:353>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:316>
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_4 = ___0_subsystem;
 		NullCheck(L_4);
 		XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 L_5;
@@ -2702,7 +2734,7 @@ IL_0004:
 		bool L_6;
 		L_6 = XRHand_get_isTracked_mDFC9D4FDE271E2DC90D5459B1A6EA304F97B7428_inline((&V_2), NULL);
 		V_1 = L_6;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:355>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:318>
 		bool L_7 = __this->___m_PreviousDrawMeshes;
 		bool L_8 = __this->___m_DrawMeshes;
 		if ((((int32_t)L_7) == ((int32_t)L_8)))
@@ -2711,24 +2743,24 @@ IL_0004:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:357>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:320>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_9 = __this->___m_LeftHandGameObjects;
 		bool L_10 = __this->___m_DrawMeshes;
 		NullCheck(L_9);
 		HandGameObjects_ToggleDrawMesh_m3EC9E4B67721C48B59B52B1A6E146E7AF07BF259(L_9, L_10, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:358>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:321>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_11 = __this->___m_RightHandGameObjects;
 		bool L_12 = __this->___m_DrawMeshes;
 		NullCheck(L_11);
 		HandGameObjects_ToggleDrawMesh_m3EC9E4B67721C48B59B52B1A6E146E7AF07BF259(L_11, L_12, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:359>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:322>
 		bool L_13 = __this->___m_DrawMeshes;
 		__this->___m_PreviousDrawMeshes = L_13;
 	}
 
 IL_005e:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:362>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:325>
 		bool L_14 = __this->___m_PreviousDebugDrawJoints;
 		bool L_15 = __this->___m_DebugDrawJoints;
 		if ((((int32_t)L_14) == ((int32_t)L_15)))
@@ -2737,26 +2769,26 @@ IL_005e:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:364>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:327>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_16 = __this->___m_LeftHandGameObjects;
 		bool L_17 = __this->___m_DebugDrawJoints;
 		bool L_18 = V_0;
 		NullCheck(L_16);
 		HandGameObjects_ToggleDebugDrawJoints_m5897D801494BFAAA40B96964AE976A7F71214752(L_16, (bool)((int32_t)((int32_t)L_17&(int32_t)L_18)), NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:365>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:328>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_19 = __this->___m_RightHandGameObjects;
 		bool L_20 = __this->___m_DebugDrawJoints;
 		bool L_21 = V_1;
 		NullCheck(L_19);
 		HandGameObjects_ToggleDebugDrawJoints_m5897D801494BFAAA40B96964AE976A7F71214752(L_19, (bool)((int32_t)((int32_t)L_20&(int32_t)L_21)), NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:366>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:329>
 		bool L_22 = __this->___m_DebugDrawJoints;
 		__this->___m_PreviousDebugDrawJoints = L_22;
 	}
 
 IL_009e:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:369>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:332>
 		int32_t L_23 = __this->___m_PreviousVelocityType;
 		int32_t L_24 = __this->___m_VelocityType;
 		if ((((int32_t)L_23) == ((int32_t)L_24)))
@@ -2765,7 +2797,7 @@ IL_009e:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:371>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:334>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_25 = __this->___m_LeftHandGameObjects;
 		bool L_26 = V_0;
 		if (L_26)
@@ -2792,7 +2824,7 @@ IL_00be:
 	{
 		NullCheck(G_B10_1);
 		HandGameObjects_SetVelocityType_m13CFD04600696F6E2F6F158999D472867AE31C3C(G_B10_1, G_B10_0, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:372>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:335>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_28 = __this->___m_RightHandGameObjects;
 		bool L_29 = V_1;
 		if (L_29)
@@ -2819,18 +2851,18 @@ IL_00d5:
 	{
 		NullCheck(G_B13_1);
 		HandGameObjects_SetVelocityType_m13CFD04600696F6E2F6F158999D472867AE31C3C(G_B13_1, G_B13_0, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:373>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:336>
 		int32_t L_31 = __this->___m_VelocityType;
 		__this->___m_PreviousVelocityType = L_31;
 	}
 
 IL_00e6:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:376>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:377>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:378>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:379>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:380>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:339>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:340>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:341>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:342>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:343>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_32 = __this->___m_LeftHandGameObjects;
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_33 = ___0_subsystem;
 		NullCheck(L_33);
@@ -2841,11 +2873,11 @@ IL_00e6:
 		int32_t L_37 = __this->___m_VelocityType;
 		NullCheck(L_32);
 		HandGameObjects_UpdateJoints_m3CB0C822FD81C182BD37B90C2753724285A0BF2D(L_32, L_34, (bool)((!(((uint32_t)((int32_t)((int32_t)L_35&2))) <= ((uint32_t)0)))? 1 : 0), L_36, L_37, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:382>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:383>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:384>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:385>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:386>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:345>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:346>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:347>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:348>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:349>
 		HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* L_38 = __this->___m_RightHandGameObjects;
 		XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* L_39 = ___0_subsystem;
 		NullCheck(L_39);
@@ -2856,11 +2888,11 @@ IL_00e6:
 		int32_t L_43 = __this->___m_VelocityType;
 		NullCheck(L_38);
 		HandGameObjects_UpdateJoints_m3CB0C822FD81C182BD37B90C2753724285A0BF2D(L_38, L_40, (bool)((!(((uint32_t)((int32_t)((int32_t)L_41&8))) <= ((uint32_t)0)))? 1 : 0), L_42, L_43, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:387>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:350>
 		return;
 	}
 }
-// Method Definition Index: 77584
+// Method Definition Index: 77604
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer__ctor_m3B66D0E80FD73F5C3E16DCF20A82A63B18297A02 (HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2868,7 +2900,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer__ctor_m3B66D0E80FD73F5C3E
 		return;
 	}
 }
-// Method Definition Index: 77585
+// Method Definition Index: 77605
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer__cctor_m79DBF171BAC87235027EC32AE08DA3EC9993F1A9 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2880,7 +2912,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer__cctor_m79DBF171BAC872350
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:136>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:120>
 		List_1_tE4111BEC044D13259EFD4EC5907636C855887179* L_0 = (List_1_tE4111BEC044D13259EFD4EC5907636C855887179*)il2cpp_codegen_object_new(List_1_tE4111BEC044D13259EFD4EC5907636C855887179_il2cpp_TypeInfo_var);
 		List_1__ctor_m9991CB9E0E4608CAE947384283EE27BCF3DAC2D4(L_0, List_1__ctor_m9991CB9E0E4608CAE947384283EE27BCF3DAC2D4_RuntimeMethod_var);
 		((HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6_StaticFields*)il2cpp_codegen_static_fields_for(HandVisualizer_tA85C45A230DA7AFCC9377FE418CDA2F75AFE49B6_il2cpp_TypeInfo_var))->___s_SubsystemsReuse = L_0;
@@ -2904,15 +2936,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer__cctor_m79DBF171BAC872350
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// Method Definition Index: 77586
+// Method Definition Index: 77606
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects__ctor_mE5FE6A2F0C183C672EB9F6584039CE9F6F0ED458 (HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* __this, int32_t ___0_handedness, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___1_parent, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___2_meshPrefab, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___3_meshMaterial, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___4_debugDrawPrefab, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___5_velocityPrefab, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2963,25 +2987,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects__ctor_mE5FE6A2F0C183C672
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* G_B3_0 = NULL;
 	HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* G_B3_1 = NULL;
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:394>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:357>
 		int32_t L_0;
 		L_0 = XRHandJointIDUtility_ToIndex_mBF5EC77C077B14029F71E64F112F37544BFD9E02(((int32_t)27), NULL);
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_1 = (GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF*)(GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF*)SZArrayNew(GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF_il2cpp_TypeInfo_var, (uint32_t)L_0);
 		__this->___m_DrawJoints = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_DrawJoints), (void*)L_1);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:395>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:358>
 		int32_t L_2;
 		L_2 = XRHandJointIDUtility_ToIndex_mBF5EC77C077B14029F71E64F112F37544BFD9E02(((int32_t)27), NULL);
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_3 = (GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF*)(GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF*)SZArrayNew(GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF_il2cpp_TypeInfo_var, (uint32_t)L_2);
 		__this->___m_VelocityParents = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_VelocityParents), (void*)L_3);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:396>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:359>
 		int32_t L_4;
 		L_4 = XRHandJointIDUtility_ToIndex_mBF5EC77C077B14029F71E64F112F37544BFD9E02(((int32_t)27), NULL);
 		LineRendererU5BU5D_t5AA0E11EC99A18A11BCCCABDF088C854E50D394A* L_5 = (LineRendererU5BU5D_t5AA0E11EC99A18A11BCCCABDF088C854E50D394A*)(LineRendererU5BU5D_t5AA0E11EC99A18A11BCCCABDF088C854E50D394A*)SZArrayNew(LineRendererU5BU5D_t5AA0E11EC99A18A11BCCCABDF088C854E50D394A_il2cpp_TypeInfo_var, (uint32_t)L_4);
 		__this->___m_Lines = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Lines), (void*)L_5);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:397>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:360>
 		int32_t L_6;
 		L_6 = XRHandJointIDUtility_ToIndex_mBF5EC77C077B14029F71E64F112F37544BFD9E02(((int32_t)27), NULL);
 		JointVisualizerU5BU5D_tBE9067F8E5E225E6A76C5027CD08047938471342* L_7 = (JointVisualizerU5BU5D_tBE9067F8E5E225E6A76C5027CD08047938471342*)(JointVisualizerU5BU5D_tBE9067F8E5E225E6A76C5027CD08047938471342*)SZArrayNew(JointVisualizerU5BU5D_tBE9067F8E5E225E6A76C5027CD08047938471342_il2cpp_TypeInfo_var, (uint32_t)L_6);
@@ -2993,17 +3017,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects__ctor_mE5FE6A2F0C183C672
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = ___5_velocityPrefab;
 		(&V_0)->___velocityPrefab = L_9;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___velocityPrefab), (void*)L_9);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:403>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:404>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:405>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:406>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:407>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:408>
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:409>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:366>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:367>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:368>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:369>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:370>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:371>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:372>
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		(&V_0)->___U3CU3E4__this = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this), (void*)__this);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:433>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:396>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = ___2_meshPrefab;
 		NullCheck(L_10);
 		Scene_tA1DC762B79745EB5140F054C884855B922318356 L_11;
@@ -3012,7 +3036,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects__ctor_mE5FE6A2F0C183C672
 		bool L_12;
 		L_12 = Scene_IsValid_m0D5200731D3E26ECBBB55803F9242965A14A4599((&V_4), NULL);
 		V_1 = L_12;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:434>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:397>
 		bool L_13 = V_1;
 		if (L_13)
 		{
@@ -3044,11 +3068,11 @@ IL_0086:
 		NullCheck(G_B3_1);
 		G_B3_1->___m_HandRoot = G_B3_0;
 		Il2CppCodeGenWriteBarrier((void**)(&G_B3_1->___m_HandRoot), (void*)G_B3_0);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:435>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:398>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = __this->___m_HandRoot;
 		NullCheck(L_18);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_18, (bool)0, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:437>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:400>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = __this->___m_HandRoot;
 		NullCheck(L_19);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20;
@@ -3057,7 +3081,7 @@ IL_0086:
 		L_21 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		NullCheck(L_20);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_20, L_21, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:438>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:401>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = __this->___m_HandRoot;
 		NullCheck(L_22);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23;
@@ -3066,13 +3090,13 @@ IL_0086:
 		L_24 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
 		NullCheck(L_23);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_23, L_24, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:440>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:403>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25 = __this->___m_HandRoot;
 		NullCheck(L_25);
 		XRHandTrackingEvents_tF1DA1153E15422968E62D8B84B99D5C00018574C* L_26;
 		L_26 = GameObject_GetComponent_TisXRHandTrackingEvents_tF1DA1153E15422968E62D8B84B99D5C00018574C_m6497F69000D8E4A8EB16945591E0EA5C21D1CA2A(L_25, GameObject_GetComponent_TisXRHandTrackingEvents_tF1DA1153E15422968E62D8B84B99D5C00018574C_m6497F69000D8E4A8EB16945591E0EA5C21D1CA2A_RuntimeMethod_var);
 		V_2 = L_26;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:441>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:404>
 		XRHandTrackingEvents_tF1DA1153E15422968E62D8B84B99D5C00018574C* L_27 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_28;
@@ -3083,17 +3107,17 @@ IL_0086:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:443>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:406>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = __this->___m_HandRoot;
 		NullCheck(L_29);
 		XRHandTrackingEvents_tF1DA1153E15422968E62D8B84B99D5C00018574C* L_30;
 		L_30 = GameObject_AddComponent_TisXRHandTrackingEvents_tF1DA1153E15422968E62D8B84B99D5C00018574C_mADC3C017664513070D3093477B302FC7198E8F2A(L_29, GameObject_AddComponent_TisXRHandTrackingEvents_tF1DA1153E15422968E62D8B84B99D5C00018574C_mADC3C017664513070D3093477B302FC7198E8F2A_RuntimeMethod_var);
 		V_2 = L_30;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:444>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:407>
 		XRHandTrackingEvents_tF1DA1153E15422968E62D8B84B99D5C00018574C* L_31 = V_2;
 		NullCheck(L_31);
 		XRHandTrackingEvents_set_updateType_m7AD23779101D561EAEC21BA41FD45AF39679DFA7_inline(L_31, 1, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:445>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:408>
 		XRHandTrackingEvents_tF1DA1153E15422968E62D8B84B99D5C00018574C* L_32 = V_2;
 		int32_t L_33 = ___0_handedness;
 		NullCheck(L_32);
@@ -3102,14 +3126,14 @@ IL_0086:
 
 IL_00f0:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:448>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:411>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_34 = __this->___m_HandRoot;
 		NullCheck(L_34);
 		XRHandMeshController_t670ADAE830016D758ED74153F39334564CD3D687* L_35;
 		L_35 = GameObject_GetComponent_TisXRHandMeshController_t670ADAE830016D758ED74153F39334564CD3D687_mFAD7BA6D178A79C7E03843EA1B08D4CE16E248B2(L_34, GameObject_GetComponent_TisXRHandMeshController_t670ADAE830016D758ED74153F39334564CD3D687_mFAD7BA6D178A79C7E03843EA1B08D4CE16E248B2_RuntimeMethod_var);
 		__this->___m_MeshController = L_35;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_MeshController), (void*)L_35);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:449>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:412>
 		XRHandMeshController_t670ADAE830016D758ED74153F39334564CD3D687* L_36 = __this->___m_MeshController;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_37;
@@ -3120,21 +3144,21 @@ IL_00f0:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:451>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:414>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_38 = __this->___m_HandRoot;
 		NullCheck(L_38);
 		XRHandMeshController_t670ADAE830016D758ED74153F39334564CD3D687* L_39;
 		L_39 = GameObject_AddComponent_TisXRHandMeshController_t670ADAE830016D758ED74153F39334564CD3D687_m0EF34ABB02714F807910BD0C78AB85F2D25D023D(L_38, GameObject_AddComponent_TisXRHandMeshController_t670ADAE830016D758ED74153F39334564CD3D687_m0EF34ABB02714F807910BD0C78AB85F2D25D023D_RuntimeMethod_var);
 		__this->___m_MeshController = L_39;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_MeshController), (void*)L_39);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:452>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:415>
 		V_5 = 0;
 		goto IL_0153;
 	}
 
 IL_0125:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:454>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:417>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40 = __this->___m_HandRoot;
 		NullCheck(L_40);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_41;
@@ -3143,7 +3167,7 @@ IL_0125:
 		NullCheck(L_41);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_43;
 		L_43 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_41, L_42, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:455>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:418>
 		NullCheck(L_43);
 		bool L_44;
 		L_44 = Component_TryGetComponent_TisSkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E_m95CEC209AB48BA4465F3CB2C9453CCA6322D2A63(L_43, (&V_6), Component_TryGetComponent_TisSkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E_m95CEC209AB48BA4465F3CB2C9453CCA6322D2A63_RuntimeMethod_var);
@@ -3153,7 +3177,7 @@ IL_0125:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:456>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:419>
 		XRHandMeshController_t670ADAE830016D758ED74153F39334564CD3D687* L_45 = __this->___m_MeshController;
 		SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E* L_46 = V_6;
 		NullCheck(L_45);
@@ -3162,14 +3186,14 @@ IL_0125:
 
 IL_014d:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:452>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:415>
 		int32_t L_47 = V_5;
 		V_5 = ((int32_t)il2cpp_codegen_add(L_47, 1));
 	}
 
 IL_0153:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:452>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:415>
 		int32_t L_48 = V_5;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_49 = __this->___m_HandRoot;
 		NullCheck(L_49);
@@ -3184,7 +3208,7 @@ IL_0153:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:459>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:422>
 		XRHandMeshController_t670ADAE830016D758ED74153F39334564CD3D687* L_52 = __this->___m_MeshController;
 		XRHandTrackingEvents_tF1DA1153E15422968E62D8B84B99D5C00018574C* L_53 = V_2;
 		NullCheck(L_52);
@@ -3193,7 +3217,7 @@ IL_0153:
 
 IL_0173:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:462>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:425>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_54 = ___3_meshMaterial;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_55;
@@ -3204,7 +3228,7 @@ IL_0173:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:464>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:427>
 		XRHandMeshController_t670ADAE830016D758ED74153F39334564CD3D687* L_56 = __this->___m_MeshController;
 		NullCheck(L_56);
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_57;
@@ -3216,13 +3240,13 @@ IL_0173:
 
 IL_018f:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:467>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:430>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_59 = __this->___m_HandRoot;
 		NullCheck(L_59);
 		XRHandSkeletonDriver_t549956F17FD2C98A8FC1C9DF04ED4218610321A9* L_60;
 		L_60 = GameObject_GetComponent_TisXRHandSkeletonDriver_t549956F17FD2C98A8FC1C9DF04ED4218610321A9_m3BF356CDEFCB41719801691285453F0D76FB5251(L_59, GameObject_GetComponent_TisXRHandSkeletonDriver_t549956F17FD2C98A8FC1C9DF04ED4218610321A9_m3BF356CDEFCB41719801691285453F0D76FB5251_RuntimeMethod_var);
 		V_3 = L_60;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:468>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:431>
 		XRHandSkeletonDriver_t549956F17FD2C98A8FC1C9DF04ED4218610321A9* L_61 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_62;
@@ -3233,28 +3257,28 @@ IL_018f:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:470>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:433>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_63 = __this->___m_HandRoot;
 		NullCheck(L_63);
 		XRHandSkeletonDriver_t549956F17FD2C98A8FC1C9DF04ED4218610321A9* L_64;
 		L_64 = GameObject_AddComponent_TisXRHandSkeletonDriver_t549956F17FD2C98A8FC1C9DF04ED4218610321A9_m8D2D63A6AD343A90A9DDF71D360B7AD36BC3B4F2(L_63, GameObject_AddComponent_TisXRHandSkeletonDriver_t549956F17FD2C98A8FC1C9DF04ED4218610321A9_m8D2D63A6AD343A90A9DDF71D360B7AD36BC3B4F2_RuntimeMethod_var);
 		V_3 = L_64;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:471>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:434>
 		XRHandSkeletonDriver_t549956F17FD2C98A8FC1C9DF04ED4218610321A9* L_65 = V_3;
 		List_1_t6374200280C9D4D9E197123BCF3B71CB8726B89F* L_66 = (List_1_t6374200280C9D4D9E197123BCF3B71CB8726B89F*)il2cpp_codegen_object_new(List_1_t6374200280C9D4D9E197123BCF3B71CB8726B89F_il2cpp_TypeInfo_var);
 		List_1__ctor_mF9E011AC0B45B83F28F733B52084915C67A264CD(L_66, List_1__ctor_mF9E011AC0B45B83F28F733B52084915C67A264CD_RuntimeMethod_var);
 		NullCheck(L_65);
 		XRHandSkeletonDriver_set_jointTransformReferences_m1498B75A0BDB9AF2603CF62C118DE8FFA84E9E36(L_65, L_66, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:472>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:435>
 		V_7 = (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:473>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:436>
 		V_8 = 0;
 		goto IL_0207;
 	}
 
 IL_01c6:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:475>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:438>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_67 = __this->___m_HandRoot;
 		NullCheck(L_67);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_68;
@@ -3264,7 +3288,7 @@ IL_01c6:
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_70;
 		L_70 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_68, L_69, NULL);
 		V_9 = L_70;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:476>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:439>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_71 = V_9;
 		NullCheck(L_71);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_72;
@@ -3285,21 +3309,21 @@ IL_01c6:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:477>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:440>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_77 = V_9;
 		V_7 = L_77;
 	}
 
 IL_0201:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:473>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:436>
 		int32_t L_78 = V_8;
 		V_8 = ((int32_t)il2cpp_codegen_add(L_78, 1));
 	}
 
 IL_0207:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:473>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:436>
 		int32_t L_79 = V_8;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_80 = __this->___m_HandRoot;
 		NullCheck(L_80);
@@ -3314,19 +3338,19 @@ IL_0207:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:480>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:443>
 		XRHandSkeletonDriver_t549956F17FD2C98A8FC1C9DF04ED4218610321A9* L_83 = V_3;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_84 = V_7;
 		NullCheck(L_83);
 		XRHandSkeletonDriver_set_rootTransform_mE5EA2C57F67949501CEC763615F2CFC3309BA34D(L_83, L_84, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:481>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:444>
 		XRHandSkeletonDriver_t549956F17FD2C98A8FC1C9DF04ED4218610321A9* L_85 = V_3;
 		XRHandSkeletonDriverUtility_FindJointsFromRoot_mF7F7E290233CB82676A5CEE92A8BBE25E320359D(L_85, (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*)NULL, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:482>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:445>
 		XRHandSkeletonDriver_t549956F17FD2C98A8FC1C9DF04ED4218610321A9* L_86 = V_3;
 		NullCheck(L_86);
 		XRHandSkeletonDriver_InitializeFromSerializedReferences_m1CADD44CEE67DBFF31D4C3D11CFC5C103573A314(L_86, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:483>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:446>
 		XRHandSkeletonDriver_t549956F17FD2C98A8FC1C9DF04ED4218610321A9* L_87 = V_3;
 		XRHandTrackingEvents_tF1DA1153E15422968E62D8B84B99D5C00018574C* L_88 = V_2;
 		NullCheck(L_87);
@@ -3335,12 +3359,12 @@ IL_0207:
 
 IL_0237:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:486>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:449>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_89 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m7D0340DE160786E6EFA8DABD39EC3B694DA30AAD(L_89, NULL);
 		__this->___m_DrawJointsParent = L_89;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_DrawJointsParent), (void*)L_89);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:487>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:450>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_90 = __this->___m_DrawJointsParent;
 		NullCheck(L_90);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_91;
@@ -3348,7 +3372,7 @@ IL_0237:
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_92 = ___1_parent;
 		NullCheck(L_91);
 		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_91, L_92, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:488>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:451>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_93 = __this->___m_DrawJointsParent;
 		NullCheck(L_93);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_94;
@@ -3357,7 +3381,7 @@ IL_0237:
 		L_95 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		NullCheck(L_94);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_94, L_95, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:489>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:452>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_96 = __this->___m_DrawJointsParent;
 		NullCheck(L_96);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_97;
@@ -3366,7 +3390,7 @@ IL_0237:
 		L_98 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
 		NullCheck(L_97);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_97, L_98, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:490>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:453>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_99 = __this->___m_DrawJointsParent;
 		Il2CppFakeBox<int32_t> L_100(Handedness_tC87DA4E9D99745447BF40B631E8B479E32D8E37F_il2cpp_TypeInfo_var, (&___0_handedness));
 		String_t* L_101;
@@ -3375,14 +3399,14 @@ IL_0237:
 		L_102 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_101, _stringLiteral4A4955D176516025430352DFFE6DF5974DEB47AB, NULL);
 		NullCheck(L_99);
 		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_99, L_102, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:492>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:455>
 		V_11 = 0;
 		goto IL_02e2;
 	}
 
 IL_02a4:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:494>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:457>
 		XRHandSkeletonDriver_t549956F17FD2C98A8FC1C9DF04ED4218610321A9* L_103 = V_3;
 		NullCheck(L_103);
 		List_1_t6374200280C9D4D9E197123BCF3B71CB8726B89F* L_104;
@@ -3392,15 +3416,15 @@ IL_02a4:
 		JointToTransformReference_t5DC7424A5741B60B0DFA15056D7F7EBF38721202 L_106;
 		L_106 = List_1_get_Item_m86F4130198090303E1C3BF94F8DCDDB031FF0DDA(L_104, L_105, List_1_get_Item_m86F4130198090303E1C3BF94F8DCDDB031FF0DDA_RuntimeMethod_var);
 		V_12 = L_106;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:495>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:458>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_107;
 		L_107 = JointToTransformReference_get_jointTransform_m81EAC20A1665D7F6AA85653F77AFFD9E4980AC40_inline((&V_12), NULL);
 		V_13 = L_107;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:496>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:459>
 		int32_t L_108;
 		L_108 = JointToTransformReference_get_xrHandJointID_m07248164E6B8E31BA297F25AFEBA64AF30F79BF4_inline((&V_12), NULL);
 		V_14 = L_108;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:497>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:460>
 		int32_t L_109 = V_14;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_110 = V_13;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_111 = __this->___m_DrawJointsParent;
@@ -3408,14 +3432,14 @@ IL_02a4:
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_112;
 		L_112 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_111, NULL);
 		HandGameObjects_U3C_ctorU3Eg__AssignJointU7C9_0_m7245539D5FC3F7CEBC5B6E4EBB30628DAA7DFE08(__this, L_109, L_110, L_112, (&V_0), NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:492>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:455>
 		int32_t L_113 = V_11;
 		V_11 = ((int32_t)il2cpp_codegen_add(L_113, 1));
 	}
 
 IL_02e2:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:492>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:455>
 		int32_t L_114 = V_11;
 		XRHandSkeletonDriver_t549956F17FD2C98A8FC1C9DF04ED4218610321A9* L_115 = V_3;
 		NullCheck(L_115);
@@ -3430,15 +3454,15 @@ IL_02e2:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:500>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:463>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_118 = __this->___m_HandRoot;
 		NullCheck(L_118);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_118, (bool)1, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:501>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:464>
 		return;
 	}
 }
-// Method Definition Index: 77587
+// Method Definition Index: 77607
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_OnDestroy_mDC01BE3680763342F2F89A8788D9B6A42ED7BBD6 (HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3450,21 +3474,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_OnDestroy_mDC01BE3680763
 	int32_t V_0 = 0;
 	int32_t V_1 = 0;
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:505>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:468>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___m_HandRoot;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_0, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:506>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:469>
 		__this->___m_HandRoot = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_HandRoot), (void*)(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:508>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:471>
 		V_0 = 0;
 		goto IL_0030;
 	}
 
 IL_0016:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:510>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:473>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_1 = __this->___m_DrawJoints;
 		int32_t L_2 = V_0;
 		NullCheck(L_1);
@@ -3472,20 +3496,20 @@ IL_0016:
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_4, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:511>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:474>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_5 = __this->___m_DrawJoints;
 		int32_t L_6 = V_0;
 		NullCheck(L_5);
 		ArrayElementTypeCheck (L_5, NULL);
 		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(L_6), (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:508>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:471>
 		int32_t L_7 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_7, 1));
 	}
 
 IL_0030:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:508>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:471>
 		int32_t L_8 = V_0;
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_9 = __this->___m_DrawJoints;
 		NullCheck(L_9);
@@ -3495,14 +3519,14 @@ IL_0030:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:514>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:477>
 		V_1 = 0;
 		goto IL_0059;
 	}
 
 IL_003f:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:516>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:479>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_10 = __this->___m_VelocityParents;
 		int32_t L_11 = V_1;
 		NullCheck(L_10);
@@ -3510,20 +3534,20 @@ IL_003f:
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_13, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:517>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:480>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_14 = __this->___m_VelocityParents;
 		int32_t L_15 = V_1;
 		NullCheck(L_14);
 		ArrayElementTypeCheck (L_14, NULL);
 		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(L_15), (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:514>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:477>
 		int32_t L_16 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_16, 1));
 	}
 
 IL_0059:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:514>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:477>
 		int32_t L_17 = V_1;
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_18 = __this->___m_VelocityParents;
 		NullCheck(L_18);
@@ -3533,27 +3557,27 @@ IL_0059:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:520>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:483>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = __this->___m_DrawJointsParent;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_19, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:521>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:484>
 		__this->___m_DrawJointsParent = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_DrawJointsParent), (void*)(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:522>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:485>
 		return;
 	}
 }
-// Method Definition Index: 77588
+// Method Definition Index: 77608
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_ToggleDrawMesh_m3EC9E4B67721C48B59B52B1A6E146E7AF07BF259 (HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* __this, bool ___0_drawMesh, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:526>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:489>
 		XRHandMeshController_t670ADAE830016D758ED74153F39334564CD3D687* L_0 = __this->___m_MeshController;
 		bool L_1 = ___0_drawMesh;
 		NullCheck(L_0);
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_0, L_1, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:527>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:490>
 		bool L_2 = ___0_drawMesh;
 		if (L_2)
 		{
@@ -3561,7 +3585,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_ToggleDrawMesh_m3EC9E4B6
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:528>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:491>
 		XRHandMeshController_t670ADAE830016D758ED74153F39334564CD3D687* L_3 = __this->___m_MeshController;
 		NullCheck(L_3);
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_4;
@@ -3572,11 +3596,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_ToggleDrawMesh_m3EC9E4B6
 
 IL_0020:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:529>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:492>
 		return;
 	}
 }
-// Method Definition Index: 77589
+// Method Definition Index: 77609
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_ToggleDebugDrawJoints_m5897D801494BFAAA40B96964AE976A7F71214752 (HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* __this, bool ___0_debugDrawJoints, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3588,14 +3612,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_ToggleDebugDrawJoints_m5
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:533>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:496>
 		V_0 = 0;
 		goto IL_0029;
 	}
 
 IL_0004:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:535>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:498>
 		bool L_0 = ___0_debugDrawJoints;
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_1 = __this->___m_DrawJoints;
 		int32_t L_2 = V_0;
@@ -3607,7 +3631,7 @@ IL_0004:
 		L_5 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_4, NULL);
 		il2cpp_codegen_runtime_class_init_inline(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var);
 		HandGameObjects_ToggleRenderers_TisMeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE_m8BC9ACC0C9BBB0A272F874B4A594AB98EF2FEFAD(L_0, L_5, HandGameObjects_ToggleRenderers_TisMeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE_m8BC9ACC0C9BBB0A272F874B4A594AB98EF2FEFAD_RuntimeMethod_var);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:536>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:499>
 		LineRendererU5BU5D_t5AA0E11EC99A18A11BCCCABDF088C854E50D394A* L_6 = __this->___m_Lines;
 		int32_t L_7 = V_0;
 		NullCheck(L_6);
@@ -3616,14 +3640,14 @@ IL_0004:
 		bool L_10 = ___0_debugDrawJoints;
 		NullCheck(L_9);
 		Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8(L_9, L_10, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:533>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:496>
 		int32_t L_11 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_11, 1));
 	}
 
 IL_0029:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:533>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:496>
 		int32_t L_12 = V_0;
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_13 = __this->___m_DrawJoints;
 		NullCheck(L_13);
@@ -3633,18 +3657,18 @@ IL_0029:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:539>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:502>
 		LineRendererU5BU5D_t5AA0E11EC99A18A11BCCCABDF088C854E50D394A* L_14 = __this->___m_Lines;
 		NullCheck(L_14);
 		int32_t L_15 = 0;
 		LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* L_16 = (L_14)->GetAt(static_cast<il2cpp_array_size_t>(L_15));
 		NullCheck(L_16);
 		Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8(L_16, (bool)0, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:540>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:503>
 		return;
 	}
 }
-// Method Definition Index: 77590
+// Method Definition Index: 77610
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_SetVelocityType_m13CFD04600696F6E2F6F158999D472867AE31C3C (HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* __this, int32_t ___0_velocityType, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3656,14 +3680,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_SetVelocityType_m13CFD04
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:544>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:507>
 		V_0 = 0;
 		goto IL_0021;
 	}
 
 IL_0004:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:545>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:508>
 		int32_t L_0 = ___0_velocityType;
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_1 = __this->___m_VelocityParents;
 		int32_t L_2 = V_0;
@@ -3675,14 +3699,14 @@ IL_0004:
 		L_5 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_4, NULL);
 		il2cpp_codegen_runtime_class_init_inline(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var);
 		HandGameObjects_ToggleRenderers_TisLineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D_mD52F431B7896E3957C42E662CECB52F1226E2834((bool)((((int32_t)((((int32_t)L_0) == ((int32_t)2))? 1 : 0)) == ((int32_t)0))? 1 : 0), L_5, HandGameObjects_ToggleRenderers_TisLineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D_mD52F431B7896E3957C42E662CECB52F1226E2834_RuntimeMethod_var);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:544>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:507>
 		int32_t L_6 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_6, 1));
 	}
 
 IL_0021:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:544>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:507>
 		int32_t L_7 = V_0;
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_8 = __this->___m_VelocityParents;
 		NullCheck(L_8);
@@ -3692,11 +3716,11 @@ IL_0021:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:546>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:509>
 		return;
 	}
 }
-// Method Definition Index: 77591
+// Method Definition Index: 77611
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_UpdateJoints_m3CB0C822FD81C182BD37B90C2753724285A0BF2D (HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* __this, XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 ___0_hand, bool ___1_areJointsTracked, bool ___2_debugDrawJoints, int32_t ___3_velocityType, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3714,7 +3738,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_UpdateJoints_m3CB0C822FD
 	int32_t V_4 = 0;
 	int32_t V_5 = 0;
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:554>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:517>
 		bool L_0 = ___1_areJointsTracked;
 		if (L_0)
 		{
@@ -3722,57 +3746,57 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_UpdateJoints_m3CB0C822FD
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:555>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:518>
 		return;
 	}
 
 IL_0004:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:557>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:520>
 		il2cpp_codegen_runtime_class_init_inline(Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971_il2cpp_TypeInfo_var);
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_1;
 		L_1 = Pose_get_identity_m145C7BA9D895CD7F8CCE2483B69764F7A9FEC66E(NULL);
 		V_0 = L_1;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:558>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:521>
 		int32_t L_2;
 		L_2 = XRHandJointIDUtility_ToIndex_mBF5EC77C077B14029F71E64F112F37544BFD9E02(1, NULL);
 		V_1 = L_2;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:559>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:522>
 		bool L_3 = ___2_debugDrawJoints;
 		int32_t L_4 = ___3_velocityType;
 		XRHandJoint_tDB955774276659AFD2294D516FC8A76A51E94783 L_5;
 		L_5 = XRHand_GetJoint_mDD5E7D4F45C9701AF8911EA4394F258CB5E68035((&___0_hand), 1, NULL);
 		HandGameObjects_UpdateJoint_mC83C6757020AA8C0F9BCE9DB2D5AF8DFAEBD44B2(__this, L_3, L_4, L_5, (&V_0), (&V_1), (bool)1, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:560>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:523>
 		bool L_6 = ___2_debugDrawJoints;
 		int32_t L_7 = ___3_velocityType;
 		XRHandJoint_tDB955774276659AFD2294D516FC8A76A51E94783 L_8;
 		L_8 = XRHand_GetJoint_mDD5E7D4F45C9701AF8911EA4394F258CB5E68035((&___0_hand), 2, NULL);
 		HandGameObjects_UpdateJoint_mC83C6757020AA8C0F9BCE9DB2D5AF8DFAEBD44B2(__this, L_6, L_7, L_8, (&V_0), (&V_1), (bool)0, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:562>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:525>
 		V_2 = 0;
 		goto IL_0092;
 	}
 
 IL_0041:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:566>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:529>
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_9 = V_0;
 		V_3 = L_9;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:567>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:530>
 		int32_t L_10 = V_2;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:568>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:531>
 		int32_t L_11;
 		L_11 = XRHandJointIDUtility_ToIndex_mBF5EC77C077B14029F71E64F112F37544BFD9E02(1, NULL);
 		V_1 = L_11;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:570>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:533>
 		int32_t L_12 = L_10;
 		int32_t L_13;
 		L_13 = XRHandJointIDUtility_GetBackJointID_m944463FBA57D581AFBF5A68F7CA59FC1673F386F(L_12, NULL);
 		int32_t L_14;
 		L_14 = XRHandJointIDUtility_ToIndex_mBF5EC77C077B14029F71E64F112F37544BFD9E02(L_13, NULL);
 		V_4 = L_14;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:571>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:534>
 		int32_t L_15;
 		L_15 = XRHandJointIDUtility_GetFrontJointID_mDAAB2FBD81037762DB147BA18C1381192A2A7313(L_12, NULL);
 		int32_t L_16;
@@ -3783,7 +3807,7 @@ IL_0041:
 
 IL_0066:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:575>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:538>
 		bool L_17 = ___2_debugDrawJoints;
 		int32_t L_18 = ___3_velocityType;
 		int32_t L_19 = V_5;
@@ -3792,14 +3816,14 @@ IL_0066:
 		XRHandJoint_tDB955774276659AFD2294D516FC8A76A51E94783 L_21;
 		L_21 = XRHand_GetJoint_mDD5E7D4F45C9701AF8911EA4394F258CB5E68035((&___0_hand), L_20, NULL);
 		HandGameObjects_UpdateJoint_mC83C6757020AA8C0F9BCE9DB2D5AF8DFAEBD44B2(__this, L_17, L_18, L_21, (&V_3), (&V_1), (bool)1, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:573>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:536>
 		int32_t L_22 = V_5;
 		V_5 = ((int32_t)il2cpp_codegen_add(L_22, 1));
 	}
 
 IL_0088:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:572>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:535>
 		int32_t L_23 = V_5;
 		int32_t L_24 = V_4;
 		if ((((int32_t)L_23) <= ((int32_t)L_24)))
@@ -3808,14 +3832,14 @@ IL_0088:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:564>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:527>
 		int32_t L_25 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_25, 1));
 	}
 
 IL_0092:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:563>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:526>
 		int32_t L_26 = V_2;
 		if ((((int32_t)L_26) <= ((int32_t)4)))
 		{
@@ -3823,11 +3847,11 @@ IL_0092:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:578>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:541>
 		return;
 	}
 }
-// Method Definition Index: 77592
+// Method Definition Index: 77612
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_UpdateJoint_mC83C6757020AA8C0F9BCE9DB2D5AF8DFAEBD44B2 (HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* __this, bool ___0_debugDrawJoints, int32_t ___1_velocityType, XRHandJoint_tDB955774276659AFD2294D516FC8A76A51E94783 ___2_joint, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* ___3_parentPose, int32_t* ___4_parentIndex, bool ___5_cacheParentPose, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3848,7 +3872,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_UpdateJoint_mC83C6757020
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_5;
 	memset((&V_5), 0, sizeof(V_5));
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:588>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:551>
 		int32_t L_0;
 		L_0 = XRHandJoint_get_id_m22F4DAECB98383D196AA9549A8682B73270AB394((&___2_joint), NULL);
 		if (L_0)
@@ -3857,19 +3881,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_UpdateJoint_mC83C6757020
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:589>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:552>
 		return;
 	}
 
 IL_000a:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:591>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:554>
 		int32_t L_1;
 		L_1 = XRHandJoint_get_id_m22F4DAECB98383D196AA9549A8682B73270AB394((&___2_joint), NULL);
 		int32_t L_2;
 		L_2 = XRHandJointIDUtility_ToIndex_mBF5EC77C077B14029F71E64F112F37544BFD9E02(L_1, NULL);
 		V_0 = L_2;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:592>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:555>
 		JointVisualizerU5BU5D_tBE9067F8E5E225E6A76C5027CD08047938471342* L_3 = __this->___m_JointVisualizers;
 		int32_t L_4 = V_0;
 		NullCheck(L_3);
@@ -3879,7 +3903,7 @@ IL_000a:
 		L_7 = XRHandJoint_get_trackingState_mD1202D64E796D92C38FA87BD02DFBD58AF5E4696_inline((&___2_joint), NULL);
 		NullCheck(L_6);
 		JointVisualizer_NotifyTrackingState_m34E6715AEB12229493AAFC3EF5B82584610B30BC(L_6, L_7, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:594>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:557>
 		bool L_8;
 		L_8 = XRHandJoint_TryGetPose_m1AA1E69E7753E1CC4E64F8649751BF7D30CE113E((&___2_joint), (&V_1), NULL);
 		if (L_8)
@@ -3888,13 +3912,13 @@ IL_000a:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:595>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:558>
 		return;
 	}
 
 IL_0037:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:597>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:560>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_9 = __this->___m_DrawJoints;
 		int32_t L_10 = V_0;
 		NullCheck(L_9);
@@ -3907,7 +3931,7 @@ IL_0037:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = L_14.___position;
 		NullCheck(L_13);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_13, L_15, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:598>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:561>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_16 = __this->___m_DrawJoints;
 		int32_t L_17 = V_0;
 		NullCheck(L_16);
@@ -3920,7 +3944,7 @@ IL_0037:
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_22 = L_21.___rotation;
 		NullCheck(L_20);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_20, L_22, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:600>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:563>
 		bool L_23 = ___0_debugDrawJoints;
 		if (!L_23)
 		{
@@ -3936,7 +3960,7 @@ IL_0037:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:602>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:565>
 		il2cpp_codegen_runtime_class_init_inline(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_25 = ((HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_StaticFields*)il2cpp_codegen_static_fields_for(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var))->___s_LinePointsReuse;
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_26 = __this->___m_DrawJoints;
@@ -3953,7 +3977,7 @@ IL_0037:
 		L_32 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_31, NULL);
 		NullCheck(L_25);
 		(L_25)->SetAt(static_cast<il2cpp_array_size_t>(0), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_32);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:603>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:566>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_33 = ((HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_StaticFields*)il2cpp_codegen_static_fields_for(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var))->___s_LinePointsReuse;
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_34 = __this->___m_DrawJoints;
 		int32_t L_35 = V_0;
@@ -3968,7 +3992,7 @@ IL_0037:
 		L_39 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_38, NULL);
 		NullCheck(L_33);
 		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(1), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_39);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:604>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:567>
 		LineRendererU5BU5D_t5AA0E11EC99A18A11BCCCABDF088C854E50D394A* L_40 = __this->___m_Lines;
 		int32_t L_41 = V_0;
 		NullCheck(L_40);
@@ -3981,7 +4005,7 @@ IL_0037:
 
 IL_00c2:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:607>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:570>
 		bool L_45 = ___5_cacheParentPose;
 		if (!L_45)
 		{
@@ -3989,11 +4013,11 @@ IL_00c2:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:609>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:572>
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_46 = ___3_parentPose;
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_47 = V_1;
 		*(Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971*)L_46 = L_47;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:610>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:573>
 		int32_t* L_48 = ___4_parentIndex;
 		int32_t L_49 = V_0;
 		*((int32_t*)L_48) = (int32_t)L_49;
@@ -4001,7 +4025,7 @@ IL_00c2:
 
 IL_00d2:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:613>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:576>
 		int32_t L_50 = ___1_velocityType;
 		if ((((int32_t)L_50) == ((int32_t)2)))
 		{
@@ -4023,7 +4047,7 @@ IL_00d2:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:615>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:578>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_56 = __this->___m_VelocityParents;
 		int32_t L_57 = V_0;
 		NullCheck(L_56);
@@ -4036,7 +4060,7 @@ IL_00d2:
 		L_61 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		NullCheck(L_60);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_60, L_61, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:616>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:579>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_62 = __this->___m_VelocityParents;
 		int32_t L_63 = V_0;
 		NullCheck(L_62);
@@ -4049,7 +4073,7 @@ IL_00d2:
 		L_67 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
 		NullCheck(L_66);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_66, L_67, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:618>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:581>
 		il2cpp_codegen_runtime_class_init_inline(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_68 = ((HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_StaticFields*)il2cpp_codegen_static_fields_for(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var))->___s_LinePointsReuse;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_69 = ((HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_StaticFields*)il2cpp_codegen_static_fields_for(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var))->___s_LinePointsReuse;
@@ -4071,7 +4095,7 @@ IL_00d2:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_77 = V_3;
 		NullCheck(L_68);
 		(L_68)->SetAt(static_cast<il2cpp_array_size_t>(0), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_77);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:619>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:582>
 		int32_t L_78 = ___1_velocityType;
 		if (L_78)
 		{
@@ -4079,7 +4103,7 @@ IL_00d2:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:621>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:584>
 		bool L_79;
 		L_79 = XRHandJoint_TryGetLinearVelocity_m3BC24DBDEB210B51568D21317B1B3574A6B57F6B((&___2_joint), (&V_4), NULL);
 		if (!L_79)
@@ -4088,7 +4112,7 @@ IL_00d2:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:622>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:585>
 		il2cpp_codegen_runtime_class_init_inline(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_80 = ((HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_StaticFields*)il2cpp_codegen_static_fields_for(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var))->___s_LinePointsReuse;
 		NullCheck(L_80);
@@ -4103,7 +4127,7 @@ IL_00d2:
 
 IL_0173:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:624>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:587>
 		int32_t L_85 = ___1_velocityType;
 		if ((!(((uint32_t)L_85) == ((uint32_t)1))))
 		{
@@ -4111,7 +4135,7 @@ IL_0173:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:626>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:589>
 		bool L_86;
 		L_86 = XRHandJoint_TryGetAngularVelocity_mA486ED68AE5883EC4EE22A4403457E5F3F64CF63((&___2_joint), (&V_5), NULL);
 		if (!L_86)
@@ -4120,7 +4144,7 @@ IL_0173:
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:627>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:590>
 		il2cpp_codegen_runtime_class_init_inline(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_87 = ((HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_StaticFields*)il2cpp_codegen_static_fields_for(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var))->___s_LinePointsReuse;
 		NullCheck(L_87);
@@ -4137,7 +4161,7 @@ IL_0173:
 
 IL_01ae:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:630>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:593>
 		LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* L_93 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_94 = ((HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_StaticFields*)il2cpp_codegen_static_fields_for(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var))->___s_LinePointsReuse;
@@ -4147,11 +4171,11 @@ IL_01ae:
 
 IL_01b9:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:632>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:595>
 		return;
 	}
 }
-// Method Definition Index: 77594
+// Method Definition Index: 77614
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects__cctor_m1C6CD34AF6E59EB2BC6CED89004BCFA9FE742CDD (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4162,14 +4186,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects__cctor_m1C6CD34AF6E59EB2
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:399>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:362>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_0 = (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)SZArrayNew(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var, (uint32_t)2);
 		((HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_StaticFields*)il2cpp_codegen_static_fields_for(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var))->___s_LinePointsReuse = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_StaticFields*)il2cpp_codegen_static_fields_for(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var))->___s_LinePointsReuse), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 77595
+// Method Definition Index: 77615
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_U3C_ctorU3Eg__AssignJointU7C9_0_m7245539D5FC3F7CEBC5B6E4EBB30628DAA7DFE08 (HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F* __this, int32_t ___0_jointId, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___1_jointDrivenTransform, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___2_drawJointsParent, U3CU3Ec__DisplayClass9_0_t18EF379C550C89A38B4C15EF582D09D97B3710DD* ___3_p, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4189,12 +4213,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_U3C_ctorU3Eg__AssignJoin
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_3;
 	memset((&V_3), 0, sizeof(V_3));
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:416>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:379>
 		int32_t L_0 = ___0_jointId;
 		int32_t L_1;
 		L_1 = XRHandJointIDUtility_ToIndex_mBF5EC77C077B14029F71E64F112F37544BFD9E02(L_0, NULL);
 		V_0 = L_1;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:417>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:380>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_2 = __this->___m_DrawJoints;
 		int32_t L_3 = V_0;
 		U3CU3Ec__DisplayClass9_0_t18EF379C550C89A38B4C15EF582D09D97B3710DD* L_4 = ___3_p;
@@ -4204,7 +4228,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_U3C_ctorU3Eg__AssignJoin
 		L_6 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3(L_5, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3_RuntimeMethod_var);
 		NullCheck(L_2);
 		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(L_3), (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_6);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:418>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:381>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_7 = __this->___m_DrawJoints;
 		int32_t L_8 = V_0;
 		NullCheck(L_7);
@@ -4216,7 +4240,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_U3C_ctorU3Eg__AssignJoin
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12 = ___2_drawJointsParent;
 		NullCheck(L_11);
 		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_11, L_12, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:419>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:382>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_13 = __this->___m_DrawJoints;
 		int32_t L_14 = V_0;
 		NullCheck(L_13);
@@ -4227,7 +4251,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_U3C_ctorU3Eg__AssignJoin
 		L_18 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_17), NULL);
 		NullCheck(L_16);
 		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_16, L_18, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:421>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:384>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_19 = __this->___m_VelocityParents;
 		int32_t L_20 = V_0;
 		U3CU3Ec__DisplayClass9_0_t18EF379C550C89A38B4C15EF582D09D97B3710DD* L_21 = ___3_p;
@@ -4236,7 +4260,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_U3C_ctorU3Eg__AssignJoin
 		L_23 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3(L_22, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3_RuntimeMethod_var);
 		NullCheck(L_19);
 		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(L_20), (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_23);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:422>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:385>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_24 = __this->___m_VelocityParents;
 		int32_t L_25 = V_0;
 		NullCheck(L_24);
@@ -4248,7 +4272,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_U3C_ctorU3Eg__AssignJoin
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29 = ___1_jointDrivenTransform;
 		NullCheck(L_28);
 		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_28, L_29, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:424>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:387>
 		LineRendererU5BU5D_t5AA0E11EC99A18A11BCCCABDF088C854E50D394A* L_30 = __this->___m_Lines;
 		int32_t L_31 = V_0;
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_32 = __this->___m_DrawJoints;
@@ -4261,7 +4285,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_U3C_ctorU3Eg__AssignJoin
 		L_36 = GameObject_GetComponent_TisLineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D_mE703918F1B04E115CCE78A5FF891A12648B04D75(L_35, GameObject_GetComponent_TisLineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D_mE703918F1B04E115CCE78A5FF891A12648B04D75_RuntimeMethod_var);
 		NullCheck(L_30);
 		(L_30)->SetAt(static_cast<il2cpp_array_size_t>(L_31), (LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D*)L_36);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:425>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:388>
 		LineRendererU5BU5D_t5AA0E11EC99A18A11BCCCABDF088C854E50D394A* L_37 = __this->___m_Lines;
 		int32_t L_38 = V_0;
 		NullCheck(L_37);
@@ -4279,7 +4303,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_U3C_ctorU3Eg__AssignJoin
 		float L_46 = V_2;
 		NullCheck(L_40);
 		LineRenderer_set_startWidth_m3899722E198D636DB216CB61C980214707069F4A(L_40, L_46, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:426>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:389>
 		il2cpp_codegen_runtime_class_init_inline(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_47 = ((HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_StaticFields*)il2cpp_codegen_static_fields_for(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var))->___s_LinePointsReuse;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_48 = ((HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_StaticFields*)il2cpp_codegen_static_fields_for(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var))->___s_LinePointsReuse;
@@ -4294,7 +4318,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_U3C_ctorU3Eg__AssignJoin
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_52 = V_3;
 		NullCheck(L_47);
 		(L_47)->SetAt(static_cast<il2cpp_array_size_t>(0), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_52);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:427>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:390>
 		LineRendererU5BU5D_t5AA0E11EC99A18A11BCCCABDF088C854E50D394A* L_53 = __this->___m_Lines;
 		int32_t L_54 = V_0;
 		NullCheck(L_53);
@@ -4303,7 +4327,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_U3C_ctorU3Eg__AssignJoin
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_57 = ((HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_StaticFields*)il2cpp_codegen_static_fields_for(HandGameObjects_t0E397BC6AC8B28ACD270CF428DF64801DF1AD26F_il2cpp_TypeInfo_var))->___s_LinePointsReuse;
 		NullCheck(L_56);
 		LineRenderer_SetPositions_m7F7B7B54428437D0BF5256D4C82F92180B577B02(L_56, L_57, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:429>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:392>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_58 = __this->___m_DrawJoints;
 		int32_t L_59 = V_0;
 		NullCheck(L_58);
@@ -4318,7 +4342,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_U3C_ctorU3Eg__AssignJoin
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:430>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:393>
 		JointVisualizerU5BU5D_tBE9067F8E5E225E6A76C5027CD08047938471342* L_63 = __this->___m_JointVisualizers;
 		int32_t L_64 = V_0;
 		JointVisualizer_t00D07115B1B09275653E1814C92C73DF8EEABFD6* L_65 = V_1;
@@ -4329,7 +4353,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandGameObjects_U3C_ctorU3Eg__AssignJoin
 
 IL_00f1:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/HandVisualizer.cs:431>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/HandVisualizer.cs:394>
 		return;
 	}
 }
@@ -4349,7 +4373,7 @@ IL_00f1:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 77596
+// Method Definition Index: 77616
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JointVisualizer_NotifyTrackingState_m34E6715AEB12229493AAFC3EF5B82584610B30BC (JointVisualizer_t00D07115B1B09275653E1814C92C73DF8EEABFD6* __this, int32_t ___0_jointTrackingState, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -4358,10 +4382,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JointVisualizer_NotifyTrackingState_m34E
 	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* G_B5_0 = NULL;
 	Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* G_B5_1 = NULL;
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/JointVisualizer.cs:23>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/JointVisualizer.cs:23>
 		int32_t L_0 = ___0_jointTrackingState;
 		V_0 = (bool)((((int32_t)((int32_t)((int32_t)L_0&((int32_t)32)))) == ((int32_t)((int32_t)32)))? 1 : 0);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/JointVisualizer.cs:24>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/JointVisualizer.cs:24>
 		bool L_1 = __this->___m_HighFidelityJoint;
 		bool L_2 = V_0;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_2))))
@@ -4370,13 +4394,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JointVisualizer_NotifyTrackingState_m34E
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/JointVisualizer.cs:25>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/JointVisualizer.cs:25>
 		return;
 	}
 
 IL_0013:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/JointVisualizer.cs:27>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/JointVisualizer.cs:27>
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_3 = __this->___m_JointRenderer;
 		bool L_4 = V_0;
 		if (L_4)
@@ -4404,14 +4428,14 @@ IL_002a:
 	{
 		NullCheck(G_B5_1);
 		Renderer_set_material_m21E88977071E0A914D62F3D9CFF0193B3117C45A(G_B5_1, G_B5_0, NULL);
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/JointVisualizer.cs:29>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/JointVisualizer.cs:29>
 		bool L_7 = V_0;
 		__this->___m_HighFidelityJoint = L_7;
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/JointVisualizer.cs:30>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/JointVisualizer.cs:30>
 		return;
 	}
 }
-// Method Definition Index: 77597
+// Method Definition Index: 77617
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JointVisualizer_Start_mE04F86E1E635C532E26CD3A587B2147A5D86189D (JointVisualizer_t00D07115B1B09275653E1814C92C73DF8EEABFD6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4422,7 +4446,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JointVisualizer_Start_mE04F86E1E635C532E
 	}
 	Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* V_0 = NULL;
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/JointVisualizer.cs:34>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/JointVisualizer.cs:34>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___m_JointVisual;
 		NullCheck(L_0);
 		bool L_1;
@@ -4433,7 +4457,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JointVisualizer_Start_mE04F86E1E635C532E
 		}
 	}
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/JointVisualizer.cs:35>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/JointVisualizer.cs:35>
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_2 = V_0;
 		__this->___m_JointRenderer = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_JointRenderer), (void*)L_2);
@@ -4441,11 +4465,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JointVisualizer_Start_mE04F86E1E635C532E
 
 IL_0016:
 	{
-		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.5.1/HandVisualizer/Scripts/JointVisualizer.cs:36>
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/JointVisualizer.cs:36>
 		return;
 	}
 }
-// Method Definition Index: 77598
+// Method Definition Index: 77618
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JointVisualizer__ctor_m3ED88816E3666EA78BBB50A958BAFDC6237625D4 (JointVisualizer_t00D07115B1B09275653E1814C92C73DF8EEABFD6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4461,6 +4485,350 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JointVisualizer__ctor_m3ED88816E3666EA78
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 77619
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShaderContainer__ctor_m8CBFEB3864274258699B54B3629B1506E5CC91DE (ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2620038B8A71EF21A205CC921576171A3CA9B0F4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9B4FEEFA76B93D58B6E47CD9FF76F6E287D0D321);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:45>
+		__this->___useSRPShaderName = (bool)1;
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:46>
+		__this->___scriptableRenderPipelineShaderName = _stringLiteral9B4FEEFA76B93D58B6E47CD9FF76F6E287D0D321;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___scriptableRenderPipelineShaderName), (void*)_stringLiteral9B4FEEFA76B93D58B6E47CD9FF76F6E287D0D321);
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:48>
+		__this->___useBuiltinShaderName = (bool)1;
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:49>
+		__this->___builtInPipelineShaderName = _stringLiteral2620038B8A71EF21A205CC921576171A3CA9B0F4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___builtInPipelineShaderName), (void*)_stringLiteral2620038B8A71EF21A205CC921576171A3CA9B0F4);
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 77620
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MaterialPipelineHandler_AutoRefreshPipelineShaders_m9216145C21862E3E991665E678402FB8D4F44594 (MaterialPipelineHandler_tF073532612A2F16372CCBD89100FC0CCB47EDDDC* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:80>
+		bool L_0 = __this->___m_AutoRefreshShaders;
+		if (!L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:81>
+		MaterialPipelineHandler_SetPipelineShaders_mC44CCA2781AD703384B2C1BB07C5E924666852F5(__this, NULL);
+	}
+
+IL_000e:
+	{
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:82>
+		return;
+	}
+}
+// Method Definition Index: 77621
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MaterialPipelineHandler_SetPipelineShaders_mC44CCA2781AD703384B2C1BB07C5E924666852F5 (MaterialPipelineHandler_tF073532612A2F16372CCBD89100FC0CCB47EDDDC* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m2A316758173D3AF217BD415516279FBE46931C17_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m9FB5C17BEA2305D525582DF38C21BE94ABE5D326_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m04EA4373946F8720DED1255002B9C83EA0ABB7EB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsSettings_t01785CE5CB5C5105CB527619AF4D74BEF417EF1A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m653BD90E86DAC4C19518CC4C56AB6F3D6AB463E7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	Enumerator_t38A231BB01943CC3CC02D92799631EF4681643E9 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52* V_2 = NULL;
+	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* V_3 = NULL;
+	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* V_4 = NULL;
+	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* V_5 = NULL;
+	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* G_B8_0 = NULL;
+	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* G_B11_0 = NULL;
+	{
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:89>
+		List_1_t80AF51D5D3B90164EF2016D606DCD0ECAA4DC406* L_0 = __this->___m_ShaderContainers;
+		if (L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:90>
+		return;
+	}
+
+IL_0009:
+	{
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:92>
+		il2cpp_codegen_runtime_class_init_inline(GraphicsSettings_t01785CE5CB5C5105CB527619AF4D74BEF417EF1A_il2cpp_TypeInfo_var);
+		RenderPipelineAsset_t5F9BF815BF931E1314B184E7F9070FB649C7054E* L_1;
+		L_1 = GraphicsSettings_get_currentRenderPipeline_mEC94DC23DE4F901D6A629E2DE882982686AF75F1(NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		V_0 = L_2;
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:94>
+		List_1_t80AF51D5D3B90164EF2016D606DCD0ECAA4DC406* L_3 = __this->___m_ShaderContainers;
+		NullCheck(L_3);
+		Enumerator_t38A231BB01943CC3CC02D92799631EF4681643E9 L_4;
+		L_4 = List_1_GetEnumerator_m653BD90E86DAC4C19518CC4C56AB6F3D6AB463E7(L_3, List_1_GetEnumerator_m653BD90E86DAC4C19518CC4C56AB6F3D6AB463E7_RuntimeMethod_var);
+		V_1 = L_4;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_00f2:
+			{
+				Enumerator_Dispose_m2A316758173D3AF217BD415516279FBE46931C17((&V_1), Enumerator_Dispose_m2A316758173D3AF217BD415516279FBE46931C17_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			{
+				goto IL_00e4_1;
+			}
+
+IL_0026_1:
+			{
+				//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:94>
+				ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52* L_5;
+				L_5 = Enumerator_get_Current_m04EA4373946F8720DED1255002B9C83EA0ABB7EB_inline((&V_1), Enumerator_get_Current_m04EA4373946F8720DED1255002B9C83EA0ABB7EB_RuntimeMethod_var);
+				V_2 = L_5;
+				//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:96>
+				ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52* L_6 = V_2;
+				NullCheck(L_6);
+				Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_7 = L_6->___material;
+				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+				bool L_8;
+				L_8 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+				if (L_8)
+				{
+					goto IL_00e4_1;
+				}
+			}
+			{
+				//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:100>
+				ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52* L_9 = V_2;
+				NullCheck(L_9);
+				bool L_10 = L_9->___useBuiltinShaderName;
+				if (L_10)
+				{
+					goto IL_004f_1;
+				}
+			}
+			{
+				ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52* L_11 = V_2;
+				NullCheck(L_11);
+				Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_12 = L_11->___builtInPipelineShader;
+				G_B8_0 = L_12;
+				goto IL_005a_1;
+			}
+
+IL_004f_1:
+			{
+				ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52* L_13 = V_2;
+				NullCheck(L_13);
+				String_t* L_14 = L_13->___builtInPipelineShaderName;
+				Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_15;
+				L_15 = Shader_Find_m183AA54F78320212DDEC811592F98456898A41C5(L_14, NULL);
+				G_B8_0 = L_15;
+			}
+
+IL_005a_1:
+			{
+				V_3 = G_B8_0;
+				//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:101>
+				ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52* L_16 = V_2;
+				NullCheck(L_16);
+				bool L_17 = L_16->___useSRPShaderName;
+				if (L_17)
+				{
+					goto IL_006b_1;
+				}
+			}
+			{
+				ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52* L_18 = V_2;
+				NullCheck(L_18);
+				Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_19 = L_18->___scriptableRenderPipelineShader;
+				G_B11_0 = L_19;
+				goto IL_0076_1;
+			}
+
+IL_006b_1:
+			{
+				ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52* L_20 = V_2;
+				NullCheck(L_20);
+				String_t* L_21 = L_20->___scriptableRenderPipelineShaderName;
+				Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_22;
+				L_22 = Shader_Find_m183AA54F78320212DDEC811592F98456898A41C5(L_21, NULL);
+				G_B11_0 = L_22;
+			}
+
+IL_0076_1:
+			{
+				V_4 = G_B11_0;
+				//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:104>
+				ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52* L_23 = V_2;
+				NullCheck(L_23);
+				Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_24 = L_23->___material;
+				NullCheck(L_24);
+				Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_25;
+				L_25 = Material_get_shader_m8B0C11AE6F2AD7DE30AF52D3195EB716F7A71983(L_24, NULL);
+				V_5 = L_25;
+				//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:107>
+				bool L_26 = V_0;
+				if (!L_26)
+				{
+					goto IL_00b4_1;
+				}
+			}
+			{
+				Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_27 = V_3;
+				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+				bool L_28;
+				L_28 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_27, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+				if (!L_28)
+				{
+					goto IL_00b4_1;
+				}
+			}
+			{
+				Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_29 = V_5;
+				Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_30 = V_3;
+				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+				bool L_31;
+				L_31 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_29, L_30, NULL);
+				if (!L_31)
+				{
+					goto IL_00b4_1;
+				}
+			}
+			{
+				//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:109>
+				ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52* L_32 = V_2;
+				NullCheck(L_32);
+				Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_33 = L_32->___material;
+				Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_34 = V_3;
+				NullCheck(L_33);
+				Material_set_shader_mBD3A0D9AB14DE2F7CD5F2775E9AD58E15424C171(L_33, L_34, NULL);
+				//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:110>
+				ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52* L_35 = V_2;
+				NullCheck(L_35);
+				Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_36 = L_35->___material;
+				MaterialPipelineHandler_MarkMaterialModified_m2C07959C6249B610A28CF28C5F1DD029390AE050(L_36, NULL);
+				goto IL_00e4_1;
+			}
+
+IL_00b4_1:
+			{
+				//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:112>
+				bool L_37 = V_0;
+				if (L_37)
+				{
+					goto IL_00e4_1;
+				}
+			}
+			{
+				Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_38 = V_4;
+				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+				bool L_39;
+				L_39 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_38, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+				if (!L_39)
+				{
+					goto IL_00e4_1;
+				}
+			}
+			{
+				Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_40 = V_5;
+				Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_41 = V_4;
+				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+				bool L_42;
+				L_42 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_40, L_41, NULL);
+				if (!L_42)
+				{
+					goto IL_00e4_1;
+				}
+			}
+			{
+				//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:114>
+				ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52* L_43 = V_2;
+				NullCheck(L_43);
+				Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_44 = L_43->___material;
+				Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_45 = V_4;
+				NullCheck(L_44);
+				Material_set_shader_mBD3A0D9AB14DE2F7CD5F2775E9AD58E15424C171(L_44, L_45, NULL);
+				//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:115>
+				ShaderContainer_t2C32A4E847EC4338A8CF5EE168E48D0E24049F52* L_46 = V_2;
+				NullCheck(L_46);
+				Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_47 = L_46->___material;
+				MaterialPipelineHandler_MarkMaterialModified_m2C07959C6249B610A28CF28C5F1DD029390AE050(L_47, NULL);
+			}
+
+IL_00e4_1:
+			{
+				//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:94>
+				bool L_48;
+				L_48 = Enumerator_MoveNext_m9FB5C17BEA2305D525582DF38C21BE94ABE5D326((&V_1), Enumerator_MoveNext_m9FB5C17BEA2305D525582DF38C21BE94ABE5D326_RuntimeMethod_var);
+				if (L_48)
+				{
+					goto IL_0026_1;
+				}
+			}
+			{
+				goto IL_0100;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0100:
+	{
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:118>
+		return;
+	}
+}
+// Method Definition Index: 77622
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MaterialPipelineHandler_MarkMaterialModified_m2C07959C6249B610A28CF28C5F1DD029390AE050 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___0_material, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:125>
+		return;
+	}
+}
+// Method Definition Index: 77623
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MaterialPipelineHandler__ctor_m436A886D41E9A66AEA28509937762223269016EF (MaterialPipelineHandler_tF073532612A2F16372CCBD89100FC0CCB47EDDDC* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/hoinryu/Documents/dev_projects/RaisingBeggarsVRGame/Assets/Samples/XR Hands/1.6.1/HandVisualizer/Scripts/MaterialPipelineHandler.cs:67>
+		__this->___m_AutoRefreshShaders = (bool)1;
+		ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF(__this, NULL);
+		return;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -4480,38 +4848,46 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JointVisualizer__ctor_m3ED88816E3666EA78
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 72571
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// Method Definition Index: 71732
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 XRHandSubsystem_get_leftHand_mD3B931E5129348FEE34C3965A0CF8E62A0CFFB97_inline (XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@860f3562c229/Runtime/XRHandSubsystem.cs:71>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/XRHandSubsystem.cs:73>
 		XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 L_0 = __this->___m_LeftHand;
 		return L_0;
 	}
 }
-// Method Definition Index: 72573
+// Method Definition Index: 71734
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 XRHandSubsystem_get_rightHand_mDE333FDF35460E1A06BE051AF9C2144B7053ED3C_inline (XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@860f3562c229/Runtime/XRHandSubsystem.cs:94>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/XRHandSubsystem.cs:96>
 		XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 L_0 = __this->___m_RightHand;
 		return L_0;
 	}
 }
-// Method Definition Index: 72454
+// Method Definition Index: 71615
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool XRHand_get_isTracked_mDFC9D4FDE271E2DC90D5459B1A6EA304F97B7428_inline (XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@860f3562c229/Runtime/XRHand.cs:52>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/XRHand.cs:52>
 		bool L_0 = __this->___U3CisTrackedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 72452
+// Method Definition Index: 71613
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 XRHand_get_rootPose_m4F34E7F55AEBFD2FF7491364ADB00B27BF86F1A5_inline (XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@860f3562c229/Runtime/XRHand.cs:38>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/XRHand.cs:38>
 		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_0 = __this->___m_RootPose;
 		return L_0;
 	}
@@ -4560,7 +4936,7 @@ IL_0053:
 		return L_24;
 	}
 }
-// Method Definition Index: 77114
+// Method Definition Index: 77253
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool SubsystemWithProvider_get_running_m6BF31FC3BDA38C56C0F60FEA37767A4151B22C44_inline (SubsystemWithProvider_tC72E35EE2D413A4B0635B058154BABF265F31242* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4568,11 +4944,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool SubsystemWithProvider_get_ru
 		return L_0;
 	}
 }
-// Method Definition Index: 72453
+// Method Definition Index: 71614
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XRHand_get_handedness_m87563F81CAF693404C49463EAC73DA29D517F752_inline (XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@860f3562c229/Runtime/XRHand.cs:45>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/XRHand.cs:45>
 		int32_t L_0 = __this->___m_Handedness;
 		return L_0;
 	}
@@ -4623,67 +4999,67 @@ IL_0009:
 		return L_1;
 	}
 }
-// Method Definition Index: 72625
+// Method Definition Index: 71789
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void XRHandTrackingEvents_set_updateType_m7AD23779101D561EAEC21BA41FD45AF39679DFA7_inline (XRHandTrackingEvents_tF1DA1153E15422968E62D8B84B99D5C00018574C* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@860f3562c229/Runtime/XRHandTrackingEvents.cs:104>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/XRHandTrackingEvents.cs:104>
 		int32_t L_0 = ___0_value;
 		__this->___m_UpdateType = L_0;
 		return;
 	}
 }
-// Method Definition Index: 72623
+// Method Definition Index: 71787
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void XRHandTrackingEvents_set_handedness_m2CBB79E143E81785877F131703B624082DDA8622_inline (XRHandTrackingEvents_tF1DA1153E15422968E62D8B84B99D5C00018574C* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@860f3562c229/Runtime/XRHandTrackingEvents.cs:93>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/XRHandTrackingEvents.cs:93>
 		int32_t L_0 = ___0_value;
 		__this->___m_Handedness = L_0;
 		return;
 	}
 }
-// Method Definition Index: 72507
+// Method Definition Index: 71668
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* XRHandMeshController_get_handMeshRenderer_m0C5AC2BC5788FB733B7F0B912DE86CB093136B18_inline (XRHandMeshController_t670ADAE830016D758ED74153F39334564CD3D687* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@860f3562c229/Runtime/XRHandMeshController.cs:70>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/XRHandMeshController.cs:70>
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_0 = __this->___m_HandMeshRenderer;
 		return L_0;
 	}
 }
-// Method Definition Index: 72525
+// Method Definition Index: 71686
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t6374200280C9D4D9E197123BCF3B71CB8726B89F* XRHandSkeletonDriver_get_jointTransformReferences_m11FAA540585CB0A29A3A1EFE54CAD133545736F0_inline (XRHandSkeletonDriver_t549956F17FD2C98A8FC1C9DF04ED4218610321A9* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@860f3562c229/Runtime/XRHandSkeletonDriver.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/XRHandSkeletonDriver.cs:117>
 		List_1_t6374200280C9D4D9E197123BCF3B71CB8726B89F* L_0 = __this->___m_JointTransformReferences;
 		return L_0;
 	}
 }
-// Method Definition Index: 72521
+// Method Definition Index: 71682
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* JointToTransformReference_get_jointTransform_m81EAC20A1665D7F6AA85653F77AFFD9E4980AC40_inline (JointToTransformReference_t5DC7424A5741B60B0DFA15056D7F7EBF38721202* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@860f3562c229/Runtime/XRHandSkeletonDriver.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/XRHandSkeletonDriver.cs:40>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___m_JointTransform;
 		return L_0;
 	}
 }
-// Method Definition Index: 72519
+// Method Definition Index: 71680
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t JointToTransformReference_get_xrHandJointID_m07248164E6B8E31BA297F25AFEBA64AF30F79BF4_inline (JointToTransformReference_t5DC7424A5741B60B0DFA15056D7F7EBF38721202* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@860f3562c229/Runtime/XRHandSkeletonDriver.cs:31>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/XRHandSkeletonDriver.cs:31>
 		int32_t L_0 = __this->___m_XRHandJointID;
 		return L_0;
 	}
 }
-// Method Definition Index: 72488
+// Method Definition Index: 71649
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XRHandJoint_get_trackingState_mD1202D64E796D92C38FA87BD02DFBD58AF5E4696_inline (XRHandJoint_tDB955774276659AFD2294D516FC8A76A51E94783* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@860f3562c229/Runtime/XRHandJoint.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/XRHandJoint.cs:40>
 		int32_t L_0 = __this->___m_TrackingState;
 		return L_0;
 	}
@@ -4779,6 +5155,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m209A9B2
 {
 	{
 		int32_t L_0 = __this->____size;
+		return L_0;
+	}
+}
+// Method Definition Index: 9037
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->____current;
 		return L_0;
 	}
 }

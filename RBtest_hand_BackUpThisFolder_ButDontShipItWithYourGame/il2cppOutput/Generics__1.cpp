@@ -3845,6 +3845,11 @@ struct AlignOfHelper_1_tE88C9B7AAA013F8306AC4EA24A81855110A32D41
 	uint8_t ___dummy;
 	UnsafeQueueBlockHeader_t93BDD5BE3C4A0486BE2A07B68862CFF1F5870D9C ___data;
 };
+struct AlignOfHelper_1_t011E0A6A1CE5BB662014F6F7D560D62F3044E227 
+{
+	uint8_t ___dummy;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___data;
+};
 struct AlignOfHelper_1_t7C5799F62D922C045CE8AD7F4642E6F6C37B8CE3 
 {
 	uint8_t ___dummy;
@@ -28056,6 +28061,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AffordanceThemeData_1__ctor_m98200331546
 		return;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

@@ -30,7 +30,6 @@ extern void HandVisualizer_OnEnable_m153D5811DA0274C7203D5C031F3B2CAA571DAF43 (v
 extern void HandVisualizer_OnDisable_m6AE8205BE1A2E445464458C682452687FDEB63AC (void);
 extern void HandVisualizer_OnDestroy_m09A391B0CC23056ACBF04B9FD1D467372BC5521E (void);
 extern void HandVisualizer_Update_mCCBC611653726A607817B3938FF6481F40CA7452 (void);
-extern void HandVisualizer_GetProviderLayoutMesh_m2F0B33FB26CD6C70B331A2E1EF7F105651EF3004 (void);
 extern void HandVisualizer_SubscribeHandSubsystem_mC8DF8C9AD2E5B23D5593833681DADD53C31B28FF (void);
 extern void HandVisualizer_UnsubscribeHandSubsystem_m4FB54A65D825A9218998D66F0099C171D4A2DBB9 (void);
 extern void HandVisualizer_UpdateRenderingVisibility_mFBC70B71322E6C97E3882E9DCE6E1F616CDC9BD1 (void);
@@ -51,7 +50,12 @@ extern void HandGameObjects_U3C_ctorU3Eg__AssignJointU7C9_0_m7245539D5FC3F7CEBC5
 extern void JointVisualizer_NotifyTrackingState_m34E6715AEB12229493AAFC3EF5B82584610B30BC (void);
 extern void JointVisualizer_Start_mE04F86E1E635C532E26CD3A587B2147A5D86189D (void);
 extern void JointVisualizer__ctor_m3ED88816E3666EA78BBB50A958BAFDC6237625D4 (void);
-static Il2CppMethodPointer s_methodPointers[45] = 
+extern void ShaderContainer__ctor_m8CBFEB3864274258699B54B3629B1506E5CC91DE (void);
+extern void MaterialPipelineHandler_AutoRefreshPipelineShaders_m9216145C21862E3E991665E678402FB8D4F44594 (void);
+extern void MaterialPipelineHandler_SetPipelineShaders_mC44CCA2781AD703384B2C1BB07C5E924666852F5 (void);
+extern void MaterialPipelineHandler_MarkMaterialModified_m2C07959C6249B610A28CF28C5F1DD029390AE050 (void);
+extern void MaterialPipelineHandler__ctor_m436A886D41E9A66AEA28509937762223269016EF (void);
+static Il2CppMethodPointer s_methodPointers[49] = 
 {
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m4B3248C322A66BDBA3CD5BFB1772120127EC39A7,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m60A4D90625F91B9B8D47C83D0385C367755F1886,
@@ -76,7 +80,6 @@ static Il2CppMethodPointer s_methodPointers[45] =
 	HandVisualizer_OnDisable_m6AE8205BE1A2E445464458C682452687FDEB63AC,
 	HandVisualizer_OnDestroy_m09A391B0CC23056ACBF04B9FD1D467372BC5521E,
 	HandVisualizer_Update_mCCBC611653726A607817B3938FF6481F40CA7452,
-	HandVisualizer_GetProviderLayoutMesh_m2F0B33FB26CD6C70B331A2E1EF7F105651EF3004,
 	HandVisualizer_SubscribeHandSubsystem_mC8DF8C9AD2E5B23D5593833681DADD53C31B28FF,
 	HandVisualizer_UnsubscribeHandSubsystem_m4FB54A65D825A9218998D66F0099C171D4A2DBB9,
 	HandVisualizer_UpdateRenderingVisibility_mFBC70B71322E6C97E3882E9DCE6E1F616CDC9BD1,
@@ -98,58 +101,67 @@ static Il2CppMethodPointer s_methodPointers[45] =
 	JointVisualizer_NotifyTrackingState_m34E6715AEB12229493AAFC3EF5B82584610B30BC,
 	JointVisualizer_Start_mE04F86E1E635C532E26CD3A587B2147A5D86189D,
 	JointVisualizer__ctor_m3ED88816E3666EA78BBB50A958BAFDC6237625D4,
+	ShaderContainer__ctor_m8CBFEB3864274258699B54B3629B1506E5CC91DE,
+	MaterialPipelineHandler_AutoRefreshPipelineShaders_m9216145C21862E3E991665E678402FB8D4F44594,
+	MaterialPipelineHandler_SetPipelineShaders_mC44CCA2781AD703384B2C1BB07C5E924666852F5,
+	MaterialPipelineHandler_MarkMaterialModified_m2C07959C6249B610A28CF28C5F1DD029390AE050,
+	MaterialPipelineHandler__ctor_m436A886D41E9A66AEA28509937762223269016EF,
 };
-static const int32_t s_InvokerIndices[45] = 
+static const int32_t s_InvokerIndices[49] = 
 {
-	23999,
-	13951,
-	13694,
-	13694,
-	10554,
-	2418,
+	24044,
+	13970,
+	13713,
+	13713,
+	10566,
+	2419,
 	1717,
-	2418,
-	13951,
-	13951,
-	13951,
-	23959,
-	13567,
-	10429,
-	13567,
-	10429,
-	13694,
-	10554,
-	13951,
-	13951,
-	13951,
-	13951,
-	13951,
-	13694,
-	13951,
-	13951,
-	5398,
-	10807,
-	10807,
-	2418,
-	13951,
-	23959,
+	2419,
+	13970,
+	13970,
+	13970,
+	24004,
+	13586,
+	10441,
+	13586,
+	10441,
+	13713,
+	10566,
+	13970,
+	13970,
+	13970,
+	13970,
+	13970,
+	13970,
+	13970,
+	5404,
+	10819,
+	10819,
+	2419,
+	13970,
+	24004,
 	436,
-	13951,
-	10429,
-	10429,
-	10554,
+	13970,
+	10441,
+	10441,
+	10566,
 	1830,
 	416,
 	-1,
-	23959,
+	24004,
 	1651,
-	10554,
-	13951,
-	13951,
+	10566,
+	13970,
+	13970,
+	13970,
+	13970,
+	13970,
+	22801,
+	13970,
 };
 static const Il2CppTokenRangePair s_rgctxIndices[1] = 
 {
-	{ 0x06000028, { 0, 4 } },
+	{ 0x06000027, { 0, 4 } },
 };
 extern const uint32_t g_rgctx_Component_TryGetComponent_TisTRenderer_t552AD44D036D069617428D5DB34E24EC0F724A11_m55998C8B0D3CBE25C42B7602C7618587F02A5A70;
 extern const uint32_t g_rgctx_TRendererU26_t3D211204A8D1BAB54351E88E2A76C08DC25E9DD7;
@@ -166,7 +178,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_XR_Hands_Samples_VisualizerSam
 const Il2CppCodeGenModule g_Unity_XR_Hands_Samples_VisualizerSample_CodeGenModule = 
 {
 	"Unity.XR.Hands.Samples.VisualizerSample.dll",
-	45,
+	49,
 	s_methodPointers,
 	0,
 	NULL,
