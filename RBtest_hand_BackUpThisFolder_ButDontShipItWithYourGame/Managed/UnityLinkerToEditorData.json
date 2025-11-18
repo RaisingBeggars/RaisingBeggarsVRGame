@@ -11,7 +11,7 @@
           {
             "name": "AnimationClip",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -19,7 +19,7 @@
           {
             "name": "Animator",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -27,7 +27,7 @@
           {
             "name": "AnimatorController",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -35,6 +35,14 @@
           {
             "name": "AnimatorOverrideController",
             "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Avatar",
+            "scenes": [
+              "Assets/Scenes/StreetScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -58,23 +66,23 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "AudioClip",
-            "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "AudioListener",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -87,17 +95,13 @@
           },
           {
             "name": "AudioResource",
-            "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
-            ],
-            "dependencyType": 0,
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
             "name": "AudioSource",
-            "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
@@ -127,7 +131,8 @@
           {
             "name": "Camera",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -146,7 +151,10 @@
           },
           {
             "name": "Cubemap",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -165,9 +173,18 @@
           {
             "name": "EditorExtension",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "FlareLayer",
+            "scenes": [
+              "Assets/Scenes/StreetScene.unity"
+            ],
+            "dependencyType": 0,
             "icon": null
           },
           {
@@ -179,7 +196,8 @@
           {
             "name": "GameObject",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -211,7 +229,8 @@
           {
             "name": "LevelGameManager",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -219,7 +238,8 @@
           {
             "name": "Light",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -232,29 +252,32 @@
           },
           {
             "name": "LightProbes",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/StreetScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "LightingSettings",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/StreetScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "LightmapSettings",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "LineRenderer",
-            "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
@@ -267,7 +290,8 @@
           {
             "name": "Material",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -275,7 +299,8 @@
           {
             "name": "Mesh",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -283,7 +308,8 @@
           {
             "name": "MeshFilter",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -291,7 +317,8 @@
           {
             "name": "MeshRenderer",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -299,7 +326,8 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -313,7 +341,8 @@
           {
             "name": "MonoScript",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -321,7 +350,8 @@
           {
             "name": "NamedObject",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -359,7 +389,8 @@
           {
             "name": "RectTransform",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -373,7 +404,8 @@
           {
             "name": "RenderSettings",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -381,7 +413,7 @@
           {
             "name": "RenderTexture",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -407,7 +439,8 @@
           {
             "name": "Shader",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -421,7 +454,7 @@
           {
             "name": "SkinnedMeshRenderer",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -434,16 +467,14 @@
           },
           {
             "name": "SortingGroup",
-            "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "Sprite",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -480,10 +511,8 @@
           },
           {
             "name": "Texture2D",
-            "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
-            ],
-            "dependencyType": 0,
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
@@ -629,6 +658,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.terrain"
+          },
+          {
+            "name": "Required by TerrainPhysics Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.terrainphysics"
           },
           {
             "name": "Required by TextCoreFontEngine Module",
@@ -916,24 +951,21 @@
           {
             "name": "BoxCollider",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "CapsuleCollider",
-            "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "CharacterController",
-            "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
@@ -946,7 +978,8 @@
           {
             "name": "MeshCollider",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -959,19 +992,21 @@
           },
           {
             "name": "Rigidbody",
-            "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "SphereCollider",
-            "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
+          },
+          {
+            "name": "Required by TerrainPhysics Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.terrainphysics"
           },
           {
             "name": "Required by UIElements Module",
@@ -1156,6 +1191,12 @@
             "icon": "package/com.unity.modules.terrain"
           },
           {
+            "name": "Required by TerrainPhysics Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.terrainphysics"
+          },
+          {
             "name": "Required by TextCoreFontEngine Module",
             "scenes": [],
             "dependencyType": 2,
@@ -1280,13 +1321,39 @@
         "dependencies": [
           {
             "name": "Terrain",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "TerrainData",
+            "scenes": [
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Required by TerrainPhysics Module",
             "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.terrainphysics"
+          }
+        ]
+      },
+      {
+        "name": "TerrainPhysics",
+        "dependencies": [
+          {
+            "name": "TerrainCollider",
+            "scenes": [
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           }
@@ -1332,7 +1399,7 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1375,7 +1442,8 @@
           {
             "name": "Canvas",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1389,7 +1457,7 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
-              "Assets/Samples/XR Interaction Toolkit/3.2.2/Hands Interaction Demo/HandsDemoScene.unity"
+              "Assets/Scenes/RiverScene.unity"
             ],
             "dependencyType": 0,
             "icon": null

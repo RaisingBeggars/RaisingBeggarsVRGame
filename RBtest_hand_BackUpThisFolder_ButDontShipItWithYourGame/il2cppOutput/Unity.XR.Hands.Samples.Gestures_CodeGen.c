@@ -9,6 +9,13 @@
 
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mC86344DC7D385AF01488202D82E59F08686B00A5 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mC2ECA1C0E76E14AF821F99579CB544E853FCC5B2 (void);
+extern void HandShapeCompletenessCalculator_TryGetFingerShapeValue_m276F51DB96E964CA475DACB92C2B6F7FFB5E5E56 (void);
+extern void HandShapeCompletenessCalculator_IsWithinToleranceRange_m86B71495CCED7A09BB6F5444C46D26F104B67E2C (void);
+extern void HandShapeCompletenessCalculator_CalculateScoreWithExternalBuffer_mEF55FA0F461DFB7DF6428E56965E7D9A986C17A8 (void);
+extern void HandShapeCompletenessCalculator_CalculateScoreWithInternalBuffer_m7648E1745482E7EB0121C19F14C51374122C632D (void);
+extern void HandShapeCompletenessCalculator_TryCalculateFingerCompletenessScore_m185AED1A5BE438B597F8611D2EB3FC53017F3C8C (void);
+extern void HandShapeCompletenessCalculator_TryCalculateHandShapeCompletenessScore_mF1D6CBA3DD262710523A91FD0EB036135E81CB57 (void);
+extern void HandShapeCompletenessCalculator__ctor_m8D1054C52851D103A9171A76A7466AEB59EC1614 (void);
 extern void StaticHandGesture_get_handTrackingEvents_m209F169D65D086635FBEA04AB30F160C409C0848 (void);
 extern void StaticHandGesture_set_handTrackingEvents_m1350924C278B0DDE568FE3FB70A12DA0ED4F9F29 (void);
 extern void StaticHandGesture_get_handShapeOrPose_m556B57D8836B1530C312E3BC6F6B081B43BB9614 (void);
@@ -17,6 +24,8 @@ extern void StaticHandGesture_get_targetTransform_m11F8650D9989A0B6AB2B80DF473A8
 extern void StaticHandGesture_set_targetTransform_m3F835367CD1E44562F765FBF8C4976AC7F1D5F81 (void);
 extern void StaticHandGesture_get_background_m9E58CB6E869D3044DC39B181C7B2F8C5C04B2207 (void);
 extern void StaticHandGesture_set_background_m549E750F0F31CE917B6905335BBF098DABE2752C (void);
+extern void StaticHandGesture_get_highlight_m15C134FDDF1601414964BA646AEF693CD9342B66 (void);
+extern void StaticHandGesture_set_highlight_m3B609909B254C66AD53103FA6FAAF89EB8D44BB3 (void);
 extern void StaticHandGesture_get_gesturePerformed_m6334076AC7D653D36B1F886AD4E170215180A339 (void);
 extern void StaticHandGesture_set_gesturePerformed_mB1126215080A3ABC5D75BA86BB7AF6BF2FBBEDB0 (void);
 extern void StaticHandGesture_get_gestureEnded_m57C3BF32A8D90446ECDA529A2666CF52B54EA8E5 (void);
@@ -25,17 +34,19 @@ extern void StaticHandGesture_get_minimumHoldTime_m66442147469BADF5BB7B19B9F611F
 extern void StaticHandGesture_set_minimumHoldTime_m8B46FF7D2A4C0C8805A00C68FC899853D4C2D7DF (void);
 extern void StaticHandGesture_get_gestureDetectionInterval_m8918C3A49BD053DF21F6A8465B16AB9D1DAB2003 (void);
 extern void StaticHandGesture_set_gestureDetectionInterval_m2E27545D7B23AEEE61CBD5E8EF53EE371CCE65D7 (void);
+extern void StaticHandGesture_set_highlightVisible_m05BCC11CAEDBBDE43B731233DDC98C12B369D4B3 (void);
 extern void StaticHandGesture_Awake_mEA932B8390025319119376B32F926AC99A1B6AD6 (void);
 extern void StaticHandGesture_OnEnable_mD51E2D19AB2FB59D532A1D26E94381D8CF27209A (void);
 extern void StaticHandGesture_OnDisable_mFB895F00ED9CDB472BB23742114D50C7D7C52E16 (void);
 extern void StaticHandGesture_OnJointsUpdated_m02388614A3A7399DA759A9D21BEECD4011D7C15D (void);
 extern void StaticHandGesture__ctor_m203114D6937E7EBF41A3F20609C03DE0F6D82CA2 (void);
 extern void XRAllFingerShapesDebugUI_get_xrFingerShapeDebugGraphs_m044253F9F92A4920B49D406A61A722330B3CC8CF (void);
+extern void XRAllFingerShapesDebugUI_get_handedness_mE423D30670B0FA6B3B5346819EE3E49793F27779 (void);
 extern void XRAllFingerShapesDebugUI_Start_mF74E4D6F3044751BF76BAC14B4D0D9D32E0AABCD (void);
 extern void XRAllFingerShapesDebugUI_UpdateFingerNames_m453819DEE8E030EECD6910202D0F065F8622E3F3 (void);
 extern void XRAllFingerShapesDebugUI_Update_m213E2E662218F00C9D94B9EA27848CDA29265677 (void);
 extern void XRAllFingerShapesDebugUI_UpdateFingerShapeUIs_m9C72951D783480FE3DD772611C197C4840A6B1C2 (void);
-extern void XRAllFingerShapesDebugUI_TryGetSubsystem_m1D06D89454E0044DF7E2E0F0A6F1EDE71FFB92D3 (void);
+extern void XRAllFingerShapesDebugUI_TryGetSubsystem_m5783BA0F4EB6F8A66FDFC4279D8EA706A664526C (void);
 extern void XRAllFingerShapesDebugUI__ctor_m5F9CC5637F2C51EE863D1C07E89312DEE1DF4D8B (void);
 extern void XRAllFingerShapesDebugUI__cctor_mA2375C809426031A80855EE438468163E23E1644 (void);
 extern void XRFingerShapeDebugBar_get_barContainer_m0986E71B1FA1925BB79948F20755FF95DE3712C1 (void);
@@ -54,12 +65,13 @@ extern void XRFingerShapeDebugBar_get_lowerRangeImage_m747FF45EDC0A6D36D9EDD0713
 extern void XRFingerShapeDebugBar_set_lowerRangeImage_m32793439A441B98D5D89F7640FF4B23D034B52E4 (void);
 extern void XRFingerShapeDebugBar_get_rangeStatusText_m24D68D384F4C912E06400306333FD82BB6A1ACBA (void);
 extern void XRFingerShapeDebugBar_set_rangeStatusText_m1CD982BBDD8EF8DF82D80F67AE8D8B395A6D2481 (void);
-extern void XRFingerShapeDebugBar_get_checkmarkImage_m09B07658F4CD45483F92947CA48F13605DCF3D36 (void);
-extern void XRFingerShapeDebugBar_set_checkmarkImage_m0D1FD14F37E2902C32CFD38D946EB911C0E3E526 (void);
+extern void XRFingerShapeDebugBar_get_checkMarkImage_m3C8384319B3B7FEE39A8EF54697A8A2ECFE398BD (void);
+extern void XRFingerShapeDebugBar_set_checkMarkImage_m7B92E2A24B85BC82D3E717F6582B106ACCA34BE1 (void);
 extern void XRFingerShapeDebugBar_get_crossImage_mF87BF8559EDE7467AD46177E9F04D6ABE3370FDE (void);
 extern void XRFingerShapeDebugBar_set_crossImage_mFC7BF44A374C64C5E96911AA3A440D5F5C9526C4 (void);
 extern void XRFingerShapeDebugBar_set_fingerShapeDetected_m1DB9F09B74130AE7998597E2C965DEBA14FFD900 (void);
 extern void XRFingerShapeDebugBar_Awake_m158D688F9E1A47B4826F5CB3D62914C1D131D5C5 (void);
+extern void XRFingerShapeDebugBar_Start_m3B3D197AB3FF7A94EB294DDE8502358903CA9637 (void);
 extern void XRFingerShapeDebugBar_SetValue_mBD10ED2120D4F06FD5791D676FAC34AF366B5515 (void);
 extern void XRFingerShapeDebugBar_HideValue_m1AC502AB540914689380C9E331EF15A7331E2308 (void);
 extern void XRFingerShapeDebugBar_SetTargetAndTolerances_mEB914080709BCD23A15EBED76EBAEF86BB5743CA (void);
@@ -76,17 +88,26 @@ extern void XRHandShapeDebugUI_set_handShapeOrPose_mFA95C90AEA7926FCD343EB677435
 extern void XRHandShapeDebugUI_Awake_m9F756D268F10BF2C431F4465125EE937E7178A22 (void);
 extern void XRHandShapeDebugUI_Update_m168D6A7E36951F6E80DF15D8B71A1DBA872044BB (void);
 extern void XRHandShapeDebugUI_ClearDetectedHandShape_m72D3B713C273138B5E5031DD12843841073F5A0E (void);
+extern void XRHandShapeDebugUI_TryGetSubsystem_mD0AB1C8925E3A4E7182B27E5D0A74EE075525D49 (void);
 extern void XRHandShapeDebugUI__ctor_mA7E9D82E9D67994FEFC532680667F523805ABE00 (void);
+extern void XRHandShapeDebugUI__cctor_m5B5377F0D70294006280EA3586AD07E4A38F7F0F (void);
 extern void XRSelectedHandShapeDebugUI_get_handShapeNameLabel_m174B099523A76841C5D8EA497F09DC3FD405A36E (void);
 extern void XRSelectedHandShapeDebugUI_set_handShapeNameLabel_m14B9527621B5D9A4FF040A35485A607BD8499F29 (void);
 extern void XRSelectedHandShapeDebugUI_Awake_m4B5CEA546F6FA168C4AD512413BD09BB0495F35D (void);
-extern void XRSelectedHandShapeDebugUI_UpdateSelectedHandshapeTextUI_m2EEA4E89CF21EF3BD15D11BA923996A71A6A7F0D (void);
+extern void XRSelectedHandShapeDebugUI_UpdateSelectedHandShapeTextUI_m9630A18C1AD07E845914BBE6C58CEF80236DBCBE (void);
 extern void XRSelectedHandShapeDebugUI_ResetUI_m02BBA55017DE71FE14CD31920DF3AF286D1CE311 (void);
 extern void XRSelectedHandShapeDebugUI__ctor_mA6A6AB3A7CCC1EB1B569235435FD4AB10BF5187E (void);
-static Il2CppMethodPointer s_methodPointers[76] = 
+static Il2CppMethodPointer s_methodPointers[90] = 
 {
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mC86344DC7D385AF01488202D82E59F08686B00A5,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mC2ECA1C0E76E14AF821F99579CB544E853FCC5B2,
+	HandShapeCompletenessCalculator_TryGetFingerShapeValue_m276F51DB96E964CA475DACB92C2B6F7FFB5E5E56,
+	HandShapeCompletenessCalculator_IsWithinToleranceRange_m86B71495CCED7A09BB6F5444C46D26F104B67E2C,
+	HandShapeCompletenessCalculator_CalculateScoreWithExternalBuffer_mEF55FA0F461DFB7DF6428E56965E7D9A986C17A8,
+	HandShapeCompletenessCalculator_CalculateScoreWithInternalBuffer_m7648E1745482E7EB0121C19F14C51374122C632D,
+	HandShapeCompletenessCalculator_TryCalculateFingerCompletenessScore_m185AED1A5BE438B597F8611D2EB3FC53017F3C8C,
+	HandShapeCompletenessCalculator_TryCalculateHandShapeCompletenessScore_mF1D6CBA3DD262710523A91FD0EB036135E81CB57,
+	HandShapeCompletenessCalculator__ctor_m8D1054C52851D103A9171A76A7466AEB59EC1614,
 	StaticHandGesture_get_handTrackingEvents_m209F169D65D086635FBEA04AB30F160C409C0848,
 	StaticHandGesture_set_handTrackingEvents_m1350924C278B0DDE568FE3FB70A12DA0ED4F9F29,
 	StaticHandGesture_get_handShapeOrPose_m556B57D8836B1530C312E3BC6F6B081B43BB9614,
@@ -95,6 +116,8 @@ static Il2CppMethodPointer s_methodPointers[76] =
 	StaticHandGesture_set_targetTransform_m3F835367CD1E44562F765FBF8C4976AC7F1D5F81,
 	StaticHandGesture_get_background_m9E58CB6E869D3044DC39B181C7B2F8C5C04B2207,
 	StaticHandGesture_set_background_m549E750F0F31CE917B6905335BBF098DABE2752C,
+	StaticHandGesture_get_highlight_m15C134FDDF1601414964BA646AEF693CD9342B66,
+	StaticHandGesture_set_highlight_m3B609909B254C66AD53103FA6FAAF89EB8D44BB3,
 	StaticHandGesture_get_gesturePerformed_m6334076AC7D653D36B1F886AD4E170215180A339,
 	StaticHandGesture_set_gesturePerformed_mB1126215080A3ABC5D75BA86BB7AF6BF2FBBEDB0,
 	StaticHandGesture_get_gestureEnded_m57C3BF32A8D90446ECDA529A2666CF52B54EA8E5,
@@ -103,17 +126,19 @@ static Il2CppMethodPointer s_methodPointers[76] =
 	StaticHandGesture_set_minimumHoldTime_m8B46FF7D2A4C0C8805A00C68FC899853D4C2D7DF,
 	StaticHandGesture_get_gestureDetectionInterval_m8918C3A49BD053DF21F6A8465B16AB9D1DAB2003,
 	StaticHandGesture_set_gestureDetectionInterval_m2E27545D7B23AEEE61CBD5E8EF53EE371CCE65D7,
+	StaticHandGesture_set_highlightVisible_m05BCC11CAEDBBDE43B731233DDC98C12B369D4B3,
 	StaticHandGesture_Awake_mEA932B8390025319119376B32F926AC99A1B6AD6,
 	StaticHandGesture_OnEnable_mD51E2D19AB2FB59D532A1D26E94381D8CF27209A,
 	StaticHandGesture_OnDisable_mFB895F00ED9CDB472BB23742114D50C7D7C52E16,
 	StaticHandGesture_OnJointsUpdated_m02388614A3A7399DA759A9D21BEECD4011D7C15D,
 	StaticHandGesture__ctor_m203114D6937E7EBF41A3F20609C03DE0F6D82CA2,
 	XRAllFingerShapesDebugUI_get_xrFingerShapeDebugGraphs_m044253F9F92A4920B49D406A61A722330B3CC8CF,
+	XRAllFingerShapesDebugUI_get_handedness_mE423D30670B0FA6B3B5346819EE3E49793F27779,
 	XRAllFingerShapesDebugUI_Start_mF74E4D6F3044751BF76BAC14B4D0D9D32E0AABCD,
 	XRAllFingerShapesDebugUI_UpdateFingerNames_m453819DEE8E030EECD6910202D0F065F8622E3F3,
 	XRAllFingerShapesDebugUI_Update_m213E2E662218F00C9D94B9EA27848CDA29265677,
 	XRAllFingerShapesDebugUI_UpdateFingerShapeUIs_m9C72951D783480FE3DD772611C197C4840A6B1C2,
-	XRAllFingerShapesDebugUI_TryGetSubsystem_m1D06D89454E0044DF7E2E0F0A6F1EDE71FFB92D3,
+	XRAllFingerShapesDebugUI_TryGetSubsystem_m5783BA0F4EB6F8A66FDFC4279D8EA706A664526C,
 	XRAllFingerShapesDebugUI__ctor_m5F9CC5637F2C51EE863D1C07E89312DEE1DF4D8B,
 	XRAllFingerShapesDebugUI__cctor_mA2375C809426031A80855EE438468163E23E1644,
 	XRFingerShapeDebugBar_get_barContainer_m0986E71B1FA1925BB79948F20755FF95DE3712C1,
@@ -132,12 +157,13 @@ static Il2CppMethodPointer s_methodPointers[76] =
 	XRFingerShapeDebugBar_set_lowerRangeImage_m32793439A441B98D5D89F7640FF4B23D034B52E4,
 	XRFingerShapeDebugBar_get_rangeStatusText_m24D68D384F4C912E06400306333FD82BB6A1ACBA,
 	XRFingerShapeDebugBar_set_rangeStatusText_m1CD982BBDD8EF8DF82D80F67AE8D8B395A6D2481,
-	XRFingerShapeDebugBar_get_checkmarkImage_m09B07658F4CD45483F92947CA48F13605DCF3D36,
-	XRFingerShapeDebugBar_set_checkmarkImage_m0D1FD14F37E2902C32CFD38D946EB911C0E3E526,
+	XRFingerShapeDebugBar_get_checkMarkImage_m3C8384319B3B7FEE39A8EF54697A8A2ECFE398BD,
+	XRFingerShapeDebugBar_set_checkMarkImage_m7B92E2A24B85BC82D3E717F6582B106ACCA34BE1,
 	XRFingerShapeDebugBar_get_crossImage_mF87BF8559EDE7467AD46177E9F04D6ABE3370FDE,
 	XRFingerShapeDebugBar_set_crossImage_mFC7BF44A374C64C5E96911AA3A440D5F5C9526C4,
 	XRFingerShapeDebugBar_set_fingerShapeDetected_m1DB9F09B74130AE7998597E2C965DEBA14FFD900,
 	XRFingerShapeDebugBar_Awake_m158D688F9E1A47B4826F5CB3D62914C1D131D5C5,
+	XRFingerShapeDebugBar_Start_m3B3D197AB3FF7A94EB294DDE8502358903CA9637,
 	XRFingerShapeDebugBar_SetValue_mBD10ED2120D4F06FD5791D676FAC34AF366B5515,
 	XRFingerShapeDebugBar_HideValue_m1AC502AB540914689380C9E331EF15A7331E2308,
 	XRFingerShapeDebugBar_SetTargetAndTolerances_mEB914080709BCD23A15EBED76EBAEF86BB5743CA,
@@ -154,98 +180,114 @@ static Il2CppMethodPointer s_methodPointers[76] =
 	XRHandShapeDebugUI_Awake_m9F756D268F10BF2C431F4465125EE937E7178A22,
 	XRHandShapeDebugUI_Update_m168D6A7E36951F6E80DF15D8B71A1DBA872044BB,
 	XRHandShapeDebugUI_ClearDetectedHandShape_m72D3B713C273138B5E5031DD12843841073F5A0E,
+	XRHandShapeDebugUI_TryGetSubsystem_mD0AB1C8925E3A4E7182B27E5D0A74EE075525D49,
 	XRHandShapeDebugUI__ctor_mA7E9D82E9D67994FEFC532680667F523805ABE00,
+	XRHandShapeDebugUI__cctor_m5B5377F0D70294006280EA3586AD07E4A38F7F0F,
 	XRSelectedHandShapeDebugUI_get_handShapeNameLabel_m174B099523A76841C5D8EA497F09DC3FD405A36E,
 	XRSelectedHandShapeDebugUI_set_handShapeNameLabel_m14B9527621B5D9A4FF040A35485A607BD8499F29,
 	XRSelectedHandShapeDebugUI_Awake_m4B5CEA546F6FA168C4AD512413BD09BB0495F35D,
-	XRSelectedHandShapeDebugUI_UpdateSelectedHandshapeTextUI_m2EEA4E89CF21EF3BD15D11BA923996A71A6A7F0D,
+	XRSelectedHandShapeDebugUI_UpdateSelectedHandShapeTextUI_m9630A18C1AD07E845914BBE6C58CEF80236DBCBE,
 	XRSelectedHandShapeDebugUI_ResetUI_m02BBA55017DE71FE14CD31920DF3AF286D1CE311,
 	XRSelectedHandShapeDebugUI__ctor_mA6A6AB3A7CCC1EB1B569235435FD4AB10BF5187E,
 };
-static const int32_t s_InvokerIndices[76] = 
+static const int32_t s_InvokerIndices[90] = 
 {
-	23998,
-	13951,
-	13758,
-	10616,
-	13758,
-	10616,
-	13758,
-	10616,
-	13758,
-	10616,
-	13758,
-	10616,
-	13758,
-	10616,
-	13855,
-	10705,
-	13855,
-	10705,
-	13951,
-	13951,
-	13951,
-	10616,
-	13951,
-	13758,
-	13951,
-	13951,
-	13951,
-	10554,
-	23871,
-	13951,
-	23959,
-	13758,
-	10616,
-	13758,
-	10616,
-	13758,
-	10616,
-	13758,
-	10616,
-	13758,
-	10616,
-	13758,
-	10616,
-	13758,
-	10616,
-	13758,
-	10616,
-	13758,
-	10616,
-	13758,
-	10616,
-	10429,
-	13951,
-	10705,
-	13951,
-	2525,
-	13951,
-	13951,
-	13758,
-	10616,
-	5074,
-	10554,
-	10616,
-	13951,
-	13758,
-	10616,
-	13951,
-	13951,
-	13951,
-	13951,
-	13758,
-	10616,
-	13951,
-	10616,
-	13951,
-	13951,
+	24065,
+	13986,
+	1943,
+	3415,
+	4191,
+	4191,
+	1886,
+	1886,
+	13986,
+	13793,
+	10640,
+	13793,
+	10640,
+	13793,
+	10640,
+	13793,
+	10640,
+	13793,
+	10640,
+	13793,
+	10640,
+	13793,
+	10640,
+	13890,
+	10729,
+	13890,
+	10729,
+	10453,
+	13986,
+	13986,
+	13986,
+	10640,
+	13986,
+	13793,
+	13729,
+	13986,
+	13986,
+	13986,
+	10578,
+	22113,
+	13986,
+	24026,
+	13793,
+	10640,
+	13793,
+	10640,
+	13793,
+	10640,
+	13793,
+	10640,
+	13793,
+	10640,
+	13793,
+	10640,
+	13793,
+	10640,
+	13793,
+	10640,
+	13793,
+	10640,
+	13793,
+	10640,
+	10453,
+	13986,
+	13986,
+	10729,
+	13986,
+	2531,
+	13986,
+	13986,
+	13793,
+	10640,
+	5089,
+	10578,
+	10640,
+	13986,
+	13793,
+	10640,
+	13986,
+	13986,
+	13986,
+	22113,
+	13986,
+	24026,
+	13793,
+	10640,
+	13986,
+	10640,
+	13986,
+	13986,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_XR_Hands_Samples_Gestures_CodeGenModule;
 const Il2CppCodeGenModule g_Unity_XR_Hands_Samples_Gestures_CodeGenModule = 
 {
 	"Unity.XR.Hands.Samples.Gestures.dll",
-	76,
+	90,
 	s_methodPointers,
 	0,
 	NULL,
