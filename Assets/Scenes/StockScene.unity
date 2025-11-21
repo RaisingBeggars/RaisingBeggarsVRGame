@@ -539,7 +539,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &99240110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7562,7 +7562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f92d21ffbc0514fdb9569a1c18e8cbb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneTransitionController
-  fadeImage: {fileID: 0}
+  fadeImage: {fileID: 2094357609}
   fadeDuration: 0.7
   sceneToLoad: 
 --- !u!4 &1441019674
@@ -7610,7 +7610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneMenuController
   sceneMenuPanel: {fileID: 99240109}
-  transition: {fileID: 0}
+  transition: {fileID: 1441019673}
 --- !u!4 &1456082516
 Transform:
   m_ObjectHideFlags: 0
