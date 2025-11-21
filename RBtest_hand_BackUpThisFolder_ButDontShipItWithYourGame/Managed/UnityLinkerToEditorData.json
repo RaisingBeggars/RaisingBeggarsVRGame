@@ -11,7 +11,7 @@
           {
             "name": "AnimationClip",
             "scenes": [
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -19,7 +19,7 @@
           {
             "name": "Animator",
             "scenes": [
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -27,7 +27,7 @@
           {
             "name": "AnimatorController",
             "scenes": [
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -35,14 +35,6 @@
           {
             "name": "AnimatorOverrideController",
             "scenes": [],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
-            "name": "Avatar",
-            "scenes": [
-              "Assets/Scenes/StreetScene.unity"
-            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -66,23 +58,23 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "AudioClip",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/StockScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "AudioListener",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -95,13 +87,17 @@
           },
           {
             "name": "AudioResource",
-            "scenes": [],
-            "dependencyType": 1,
+            "scenes": [
+              "Assets/Scenes/StockScene.unity"
+            ],
+            "dependencyType": 0,
             "icon": null
           },
           {
             "name": "AudioSource",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/StockScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -131,8 +127,7 @@
           {
             "name": "Camera",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -152,8 +147,7 @@
           {
             "name": "Cubemap",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -173,18 +167,9 @@
           {
             "name": "EditorExtension",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 1,
-            "icon": null
-          },
-          {
-            "name": "FlareLayer",
-            "scenes": [
-              "Assets/Scenes/StreetScene.unity"
-            ],
-            "dependencyType": 0,
             "icon": null
           },
           {
@@ -196,8 +181,7 @@
           {
             "name": "GameObject",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -229,8 +213,7 @@
           {
             "name": "LevelGameManager",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -238,8 +221,7 @@
           {
             "name": "Light",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -252,32 +234,29 @@
           },
           {
             "name": "LightProbes",
-            "scenes": [
-              "Assets/Scenes/StreetScene.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "LightingSettings",
-            "scenes": [
-              "Assets/Scenes/StreetScene.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "LightmapSettings",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "LineRenderer",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/StockScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -290,8 +269,7 @@
           {
             "name": "Material",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -299,8 +277,7 @@
           {
             "name": "Mesh",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -308,8 +285,7 @@
           {
             "name": "MeshFilter",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -317,8 +293,7 @@
           {
             "name": "MeshRenderer",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -326,8 +301,7 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -341,8 +315,7 @@
           {
             "name": "MonoScript",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -350,8 +323,7 @@
           {
             "name": "NamedObject",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -389,8 +361,7 @@
           {
             "name": "RectTransform",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -404,8 +375,7 @@
           {
             "name": "RenderSettings",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -413,7 +383,7 @@
           {
             "name": "RenderTexture",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -439,8 +409,7 @@
           {
             "name": "Shader",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -454,7 +423,7 @@
           {
             "name": "SkinnedMeshRenderer",
             "scenes": [
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -467,14 +436,16 @@
           },
           {
             "name": "SortingGroup",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/StockScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "Sprite",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -658,12 +629,6 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.terrain"
-          },
-          {
-            "name": "Required by TerrainPhysics Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.terrainphysics"
           },
           {
             "name": "Required by TextCoreFontEngine Module",
@@ -951,21 +916,24 @@
           {
             "name": "BoxCollider",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "CapsuleCollider",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/StockScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "CharacterController",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/StockScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -978,8 +946,7 @@
           {
             "name": "MeshCollider",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -992,7 +959,9 @@
           },
           {
             "name": "Rigidbody",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/StockScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -1001,12 +970,6 @@
             "scenes": [],
             "dependencyType": 0,
             "icon": null
-          },
-          {
-            "name": "Required by TerrainPhysics Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.terrainphysics"
           },
           {
             "name": "Required by UIElements Module",
@@ -1191,12 +1154,6 @@
             "icon": "package/com.unity.modules.terrain"
           },
           {
-            "name": "Required by TerrainPhysics Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.terrainphysics"
-          },
-          {
             "name": "Required by TextCoreFontEngine Module",
             "scenes": [],
             "dependencyType": 2,
@@ -1321,39 +1278,13 @@
         "dependencies": [
           {
             "name": "Terrain",
-            "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "TerrainData",
-            "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
-            ],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
-            "name": "Required by TerrainPhysics Module",
             "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.terrainphysics"
-          }
-        ]
-      },
-      {
-        "name": "TerrainPhysics",
-        "dependencies": [
-          {
-            "name": "TerrainCollider",
-            "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
-            ],
             "dependencyType": 0,
             "icon": null
           }
@@ -1399,7 +1330,7 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1442,8 +1373,7 @@
           {
             "name": "Canvas",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1457,7 +1387,7 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity"
+              "Assets/Scenes/StockScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
