@@ -61,10 +61,7 @@ public class CoinManager : MonoBehaviour
         coinText.text = formattedMoney;
     }
 
-    /// <summary>
-    /// 10,000 미만의 숫자를 한국어 단위 (천, 백, 십, 일)로 포맷합니다.
-    /// 예: 8900 -> "8천 9백", 5 -> "5"
-    /// </summary>
+
     private string FormatLessThanTenThousand(int amount)
     {
         if (amount == 0) return "";
@@ -103,47 +100,37 @@ public class CoinManager : MonoBehaviour
     }
 
 
-    /// <summary>
-    /// 금액을 한국식 단위 (만, 억)로 포맷하고, 맨 뒤에 '원'을 추가합니다.
-    /// </summary>
     private string FormatMoneyKorean(long money)
     {
         if (money < 0) return "0원"; // 0원이나 음수 처리
 
-        // 한국 단위 (10^4 승수)
         string[] units = { "", "만", "억" };
         long[] unitValues = { 1, 10000, 100000000 };
 
         StringBuilder sb = new StringBuilder();
         long tempMoney = money;
 
-        // 가장 큰 단위(억)부터 순서대로 처리 (i=2: 억, i=1: 만)
         for (int i = units.Length - 1; i >= 1; i--)
         {
             long unitValue = unitValues[i];
-            // '만' 단위와 '억' 단위에 들어갈 금액 (예: 21억 4567만)
             long unitAmount = tempMoney / unitValue;
 
             if (unitAmount > 0)
             {
-                // 숫자와 단위를 추가. 만/억 단위는 콤마 없이 깔끔하게 출력
+
                 sb.Append(unitAmount.ToString());
                 sb.Append(units[i]);
                 sb.Append(" ");
 
-                // 사용된 금액은 나머지 연산자로 제외
                 tempMoney %= unitValue;
             }
         }
 
-        // **NEW LOGIC START: 10,000 미만 금액 처리**
-        // tempMoney는 이제 0~9999 사이의 값을 가집니다.
         if (tempMoney > 0)
         {
             string remainderKorean = FormatLessThanTenThousand((int)tempMoney);
             sb.Append(remainderKorean);
         }
-        // **NEW LOGIC END**
 
         if (sb.Length == 0)
         {

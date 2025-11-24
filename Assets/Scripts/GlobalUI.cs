@@ -21,12 +21,11 @@ public class GlobalUI : MonoBehaviour
             return;
         }
 
-        // 씬 전환 이벤트에 OnSceneLoaded 함수를 등록합니다.
-        // 이 등록은 오브젝트가 파괴되지 않으므로 한 번만 이루어집니다.
+        // 씬 전환 이벤트에 OnSceneLoaded 함수 등록
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    // 이 오브젝트가 파괴될 때 이벤트 리스너를 해제합니다.
+    // 이 오브젝트가 파괴될 때 이벤트 리스너 해제
     private void OnDestroy()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
@@ -41,7 +40,7 @@ public class GlobalUI : MonoBehaviour
             return;
         }
 
-        // 현재 씬의 이름을 확인하여 버튼 활성화/비활성화를 결정합니다.
+        // 현재 씬의 이름을 확인하여 버튼 활성화/비활성화 결정
         if (scene.name == "StreetScene")
         {
             // StreetScene일 때만 버튼을 활성화 (보이게 함)
