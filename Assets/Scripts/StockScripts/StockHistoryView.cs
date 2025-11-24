@@ -35,7 +35,7 @@ public class StockHistoryView : MonoBehaviour
 
         IReadOnlyList<float> hist = StockMarketManager.Instance.GetHistory(stockId);
 
-        // 히스토리가 아무 것도 없으면 현재가 한 줄이라도 보여줌
+        // 히스토리가 없으면 현재가 한 줄이라도 표시
         if (hist == null || hist.Count == 0)
         {
             float priceNow = StockMarketManager.Instance.GetPrice(stockId);
@@ -45,44 +45,58 @@ public class StockHistoryView : MonoBehaviour
 
         var sb = new StringBuilder();
 
-        // ★ 최신 값부터 거꾸로, 최대 maxLines 줄까지 출력
+        // ★ 최신 값이 "맨 아래"로 가도록, 오래된 값부터 순서대로 출력
         int linesToShow = Mathf.Min(hist.Count, maxLines);
-        for (int i = 0; i < linesToShow; i++)
-        {
-            int idx = hist.Count - 1 - i;   // 맨 뒤가 최신
-            float price = hist[idx];
-            string line;
+        int startIdx = hist.Count - linesToShow;   // 보여줄 구간의 시작 인덱스
 
-            if (idx == 0)
+        for (int i = startIdx; i < hist.Count; i++)
+        {
+            float price = hist[i];
+            string plainLine;
+            string colorStart;
+            const string colorEnd = "</color>";
+
+            if (i == 0)
             {
-                // 맨 처음 값: 변화량 없이 숫자만
-                line = FormatPrice(price);
+                // 히스토리의 첫 값: 기준가, 변화량 없이 숫자만
+                plainLine = FormatPrice(price);
+                colorStart = "<color=#FFFFFF>";   // 흰색(원하면 다른 색으로)
             }
             else
             {
-                float prev = hist[idx - 1];
+                float prev = hist[i - 1];
                 float diff = price - prev;
                 float diffPercent = prev != 0f ? diff / prev * 100f : 0f;
 
                 string arrow;
-                if (diff > 0f) arrow = "🔺";
-                else if (diff < 0f) arrow = "🔻";
-                else arrow = "⏺";
+                if (diff > 0f)
+                {
+                    arrow = "🔺";
+                    colorStart = "<color=#C73838>";   // 빨간색 (상승)
+                }
+                else if (diff < 0f)
+                {
+                    arrow = "🔻";
+                    colorStart = "<color=#3B3BB3>";   // 파란색 (하락)
+                }
+                else
+                {
+                    arrow = "⏺";
+                    colorStart = "<color=#DDDDDD>";   // 보합 = 회색
+                }
 
                 string percentText = diffPercent.ToString("0.#");
                 if (diffPercent > 0f) percentText = "+" + percentText;
 
-                line = $"{FormatPrice(price)} {arrow}({percentText}%)";
+                plainLine = $"{FormatPrice(price)} {arrow}({percentText}%)";
             }
 
-            sb.AppendLine(line);
+            // ★ 한 줄 전체를 색 입혀서 누적
+            sb.AppendLine(colorStart + plainLine + colorEnd);
         }
 
-        // ★ 루프 끝난 뒤에 딱 한 번만 텍스트에 넣기
+        // 마지막에 한 번만 Text에 넣기
         historyText.text = sb.ToString();
-
-        // 디버그로 실제 들어간 문자열 확인해보고 싶으면 이 줄 잠깐 켜기
-        // Debug.Log($"[{stockId}] history text:\n" + historyText.text);
     }
 
     private void UpdateCountdown()
