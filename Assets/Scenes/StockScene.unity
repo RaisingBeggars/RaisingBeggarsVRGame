@@ -292,7 +292,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -3476,7 +3476,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -7046,7 +7046,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e97fe466ece347cfbf94218c32ba8ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StockHistoryView
-  stockId: 2
+  stockId: 0
   historyText: {fileID: 1825739247}
   countdownText: {fileID: 1369558582}
   maxLines: 10
@@ -7787,7 +7787,7 @@ MonoBehaviour:
     alwaysUp: 1
     history: []
   updateIntervalSeconds: 30
-  maxChangePercent: 0.1
+  maxChangePercent: 0.2
   minPrice: 100
   maxHistoryCount: 10
 --- !u!1 &1527897012 stripped
@@ -8755,7 +8755,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -9233,7 +9233,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -10049,7 +10049,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
