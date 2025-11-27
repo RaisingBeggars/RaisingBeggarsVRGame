@@ -15,17 +15,17 @@ public class CoinManager : MonoBehaviour
 
     void Awake()
     {
-        // 싱글톤 패턴: 게임 내에 CoinManager는 단 하나만 존재해야 함
         if (Instance == null)
         {
             Instance = this;
-            // 중요: 씬이 바뀌어도(로비 -> 인게임 등) 자산 데이터가 사라지지 않게 함
-            DontDestroyOnLoad(gameObject);
+            // ★ 수정됨: 나(HeaderUI)만 살리지 말고, 내 최상위 부모(Canvas)를 살려라!
+            DontDestroyOnLoad(transform.root.gameObject);
         }
         else if (Instance != this)
         {
-            // 만약 다른 씬에서 넘어왔는데 이미 CoinManager가 있다면, 중복된 새 것은 파괴
-            Destroy(gameObject);
+            // 이미 다른 씬에서 넘어온 대장(Canvas)이 있다면, 
+            // 이번 씬에 새로 생긴 짝퉁 Canvas는 파괴한다.
+            Destroy(transform.root.gameObject);
         }
     }
 
