@@ -1,5 +1,4 @@
-//보유주식, 평균가 관리 스크립트
-
+//(보유/평단/매수/매도)
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,8 +7,8 @@ using UnityEngine;
 public class StockHolding
 {
     public StockId id;
-    public long shares;       // 보유 주수
-    public long avgPrice;     // 평균 매수가(원 단위, 정수)
+    public long shares;
+    public long avgPrice;
 }
 
 public class StockPortfolioManager : MonoBehaviour
@@ -17,7 +16,7 @@ public class StockPortfolioManager : MonoBehaviour
     public static StockPortfolioManager Instance { get; private set; }
 
     [SerializeField] private List<StockHolding> holdings = new();
-    private Dictionary<StockId, StockHolding> map = new();
+    private readonly Dictionary<StockId, StockHolding> map = new();
 
     public event Action OnPortfolioChanged;
 
@@ -25,9 +24,8 @@ public class StockPortfolioManager : MonoBehaviour
     {
         if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
-        DontDestroyOnLoad(transform.root.gameObject);
+        DontDestroyOnLoad(gameObject);
 
-        // 초기화(인스펙터로 넣은 값이 있을 수도 있으니)
         RebuildMap();
     }
 
@@ -36,13 +34,15 @@ public class StockPortfolioManager : MonoBehaviour
         map.Clear();
         foreach (var h in holdings)
         {
-            if (!map.ContainsKey(h.id)) map.Add(h.id, h);
+            if (h == null) continue;
+            map[h.id] = h;
         }
     }
 
     private StockHolding GetOrCreate(StockId id)
     {
         if (map.TryGetValue(id, out var h)) return h;
+
         h = new StockHolding { id = id, shares = 0, avgPrice = 0 };
         holdings.Add(h);
         map[id] = h;
@@ -50,6 +50,8 @@ public class StockPortfolioManager : MonoBehaviour
     }
 
     public StockHolding GetHolding(StockId id) => GetOrCreate(id);
+    public long GetShares(StockId id) => GetOrCreate(id).shares;
+    public long GetAvgPrice(StockId id) => GetOrCreate(id).avgPrice;
 
     public bool Buy(StockId id, int qty, long price, out string msg)
     {
@@ -67,7 +69,6 @@ public class StockPortfolioManager : MonoBehaviour
 
         var h = GetOrCreate(id);
 
-        // 가중 평균가 업데이트
         long prevShares = h.shares;
         long newShares = prevShares + qty;
 
@@ -100,10 +101,7 @@ public class StockPortfolioManager : MonoBehaviour
         CoinManager.Instance.AddCoin(revenue);
 
         h.shares -= qty;
-        if (h.shares == 0)
-        {
-            h.avgPrice = 0; // 다 팔면 평균가 초기화
-        }
+        if (h.shares == 0) h.avgPrice = 0;
 
         OnPortfolioChanged?.Invoke();
         msg = $"매도 완료: {qty}주";

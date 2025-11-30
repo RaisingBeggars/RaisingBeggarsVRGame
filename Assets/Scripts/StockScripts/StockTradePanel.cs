@@ -1,10 +1,11 @@
+//(키패드 입력 + 매수/매도 버튼)
 using UnityEngine;
 using TMPro;
 
 public class StockTradePanel : MonoBehaviour
 {
     [Header("Selection Source")]
-    public StockDetailPanel detailPanel; // FrontLeft 선택 상태(현재 인덱스)
+    public StockDetailPanel detailPanel; // FrontLeft에서 선택된 인덱스
 
     [Header("UI")]
     public TMP_Text selectedNameText;
@@ -18,16 +19,7 @@ public class StockTradePanel : MonoBehaviour
 
     private string qtyStr = "";
 
-    private void OnEnable()
-    {
-        RefreshAll();
-    }
-
-    private void Update()
-    {
-        // 가격은 30초마다 바뀌니 프리뷰만 자주 갱신(가벼움)
-        RefreshAll();
-    }
+    private void OnEnable() => RefreshAll();
 
     private StockId? GetSelectedStockId()
     {
@@ -45,42 +37,44 @@ public class StockTradePanel : MonoBehaviour
             _ => null
         };
     }
+        private void Start()
+    {
+        Debug.Log("[Trade] StockTradePanel Start");
+    }
+
 
     private long GetCurrentPrice(StockId id)
     {
         if (StockMarketManager.Instance == null) return 0;
-        // float→long 반올림
         return (long)System.Math.Round(StockMarketManager.Instance.GetPrice(id));
     }
 
     private int GetQty()
     {
         if (string.IsNullOrEmpty(qtyStr)) return 0;
-        if (int.TryParse(qtyStr, out int v)) return v;
-        return 0;
+        return int.TryParse(qtyStr, out int v) ? v : 0;
     }
 
     private void RefreshAll()
     {
         var sid = GetSelectedStockId();
+        int qty = GetQty();
+
+        if (qtyText) qtyText.text = qty.ToString();
+
         if (sid == null)
         {
             if (selectedNameText) selectedNameText.text = "선택된 종목 없음";
             if (currentPriceText) currentPriceText.text = "-";
             if (totalText) totalText.text = "-";
-            if (qtyText) qtyText.text = string.IsNullOrEmpty(qtyStr) ? "0" : qtyStr;
             return;
         }
 
         long price = GetCurrentPrice(sid.Value);
+        long total = price * (long)qty;
 
         if (selectedNameText) selectedNameText.text = sid.Value.ToString();
         if (currentPriceText) currentPriceText.text = price.ToString("#,0");
-
-        int qty = GetQty();
-        long total = price * (long)qty;
-
-        if (qtyText) qtyText.text = qty.ToString();
         if (totalText) totalText.text = total.ToString("#,0");
     }
 
@@ -88,10 +82,9 @@ public class StockTradePanel : MonoBehaviour
     public void PressDigit(string digit)
     {
         if (digit.Length != 1 || digit[0] < '0' || digit[0] > '9') return;
-
         if (qtyStr.Length == 0 && digit == "0") return; // 선행 0 방지
+        if (qtyStr.Length >= 4) return;
 
-        if (qtyStr.Length >= 4) return; // maxQty=9999 기준 (원하면 늘려도 됨)
         qtyStr += digit;
 
         int qty = GetQty();
@@ -113,16 +106,28 @@ public class StockTradePanel : MonoBehaviour
     }
 
     // === Trade ===
+    // 참고: 빨강=Buy, 초록=Sell로 이벤트만 연결해주면 됨
     public void Buy()
-    {
-        feedbackText.text = "";
-        var sid = GetSelectedStockId();
-        if (sid == null) { feedbackText.text = "종목을 먼저 선택하세요"; return; }
 
+    {
+        Debug.Log("[Trade] Buy pressed");
+
+        if (feedbackText == null) { Debug.LogError("[Trade] feedbackText not assigned"); return; }
+
+        feedbackText.text = "";
+
+        var sid = GetSelectedStockId();
         int qty = GetQty();
+        Debug.Log($"[Trade] sid={(sid.HasValue ? sid.Value.ToString() : "null")} qty={qty}");
+
+        if (sid == null) { feedbackText.text = "종목을 먼저 선택하세요"; return; }
         if (qty <= 0) { feedbackText.text = "수량을 입력하세요"; return; }
 
         long price = GetCurrentPrice(sid.Value);
+        long cost = price * (long)qty;
+
+        var cm = CoinManager.Instance;
+        Debug.Log($"[Trade] price={price} cost={cost} coin={(cm != null ? cm.GetCurrentCoin() : -1)}");
 
         if (StockPortfolioManager.Instance == null) { feedbackText.text = "PortfolioManager 없음"; return; }
 
@@ -135,15 +140,21 @@ public class StockTradePanel : MonoBehaviour
         {
             feedbackText.text = msg;
         }
+
+        RefreshAll();
     }
 
     public void Sell()
     {
-        feedbackText.text = "";
-        var sid = GetSelectedStockId();
-        if (sid == null) { feedbackText.text = "종목을 먼저 선택하세요"; return; }
+        if (feedbackText == null) { Debug.LogError("[Trade] feedbackText not assigned"); return; }
 
+        feedbackText.text = "";
+        Debug.Log("[Trade] Sell pressed");
+
+        var sid = GetSelectedStockId();
         int qty = GetQty();
+
+        if (sid == null) { feedbackText.text = "종목을 먼저 선택하세요"; return; }
         if (qty <= 0) { feedbackText.text = "수량을 입력하세요"; return; }
 
         long price = GetCurrentPrice(sid.Value);
@@ -159,5 +170,7 @@ public class StockTradePanel : MonoBehaviour
         {
             feedbackText.text = msg;
         }
+
+        RefreshAll();
     }
 }
