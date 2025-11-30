@@ -64,9 +64,9 @@ public class StockTradePanel : MonoBehaviour
 
         if (sid == null)
         {
-            if (selectedNameText) selectedNameText.text = "선택된 종목 없음";
-            if (currentPriceText) currentPriceText.text = "-";
-            if (totalText) totalText.text = "-";
+            if (selectedNameText) selectedNameText.text = "거지증권사";
+            if (currentPriceText) currentPriceText.text = "100";
+            if (totalText) totalText.text = "total";
             return;
         }
 
