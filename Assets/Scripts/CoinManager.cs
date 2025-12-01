@@ -6,77 +6,61 @@ public class CoinManager : MonoBehaviour
 {
     public static CoinManager Instance { get; private set; }
 
-    [Header("UI ¿¬°á")]
-    public TMP_Text coinText; // ±Ý¾×À» Ç¥½ÃÇÒ UI ÅØ½ºÆ® (VR Ä«¸Þ¶ó ¾Õ UI)
+    public TMP_Text coinText;
 
-    [Header("ÄÚÀÎ µ¥ÀÌÅÍ")]
     [SerializeField]
-    private long currentCoin = 0; // ½ÇÁ¦ ÀÚ»ê µ¥ÀÌÅÍ 
+    private long currentCoin = 0;
 
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            // ¡Ú ¼öÁ¤µÊ: ³ª(HeaderUI)¸¸ »ì¸®Áö ¸»°í, ³» ÃÖ»óÀ§ ºÎ¸ð(Canvas)¸¦ »ì·Á¶ó!
             DontDestroyOnLoad(transform.root.gameObject);
         }
         else if (Instance != this)
         {
-            // ÀÌ¹Ì ´Ù¸¥ ¾À¿¡¼­ ³Ñ¾î¿Â ´ëÀå(Canvas)ÀÌ ÀÖ´Ù¸é, 
-            // ÀÌ¹ø ¾À¿¡ »õ·Î »ý±ä Â¦Åü Canvas´Â ÆÄ±«ÇÑ´Ù.
             Destroy(transform.root.gameObject);
         }
     }
 
     void Start()
     {
-        // Å×½ºÆ®¿ë: ÀúÀåµÈ µ·ÀÌ ¾øÀ¸¸é ÃÊ±â ÀÚ±Ý ¼³Á¤
         if (currentCoin == 0)
         {
-            currentCoin = 2145678900; // ¾à 21¾ï (Å×½ºÆ® °ª)
+            currentCoin = 2145678900;
         }
 
-        // °ÔÀÓ ½ÃÀÛ ½Ã UI °»½Å
         UpdateCoinDisplay();
 
         if (coinText != null)
         {
-            Debug.Log($"[CoinManager] ÃÊ±â ÀÚ»ê ¼³Á¤ ¿Ï·á: {coinText.text}");
+            Debug.Log($"[CoinManager] ì´ˆê¸° ìžì‚° ì„¤ì • ì™„ë£Œ: {coinText.text}");
         }
     }
 
-    //  ÁÖ½Ä ¸Å¼ö/¸Åµµ ½Ã ÀÌ ÇÔ¼ö¸¦ È£Ãâ ¡Ú¡Ú¡Ú
-    // amount°¡ ¾ç¼ö¸é µ· Áõ°¡(¸Åµµ), À½¼ö¸é µ· °¨¼Ò(¸Å¼ö)
-    // ¿¹: CoinManager.Instance.AddCoin(-10000); // 1¸¸¿ø Â÷°¨
     public void AddCoin(int amount)
     {
         currentCoin += amount;
-        UpdateCoinDisplay(); // µ¥ÀÌÅÍ º¯°æ ÈÄ Áï½Ã UI ¹Ý¿µ
+        UpdateCoinDisplay();
     }
 
-    // ÇöÀç ÀÜ¾× È®ÀÎ ¡Ú¡Ú¡Ú
-    // ¿¹: if(CoinManager.Instance.GetCurrentCoin() >= ÁÖ½Ä°¡°Ý) { ¸Å¼ö½ÇÇà }
     public long GetCurrentCoin()
     {
         return currentCoin;
     }
 
-    // ³»ºÎÀûÀ¸·Î »ç¿ëÇÏ´Â UI °»½Å ÇÔ¼ö
     private void UpdateCoinDisplay()
     {
         if (coinText == null)
         {
-            Debug.LogError("[CoinManager] UI ÅØ½ºÆ®°¡ ¿¬°áµÇÁö ¾Ê¾Ò½À´Ï´Ù!");
+            Debug.LogError("[CoinManager] UI í…ìŠ¤íŠ¸ê°€ ì—°ê²°ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤!");
             return;
         }
 
-        // ÇÑ±¹ È­Æó ´ÜÀ§(¾ï, ¸¸, ¿ø)·Î Æ÷¸ËÆÃÇÏ¿© ÅØ½ºÆ® Àû¿ë
         string formattedMoney = FormatMoneyKorean(currentCoin);
         coinText.text = formattedMoney;
     }
-
-    // --- ¾Æ·¡´Â ´Ü¼øÈ÷ ¼ýÀÚ¸¦ '00¾ï 00¸¸ 00¿ø' ÅØ½ºÆ®·Î ¹Ù²Ù´Â ·ÎÁ÷ (°Çµå¸± ÇÊ¿ä X) ---
 
     private string FormatLessThanTenThousand(int amount)
     {
@@ -89,9 +73,9 @@ public class CoinManager : MonoBehaviour
 
         StringBuilder sb = new StringBuilder();
 
-        if (thousands > 0) sb.Append(thousands).Append("Ãµ ");
-        if (hundreds > 0) sb.Append(hundreds).Append("¹é ");
-        if (tens > 0) sb.Append(tens).Append("½Ê ");
+        if (thousands > 0) sb.Append(thousands).Append("ì²œ ");
+        if (hundreds > 0) sb.Append(hundreds).Append("ë°± ");
+        if (tens > 0) sb.Append(tens).Append("ì‹­ ");
         if (ones > 0) sb.Append(ones);
 
         return sb.ToString().Trim();
@@ -99,9 +83,9 @@ public class CoinManager : MonoBehaviour
 
     private string FormatMoneyKorean(long money)
     {
-        if (money < 0) return "0¿ø";
+        if (money < 0) return "0ì›";
 
-        string[] units = { "", "¸¸", "¾ï" };
+        string[] units = { "", "ë§Œ", "ì–µ" };
         long[] unitValues = { 1, 10000, 100000000 };
 
         StringBuilder sb = new StringBuilder();
@@ -127,8 +111,26 @@ public class CoinManager : MonoBehaviour
             sb.Append(remainderKorean);
         }
 
-        if (sb.Length == 0) return "0¿ø";
+        if (sb.Length == 0) return "0ì›";
 
-        return sb.ToString().Trim() + "¿ø";
+        return sb.ToString().Trim() + "ì›";
     }
+    
+        public bool TrySpend(long amount)
+    {
+        if (amount <= 0) return false;
+        if (currentCoin < amount) return false;
+        currentCoin -= amount;
+        UpdateCoinDisplay();
+        return true;
+    }
+
+    public void AddCoin(long amount)
+    {
+        if (amount <= 0) return;
+        currentCoin += amount;
+        UpdateCoinDisplay();
+    }
+
+
 }
