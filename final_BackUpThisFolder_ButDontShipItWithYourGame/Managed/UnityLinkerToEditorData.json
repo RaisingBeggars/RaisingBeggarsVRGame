@@ -11,6 +11,7 @@
           {
             "name": "AnimationClip",
             "scenes": [
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -19,6 +20,7 @@
           {
             "name": "Animator",
             "scenes": [
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -27,6 +29,7 @@
           {
             "name": "AnimatorController",
             "scenes": [
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 1,
@@ -68,6 +71,7 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -75,7 +79,9 @@
           },
           {
             "name": "AudioClip",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/StockSceneFIX.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -84,6 +90,7 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -97,13 +104,17 @@
           },
           {
             "name": "AudioResource",
-            "scenes": [],
-            "dependencyType": 1,
+            "scenes": [
+              "Assets/Scenes/StockSceneFIX.unity"
+            ],
+            "dependencyType": 0,
             "icon": null
           },
           {
             "name": "AudioSource",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/StockSceneFIX.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -135,6 +146,7 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -157,6 +169,7 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -179,17 +192,10 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 1,
-            "icon": null
-          },
-          {
-            "name": "FlareLayer",
-            "scenes": [
-              "Assets/Scenes/StreetScene.unity"
-            ],
-            "dependencyType": 0,
             "icon": null
           },
           {
@@ -203,6 +209,7 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -237,6 +244,7 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 1,
@@ -247,6 +255,7 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -280,6 +289,7 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -288,7 +298,8 @@
           {
             "name": "LineRenderer",
             "scenes": [
-              "Assets/Scenes/HandVisualizer.unity"
+              "Assets/Scenes/HandVisualizer.unity",
+              "Assets/Scenes/StockSceneFIX.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -304,6 +315,7 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -314,6 +326,7 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -324,6 +337,7 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -334,6 +348,7 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -344,6 +359,7 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -360,6 +376,7 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 1,
@@ -370,6 +387,7 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 1,
@@ -409,6 +427,8 @@
             "name": "RectTransform",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -425,6 +445,7 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -433,8 +454,8 @@
           {
             "name": "RenderTexture",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
-              "Assets/Scenes/StreetScene.unity"
+              "Assets/Scenes/HandVisualizer.unity",
+              "Assets/Scenes/RiverScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -462,6 +483,7 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -477,6 +499,7 @@
             "name": "SkinnedMeshRenderer",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -490,7 +513,9 @@
           },
           {
             "name": "SortingGroup",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/StockSceneFIX.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -498,6 +523,8 @@
             "name": "Sprite",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -977,6 +1004,7 @@
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -984,13 +1012,17 @@
           },
           {
             "name": "CapsuleCollider",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/StockSceneFIX.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "CharacterController",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/StockSceneFIX.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -1004,6 +1036,7 @@
             "name": "MeshCollider",
             "scenes": [
               "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -1017,7 +1050,9 @@
           },
           {
             "name": "Rigidbody",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/StockSceneFIX.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -1425,6 +1460,8 @@
             "name": "Font",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -1469,6 +1506,8 @@
             "name": "Canvas",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -1476,7 +1515,11 @@
           },
           {
             "name": "CanvasGroup",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
+              "Assets/Scenes/StreetScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -1484,6 +1527,8 @@
             "name": "CanvasRenderer",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
+              "Assets/Scenes/RiverScene.unity",
+              "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,

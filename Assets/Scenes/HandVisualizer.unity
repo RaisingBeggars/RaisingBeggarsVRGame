@@ -599,6 +599,17 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &301738031 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4118211157567309792, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+  m_PrefabInstance: {fileID: 1937022154}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf93899325d5df74eb9176e097ee3d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &402689728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -791,6 +802,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 447680416}
   m_Mesh: {fileID: 0}
+--- !u!114 &635373238 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4103395466030174051, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+  m_PrefabInstance: {fileID: 1937022154}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf93899325d5df74eb9176e097ee3d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &713583834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1817,6 +1839,86 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4103395466030174051, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103395466030174051, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1939129284}
+    - target: {fileID: 4103395466030174051, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103395466030174051, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLeftPalmUpEnded
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103395466030174051, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1939129284}
+    - target: {fileID: 4103395466030174051, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103395466030174051, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLeftPalmUpStarted
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103395466030174051, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PalmUpTimeScorer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103395466030174051, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PalmUpTimeScorer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103395466030174051, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103395466030174051, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118211157567309792, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1939129284}
+    - target: {fileID: 4118211157567309792, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118211157567309792, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnRightPalmUpEnded
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118211157567309792, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1939129284}
+    - target: {fileID: 4118211157567309792, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnRightPalmUpStarted
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118211157567309792, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GestureEnded.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PalmUpTimeScorer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118211157567309792, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PalmUpTimeScorer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118211157567309792, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118211157567309792, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+      propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4218427534136957687, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2473,6 +2575,53 @@ PrefabInstance:
       addedObject: {fileID: 753607284}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
+--- !u!1 &1939129283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1939129285}
+  - component: {fileID: 1939129284}
+  m_Layer: 0
+  m_Name: PalmUpScoringManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1939129284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939129283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e3b3377a12e3499c845a234b390cb9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PalmUpTimeScorer
+  leftPalmUpGesture: {fileID: 635373238}
+  rightPalmUpGesture: {fileID: 301738031}
+  coinPerSecond: 1000
+--- !u!4 &1939129285
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939129283}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.77281, y: 0, z: 10.14703}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2483,3 +2632,4 @@ SceneRoots:
   - {fileID: 1085439597}
   - {fileID: 1937022154}
   - {fileID: 51499785}
+  - {fileID: 1939129285}
