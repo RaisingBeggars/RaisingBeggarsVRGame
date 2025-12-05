@@ -70,7 +70,6 @@
             "name": "AudioBehaviour",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -89,7 +88,6 @@
             "name": "AudioListener",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -145,7 +143,6 @@
             "name": "Camera",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -168,7 +165,6 @@
             "name": "Cubemap",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -191,7 +187,6 @@
             "name": "EditorExtension",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -208,7 +203,6 @@
             "name": "GameObject",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -243,7 +237,6 @@
             "name": "LevelGameManager",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -254,7 +247,6 @@
             "name": "Light",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -288,7 +280,6 @@
             "name": "LightmapSettings",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -314,7 +305,6 @@
             "name": "Material",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -325,7 +315,6 @@
             "name": "Mesh",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -336,7 +325,6 @@
             "name": "MeshFilter",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -347,7 +335,6 @@
             "name": "MeshRenderer",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -358,7 +345,6 @@
             "name": "MonoBehaviour",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -375,7 +361,6 @@
             "name": "MonoScript",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -386,7 +371,6 @@
             "name": "NamedObject",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -427,7 +411,6 @@
             "name": "RectTransform",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -444,7 +427,6 @@
             "name": "RenderSettings",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -454,8 +436,7 @@
           {
             "name": "RenderTexture",
             "scenes": [
-              "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity"
+              "Assets/Scenes/HandVisualizer.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -482,7 +463,6 @@
             "name": "Shader",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -523,7 +503,6 @@
             "name": "Sprite",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -1003,7 +982,6 @@
             "name": "BoxCollider",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -1035,7 +1013,6 @@
           {
             "name": "MeshCollider",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -1382,7 +1359,6 @@
           {
             "name": "Terrain",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -1391,7 +1367,6 @@
           {
             "name": "TerrainData",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -1411,7 +1386,6 @@
           {
             "name": "TerrainCollider",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
             "dependencyType": 0,
@@ -1460,7 +1434,6 @@
             "name": "Font",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -1506,7 +1479,6 @@
             "name": "Canvas",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -1516,7 +1488,6 @@
           {
             "name": "CanvasGroup",
             "scenes": [
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
@@ -1527,7 +1498,6 @@
             "name": "CanvasRenderer",
             "scenes": [
               "Assets/Scenes/HandVisualizer.unity",
-              "Assets/Scenes/RiverScene.unity",
               "Assets/Scenes/StockSceneFIX.unity",
               "Assets/Scenes/StreetScene.unity"
             ],
