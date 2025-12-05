@@ -107,4 +107,22 @@ public class StockPortfolioManager : MonoBehaviour
         msg = $"매도 완료: {qty}주";
         return true;
     }
+
+    public IReadOnlyList<StockHolding> GetHoldingsAll() => holdings;
+
+    // 보유하지 않은 주식들 처리
+    public List<StockHolding> GetHoldingsOwned()
+{
+    var res = new List<StockHolding>();
+    foreach (var h in holdings)
+    {
+        if (h == null) continue;
+        if (h.shares > 0) res.Add(h);
+    }
+    return res;
+}
+
+
+    
+
 }
