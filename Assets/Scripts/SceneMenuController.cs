@@ -16,14 +16,14 @@ public class SceneMenuController : MonoBehaviour
     public void LoadStreet()
     {
         Debug.Log("LoadStreet 버튼 눌림");
-        transition.sceneToLoad = "StreetScene";
+        transition.sceneToLoad = "HandVisualizer";
         transition.OnButtonPressed();
     }
 
     public void LoadStock()
     {
         Debug.Log("LoadStock 버튼 눌림");
-        transition.sceneToLoad = "StockScene";
+        transition.sceneToLoad = "StockSceneFIX";
         transition.OnButtonPressed();
     }
 
