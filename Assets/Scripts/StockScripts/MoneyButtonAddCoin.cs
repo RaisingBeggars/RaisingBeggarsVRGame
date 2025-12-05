@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
-[RequireComponent(typeof(UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable))]
+[RequireComponent(typeof(XRSimpleInteractable))]
 public class MoneyButtonAddCoin : MonoBehaviour
 {
     [Tooltip("추가할 금액(코인)")]
@@ -10,11 +11,11 @@ public class MoneyButtonAddCoin : MonoBehaviour
     [Tooltip("한 번만 동작시키고 비활성화할지")]
     public bool oneShot = false;
 
-    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable interactable;
+    private XRSimpleInteractable interactable;
 
     private void Awake()
     {
-        interactable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable>();
+        interactable = GetComponent<XRSimpleInteractable>();
     }
 
     private void OnEnable()
