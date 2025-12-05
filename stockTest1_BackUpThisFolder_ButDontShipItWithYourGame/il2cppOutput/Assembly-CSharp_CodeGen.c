@@ -30,6 +30,9 @@ extern void PalmUpTimeScorer_OnLeftPalmUpEnded_m2D513153F9AB72058C31259265E03903
 extern void PalmUpTimeScorer_OnRightPalmUpStarted_m8BFEB09BF435FF54CF36A1D38362227465E5516D (void);
 extern void PalmUpTimeScorer_OnRightPalmUpEnded_m939C4091E5ACD35FBA7642888FC8915595F95EB4 (void);
 extern void PalmUpTimeScorer__ctor_m868541A236C6CB1F6618AEC65364B3FE6E175495 (void);
+extern void PurchaseZone_OnTriggerEnter_m3F7D4AC171BC66E5134AA2BE5DA64F877414B981 (void);
+extern void PurchaseZone_LoadNextScene_mA2E6D0EC22D14D92C700C7178618B757FD20C0FA (void);
+extern void PurchaseZone__ctor_mB624B5420FCC694D886D9CE52B9C1974B9A165D8 (void);
 extern void SceneChanger_LoadScene_m7206EF4AA96F98348A42F2B1D1B93AD73D290569 (void);
 extern void SceneChanger__ctor_mE9DB2B4102825D23A4B0271C2A6023F02920B4AD (void);
 extern void SceneMenuController_OnSTButtonPressed_m993FBF1EBB70EE8AB14FDE5C8F10FAC565DFA490 (void);
@@ -204,7 +207,7 @@ extern void SimpleGemsAnim_Start_mE3E35DFC65DBD295C65664CAA40DC239B1B051BA (void
 extern void SimpleGemsAnim_Update_m65A5F3798DD285B25501AA98DBF99464736C5EDF (void);
 extern void SimpleGemsAnim_EaseInOutQuad_m147998879DBAC5A60C32C43BAD93D7D17E2D0C6C (void);
 extern void SimpleGemsAnim__ctor_m3AEC9F12E8B8F5E1A8CD5761EC016F756C3A5B9D (void);
-static Il2CppMethodPointer s_methodPointers[197] = 
+static Il2CppMethodPointer s_methodPointers[200] = 
 {
 	CoinManager_get_Instance_m7EDD4A24F8AD14408BF52ABC9FDEC933595569D2,
 	CoinManager_set_Instance_mB87ED5D971A57C087DF155772674023B447C2870,
@@ -229,6 +232,9 @@ static Il2CppMethodPointer s_methodPointers[197] =
 	PalmUpTimeScorer_OnRightPalmUpStarted_m8BFEB09BF435FF54CF36A1D38362227465E5516D,
 	PalmUpTimeScorer_OnRightPalmUpEnded_m939C4091E5ACD35FBA7642888FC8915595F95EB4,
 	PalmUpTimeScorer__ctor_m868541A236C6CB1F6618AEC65364B3FE6E175495,
+	PurchaseZone_OnTriggerEnter_m3F7D4AC171BC66E5134AA2BE5DA64F877414B981,
+	PurchaseZone_LoadNextScene_mA2E6D0EC22D14D92C700C7178618B757FD20C0FA,
+	PurchaseZone__ctor_mB624B5420FCC694D886D9CE52B9C1974B9A165D8,
 	SceneChanger_LoadScene_m7206EF4AA96F98348A42F2B1D1B93AD73D290569,
 	SceneChanger__ctor_mE9DB2B4102825D23A4B0271C2A6023F02920B4AD,
 	SceneMenuController_OnSTButtonPressed_m993FBF1EBB70EE8AB14FDE5C8F10FAC565DFA490,
@@ -404,10 +410,10 @@ static Il2CppMethodPointer s_methodPointers[197] =
 	SimpleGemsAnim_EaseInOutQuad_m147998879DBAC5A60C32C43BAD93D7D17E2D0C6C,
 	SimpleGemsAnim__ctor_m3AEC9F12E8B8F5E1A8CD5761EC016F756C3A5B9D,
 };
-static const int32_t s_InvokerIndices[197] = 
+static const int32_t s_InvokerIndices[200] = 
 {
-	23925,
-	22810,
+	23926,
+	22811,
 	13974,
 	13974,
 	10569,
@@ -427,6 +433,9 @@ static const int32_t s_InvokerIndices[197] =
 	13974,
 	13974,
 	13974,
+	13974,
+	13974,
+	10631,
 	13974,
 	13974,
 	10631,
@@ -458,7 +467,7 @@ static const int32_t s_InvokerIndices[197] =
 	13974,
 	9133,
 	13974,
-	22445,
+	22446,
 	1738,
 	13974,
 	13974,
@@ -466,8 +475,8 @@ static const int32_t s_InvokerIndices[197] =
 	10444,
 	13974,
 	13974,
-	23925,
-	22810,
+	23926,
+	22811,
 	13974,
 	13974,
 	13781,
@@ -486,8 +495,8 @@ static const int32_t s_InvokerIndices[197] =
 	13974,
 	13781,
 	13974,
-	23925,
-	22810,
+	23926,
+	22811,
 	10631,
 	10631,
 	13974,
@@ -509,7 +518,7 @@ static const int32_t s_InvokerIndices[197] =
 	13974,
 	13974,
 	13974,
-	24013,
+	24014,
 	13974,
 	3813,
 	10569,
@@ -569,7 +578,7 @@ static const int32_t s_InvokerIndices[197] =
 	13974,
 	13974,
 	13974,
-	24037,
+	24038,
 	13974,
 	13974,
 	13974,
@@ -608,7 +617,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	197,
+	200,
 	s_methodPointers,
 	0,
 	NULL,
