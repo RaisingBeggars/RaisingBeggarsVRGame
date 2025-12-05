@@ -10,7 +10,7 @@ public class GlobalUI : MonoBehaviour
 
     [Header("VR UI 설정")]
     // 카메라 기준 위치 (앞으로 0.5m, 약간 위로 0.35m)
-    [SerializeField] private Vector3 vrLocalPosition = new Vector3(0, 0.35f, 0.5f);
+    [SerializeField] private Vector3 vrLocalPosition = new Vector3(0.2f, 0.15f, 0.5f);
     // 크기 (10배 확대)
     [SerializeField] private Vector3 vrLocalScale = new Vector3(0.1f, 0.1f, 0.1f);
 
