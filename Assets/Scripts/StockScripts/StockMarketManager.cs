@@ -140,4 +140,29 @@ public class StockMarketManager : MonoBehaviour
     {
         return Mathf.Max(0f, nextUpdateTime - Time.time);
     }
+
+
+    // 이름/데이터 찾기
+        public StockData GetStock(StockId id)
+    {
+        foreach (var s in stocks)
+            if (s.id == id) return s;
+
+        return null;
+    }
+
+        public string GetDisplayName(StockId id)
+    {
+        foreach (var s in stocks)
+            if (s.id == id)
+                return string.IsNullOrEmpty(s.displayName) ? id.ToString() : s.displayName;
+
+        return id.ToString();
+    }
+
+    public long GetPriceLong(StockId id)
+    {
+        return (long)Mathf.RoundToInt(GetPrice(id)); // 기존 GetPrice(float) 활용
+    }
+
 }
