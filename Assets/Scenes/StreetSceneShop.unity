@@ -58784,6 +58784,10 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5678737762727409992, guid: b2f1ee510b30d804d8dc42fd51c4e10d, type: 3}
+      propertyPath: currentCoin
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6841800747349225535, guid: b2f1ee510b30d804d8dc42fd51c4e10d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
