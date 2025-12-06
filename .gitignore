@@ -12,6 +12,10 @@
 /[Uu]ser[Ss]ettings/
 *.log
 
+# IL2CPP 빌드 중 생성되는 임시/백업 폴더 무시 (충돌의 주요 원인)
+# 예: projectname_BackUpThisFolder_ButDontShipItWithYourGame/
+*_BackUpThisFolder_ButDontShipItWithYourGame/
+
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
 *.blend1
 *.blend1.meta
