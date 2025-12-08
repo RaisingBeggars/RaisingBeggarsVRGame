@@ -1,53 +1,51 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PurchaseZone : MonoBehaviour
 {
-    // ÅÂ±×¸¦ "Buyable"·Î º¯°æ
     [SerializeField] private string targetTag = "Buyable";
 
-    // ºôµùÀÇ °¡°İ (1¾ï ¿ø)
+    // ë¹Œë”©ì˜ ê°€ê²© (1ì–µ ì›)
     [SerializeField] private long buildingCost = 100000000;
 
     private bool isPurchased = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        // ÀÌ¹Ì ±¸ÀÔ Ã³¸® ÁßÀÌ°Å³ª CoinManager ÀÎ½ºÅÏ½º°¡ ¾ø´Â °æ¿ì Áï½Ã ¸®ÅÏ
+        // ì´ë¯¸ êµ¬ì… ì²˜ë¦¬ ì¤‘ì´ê±°ë‚˜ CoinManager ì¸ìŠ¤í„´ìŠ¤ê°€ ì—†ëŠ” ê²½ìš° ì¦‰ì‹œ ë¦¬í„´
         if (isPurchased || CoinManager.Instance == null)
         {
             return;
         }
 
-        // 1. Äİ¶óÀÌ´õÀÇ ·çÆ® ¿ÀºêÁ§Æ®(¾ÆÀÌÅÛ)°¡ ¸ñÇ¥ ÅÂ±×("Buyable")¸¦ °¡Áö°í ÀÖ´ÂÁö È®ÀÎ
+        // 1. ì½œë¼ì´ë”ì˜ ë£¨íŠ¸ ì˜¤ë¸Œì íŠ¸(ì•„ì´í…œ)ê°€ ëª©í‘œ íƒœê·¸("Buyable")ë¥¼ ê°€ì§€ê³  ìˆëŠ”ì§€ í™•ì¸
         if (other.attachedRigidbody != null && other.attachedRigidbody.gameObject.CompareTag(targetTag))
         {
-            // ºôµù ¾ÆÀÌÅÛÀ» Ã£À½
+            // ë¹Œë”© ì•„ì´í…œì„ ì°¾ìŒ
             GameObject building = other.attachedRigidbody.gameObject;
 
-            // 2. CoinManagerÀÇ TrySpend ÇÔ¼ö¸¦ È£ÃâÇÏ¿© ±¸¸Å¸¦ ½ÃµµÇÕ´Ï´Ù.
+            // 2. CoinManagerì˜ TrySpend í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•˜ì—¬ êµ¬ë§¤ë¥¼ ì‹œë„í•©ë‹ˆë‹¤.
             if (CoinManager.Instance.TrySpend(buildingCost))
             {
-                // **±¸¸Å ¼º°ø ½Ã**
+                // **êµ¬ë§¤ ì„±ê³µ ì‹œ**
                 isPurchased = true;
-                Debug.Log("ºôµù ±¸¸Å ¼º°ø! 1¾ï ¿øÀÌ Â÷°¨µÇ¾ú½À´Ï´Ù. ¾À ÀüÈ¯À» ÁØºñÇÕ´Ï´Ù.");
+                Debug.Log("ë¹Œë”© êµ¬ë§¤ ì„±ê³µ! 1ì–µ ì›ì´ ì°¨ê°ë˜ì—ˆìŠµë‹ˆë‹¤. ì”¬ ì „í™˜ì„ ì¤€ë¹„í•©ë‹ˆë‹¤.");
 
 
-                //  Àá½Ã ÈÄ ¾À ÀüÈ¯ (2ÃÊ ´ë±â)
-                Invoke("LoadNextScene", 2f);
+                //  ì ì‹œ í›„ ì”¬ ì „í™˜ (2ì´ˆ ëŒ€ê¸°)
+                Invoke("LoadClearScene", 2f);
             }
             else
             {
-                // **±¸¸Å ½ÇÆĞ ½Ã (µ· ºÎÁ·)**
-                Debug.Log($"[±¸¸Å ½ÇÆĞ] µ·ÀÌ ºÎÁ·ÇÕ´Ï´Ù! ÇöÀç ÄÚÀÎ: {CoinManager.Instance.GetCurrentCoin()}");
-                // ¾ÆÀÌÅÛÀ» »óÀÚ¿¡ ³Ö¾úÁö¸¸ µ·ÀÌ ºÎÁ·ÇÏ¹Ç·Î ¾Æ¹«°Íµµ ÇÏÁö ¾Ê°í ´ë±âÇÕ´Ï´Ù.
+                // **êµ¬ë§¤ ì‹¤íŒ¨ ì‹œ (ëˆ ë¶€ì¡±)**
+                Debug.Log($"[êµ¬ë§¤ ì‹¤íŒ¨] ëˆì´ ë¶€ì¡±í•©ë‹ˆë‹¤! í˜„ì¬ ì½”ì¸: {CoinManager.Instance.GetCurrentCoin()}");
+                // ì•„ì´í…œì„ ìƒìì— ë„£ì—ˆì§€ë§Œ ëˆì´ ë¶€ì¡±í•˜ë¯€ë¡œ ì•„ë¬´ê²ƒë„ í•˜ì§€ ì•Šê³  ëŒ€ê¸°í•©ë‹ˆë‹¤.
             }
         }
     }
 
-    private void LoadNextScene()
+    private void LoadClearScene()
     {
-        // ºôµå ¼³Á¤¿¡ µî·ÏµÈ ´ÙÀ½ ¾ÀÀ¸·Î ÀüÈ¯
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("ClearScene");
     }
 }
