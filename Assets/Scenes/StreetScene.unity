@@ -7853,52 +7853,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4004965118951458, guid: ffa4d200e6c7d9c4b90b3764b7ed86d4, type: 3}
   m_PrefabInstance: {fileID: 308835592}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &310199827
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 310199829}
-  - component: {fileID: 310199828}
-  m_Layer: 0
-  m_Name: SceneMenuManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &310199828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 310199827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fa80d17ea89d42e6811e445531bdbc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SceneMenuController
-  sceneMenuPanel: {fileID: 0}
-  transition: {fileID: 2063097172}
---- !u!4 &310199829
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 310199827}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.07986, y: 77.00003, z: -47.3776}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &310991406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19967,13 +19921,47 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3824597611621244069, guid: 1e3ee4ae600696e40ad82498994cf7d1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 743153331}
   m_SourcePrefab: {fileID: 100100000, guid: 1e3ee4ae600696e40ad82498994cf7d1, type: 3}
 --- !u!4 &743153328 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3824597611621244068, guid: 1e3ee4ae600696e40ad82498994cf7d1, type: 3}
   m_PrefabInstance: {fileID: 743153327}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &743153329 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3824597611621244070, guid: 1e3ee4ae600696e40ad82498994cf7d1, type: 3}
+  m_PrefabInstance: {fileID: 743153327}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743153330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b9cf54c47f40ee9c3eb30ea8eb89b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &743153330 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3824597611621244069, guid: 1e3ee4ae600696e40ad82498994cf7d1, type: 3}
+  m_PrefabInstance: {fileID: 743153327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &743153331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743153330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f2b220eb9d9c40178b5f515c20a7b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::XRHandRigBinder
+  target: {fileID: 743153329}
+  xrOriginFieldName: xrOrigin
+  xrCameraFieldName: xrCamera
 --- !u!1001 &744570389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35941,17 +35929,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4004965118951458, guid: ffa4d200e6c7d9c4b90b3764b7ed86d4, type: 3}
   m_PrefabInstance: {fileID: 1326754074}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1329612708 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4626812621992280559, guid: 12e7c6e2a052ca344a4b1b5616e1597c, type: 3}
-  m_PrefabInstance: {fileID: 437966142}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1330125320
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56438,53 +56415,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4004965118951458, guid: ffa4d200e6c7d9c4b90b3764b7ed86d4, type: 3}
   m_PrefabInstance: {fileID: 2062844959}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2063097171
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2063097173}
-  - component: {fileID: 2063097172}
-  m_Layer: 0
-  m_Name: SceneTransitionManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2063097172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063097171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f92d21ffbc0514fdb9569a1c18e8cbb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SceneTransitionController
-  fadeImage: {fileID: 1329612708}
-  fadeDuration: 0.7
-  sceneToLoad: 
---- !u!4 &2063097173
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063097171}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.07986, y: 77.00003, z: -47.3776}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2063141145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58131,6 +58061,4 @@ SceneRoots:
   - {fileID: 259638853}
   - {fileID: 510433698}
   - {fileID: 437966142}
-  - {fileID: 310199829}
-  - {fileID: 2063097173}
   - {fileID: 1497737598}
