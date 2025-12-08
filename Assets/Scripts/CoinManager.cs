@@ -1,31 +1,38 @@
-using System;
 using UnityEngine;
 using TMPro;
 using System.Text;
 using UnityEngine.SceneManagement;
+using System.Collections; // 코루틴 사용을 위해 필수
+using System; // Action 및 Math 사용
 
 public class CoinManager : MonoBehaviour
 {
     public static CoinManager Instance { get; private set; }
 
-    // ✅ 코인 변경 이벤트
+    // ✅ 코인 변경 이벤트 (다른 스크립트에서 구독 가능)
     public event Action<long> OnCoinChanged;
 
-    public TMP_Text coinText;
+    [Header("UI 연결")]
+    public TMP_Text coinText;       // 현재 자산 텍스트
+    public TMP_Text countdownText;  // ⭐ 카운트다운 텍스트 (새로 추가)
 
-    [SerializeField] private float timeUntilSceneChange = 5f;
-    private float timeInNegative;
-    private bool isNegative = false;
-
+    [Header("게임 설정")]
     [SerializeField] private long currentCoin = 0;
+    [SerializeField] private string endingSceneName = "RiverScene"; // 이동할 씬 이름
+
+    private bool isCountingDown = false; // 카운트다운 중복 방지
 
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
+            // UI를 포함한 루트 오브젝트 유지
             DontDestroyOnLoad(transform.root.gameObject);
             SceneManager.sceneLoaded += OnSceneLoaded;
+
+            // 시작 시 카운트다운 텍스트는 숨김
+            if (countdownText != null) countdownText.gameObject.SetActive(false);
         }
         else if (Instance != this)
         {
@@ -40,10 +47,11 @@ public class CoinManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "RiverScene")
+        // 특정 씬(RiverScene 등)에서 Global UI 숨기기
+        if (scene.name == "RiverScene" || scene.name == endingSceneName)
         {
             transform.root.gameObject.SetActive(false);
-            Debug.Log("[CoinManager] RiverScene 로드 완료, Global UI 숨김.");
+            Debug.Log($"[CoinManager] {scene.name} 로드 완료, Global UI 숨김.");
         }
         else
         {
@@ -51,52 +59,33 @@ public class CoinManager : MonoBehaviour
             Debug.Log("[CoinManager] 새로운 씬 로드 완료, Global UI 활성화.");
         }
 
-        // ✅ 씬 바뀌어도 구독자/UI가 다시 그리도록 강제 통지
         RefreshCoinUIAndNotify();
     }
 
     void Start()
     {
         RefreshCoinUIAndNotify();
-
         if (coinText != null)
-            Debug.Log($"[CoinManager] 초기 자산 설정 완료: {FormatMoneyKorean(currentCoin)}");
+            Debug.Log($"[CoinManager] 초기 자산: {FormatMoneyKorean(currentCoin)}");
     }
 
-    void Update()
-    {
-        if (isNegative)
-        {
-            timeInNegative += Time.deltaTime;
-            if (timeInNegative >= timeUntilSceneChange)
-            {
-                Debug.Log("[CoinManager] 코인 부족 시간 초과 (5초), RiverScene으로 이동합니다.");
-                LoadRiverScene();
-            }
-        }
-    }
-
-    private void LoadRiverScene()
-    {
-        SceneManager.LoadScene("RiverScene");
-    }
-
-    // ✅ 코인 변경 공통 처리(유일한 진실)
+    // ✅ 코인 변경 공통 처리
     private void ApplyCoinChanged()
     {
-        UpdateCoinDisplay();   // (CoinManager가 들고 있는 텍스트)
-        CheckCoinStatus();     // 음수 타이머 상태
-        OnCoinChanged?.Invoke(currentCoin);  // (다른 UI들)
+        UpdateCoinDisplay();
+        OnCoinChanged?.Invoke(currentCoin);
+
+        // 잔액 변경 시마다 게임 오버(마이너스) 체크
+        CheckForGameOver();
     }
 
-    // ✅ 씬 로드 등 "값은 그대로지만 UI를 다시" 상황
     public void RefreshCoinUIAndNotify()
     {
         UpdateCoinDisplay();
         OnCoinChanged?.Invoke(currentCoin);
     }
 
-    // 돈이 부족하면 실패
+    // 돈 쓰기 (구매)
     public bool TrySpend(long amount)
     {
         if (amount <= 0) return false;
@@ -112,7 +101,7 @@ public class CoinManager : MonoBehaviour
         return true;
     }
 
-    // ✅ 여기서부터가 원래 버그 지점: 양수->양수 변화에서도 항상 갱신/이벤트 발생해야 함
+    // 돈 벌기/잃기 (음수 amount 가능)
     public void AddCoin(long amount)
     {
         currentCoin += amount;
@@ -120,35 +109,64 @@ public class CoinManager : MonoBehaviour
     }
 
     public void AddCoin(int amount) => AddCoin((long)amount);
-
     public long GetCurrentCoin() => currentCoin;
 
-    private void CheckCoinStatus()
+    // ✅ 게임 오버 체크 및 카운트다운 시작 로직
+    private void CheckForGameOver()
     {
-        if (currentCoin < 0 && !isNegative)
+        // 자산이 마이너스이고, 이미 카운트다운 중이 아닐 때
+        if (currentCoin < 0 && !isCountingDown)
         {
-            isNegative = true;
-            timeInNegative = 0f;
-            Debug.Log("[CoinManager] 코인 마이너스 감지, 5초 후 씬 전환 타이머 시작.");
+            isCountingDown = true;
+            Debug.Log("[CoinManager] 파산 위기! 카운트다운 시작.");
+            StartCoroutine(CountdownRoutine());
         }
-        else if (currentCoin >= 0 && isNegative)
+        // 자산이 다시 0 이상으로 회복되었을 때
+        else if (currentCoin >= 0 && isCountingDown)
         {
-            isNegative = false;
-            timeInNegative = 0f;
-            Debug.Log("[CoinManager] 코인 회복 감지, 씬 전환 타이머 중지.");
+            isCountingDown = false;
+            StopAllCoroutines(); // 카운트다운 중지
+            if (countdownText != null) countdownText.gameObject.SetActive(false); // 텍스트 끄기
+            Debug.Log("[CoinManager] 자산 회복! 카운트다운 중지.");
         }
+    }
+
+    // ✅ 5초 카운트다운 코루틴
+    private IEnumerator CountdownRoutine()
+    {
+        if (countdownText != null)
+        {
+            countdownText.gameObject.SetActive(true);
+            countdownText.text = "경고!";
+        }
+
+        // 5초부터 1초까지 카운트
+        for (int i = 5; i > 0; i--)
+        {
+            if (countdownText != null)
+            {
+                countdownText.text = $"<color=red>{i}</color>";
+            }
+            yield return new WaitForSeconds(1f);
+        }
+
+        // 카운트다운 끝 -> 씬 전환
+        if (countdownText != null) countdownText.text = "<color=red>GAME OVER</color>";
+        yield return new WaitForSeconds(1f); // "GAME OVER" 문구 1초 보여줌
+
+        Debug.Log($"[CoinManager] {endingSceneName}으로 이동합니다.");
+        SceneManager.LoadScene(endingSceneName);
     }
 
     private void UpdateCoinDisplay()
     {
-        if (coinText == null) return; // 씬에 따라 없을 수 있으니 조용히 스킵
+        if (coinText == null) return;
         coinText.text = FormatMoneyKorean(currentCoin);
     }
 
     private string FormatLessThanTenThousand(int amount)
     {
         if (amount == 0) return "";
-
         int thousands = amount / 1000;
         int hundreds = (amount % 1000) / 100;
         int tens = (amount % 100) / 10;
@@ -162,13 +180,12 @@ public class CoinManager : MonoBehaviour
         return sb.ToString().Trim();
     }
 
-    // ✅ 다른 UI도 쓰기 좋게 public으로 열어둠
     public string FormatMoneyKorean(long money)
     {
         if (money == 0) return "0원";
 
         bool neg = money < 0;
-        long absMoney = System.Math.Abs(money);
+        long absMoney = System.Math.Abs(money); // 절대값 변환
 
         string[] units = { "", "만", "억" };
         long[] unitValues = { 1, 10000, 100000000 };
@@ -192,6 +209,6 @@ public class CoinManager : MonoBehaviour
             sb.Append(FormatLessThanTenThousand((int)tempMoney));
 
         string result = sb.ToString().Trim() + "원";
-        return neg ? "-" + result : result;
+        return neg ? "-" + result : result; // 마이너스 기호 처리
     }
 }
